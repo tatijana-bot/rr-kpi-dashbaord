@@ -126,6 +126,8 @@
     <!-- Tab Bar -->
     <div class="tab-bar">
         <button class="tab-btn" onclick="switchTab('ytd')">Q1 2026 YTD</button>
+        <button class="tab-btn" onclick="switchTab('q2')">Q2 2026</button>
+        <button class="tab-btn" onclick="switchTab('q3')">Q3 2026</button>
         <button class="tab-btn active" onclick="switchTab('september')">September 2026</button>
         <button class="tab-btn" onclick="switchTab('august')">August 2026</button>
         <button class="tab-btn" onclick="switchTab('july')">July 2026</button>
@@ -4705,6 +4707,439 @@
             Data pulled from HubSpot CRM (Account #21116307) &middot; Sales Pipeline + Outreach Sales Pipeline &middot; January 1-31, 2026
         </div>
     </div>
+
+    <!-- ============================================================ -->
+    <!-- Q3 2026 SUMMARY TAB -->
+    <!-- ============================================================ -->
+    <div class="tab-content" id="tab-q3">
+
+        <div class="header">
+            <div>
+                <h1>Q3 2026 Summary</h1>
+                <div class="subtitle">Reputation Resolutions &mdash; HubSpot CRM Data</div>
+            </div>
+            <div class="date-badge">Jul - Sep 2026</div>
+        </div>
+
+        <div class="kpi-row">
+            <div class="kpi-card">
+                <div class="kpi-label">Total Revenue</div>
+                <div class="kpi-value">$952,795</div>
+                <div class="kpi-detail">145 deals closed won</div>
+                <div style="font-size: 10px; color: #34d399; margin-top: 5px;">+38% vs Q2 &middot; growth every month</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Avg Deal Size</div>
+                <div class="kpi-value">$6,571</div>
+                <div class="kpi-detail">across both pipelines</div>
+                <div style="font-size: 10px; color: #34d399; margin-top: 5px;">Q2 $5,186 &middot; bigger deals</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">New Leads Created</div>
+                <div class="kpi-value">1,344</div>
+                <div class="kpi-detail">1,015 Inbound &middot; 231 Outreach &middot; 98 Sub-Brand</div>
+                <div style="font-size: 10px; color: #f59e0b; margin-top: 5px;">tagged leads &middot; outreach went quality over volume</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Deals Closed</div>
+                <div class="kpi-value">145</div>
+                <div class="kpi-detail">121 Sales &middot; 24 Outreach</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Deals Lost</div>
+                <div class="kpi-value">3</div>
+                <div class="kpi-detail">0 Jul &middot; 0 Aug &middot; 3 Sep</div>
+                <div style="font-size: 10px; color: #34d399; margin-top: 5px;">~98% close rate</div>
+            </div>
+        </div>
+
+        <!-- Pipeline Revenue Split -->
+        <div class="card">
+            <div style="font-size: 13px; font-weight: 600; color: #71717a; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">Revenue by Pipeline</div>
+            <div class="split-bar">
+                <div class="split-segment" style="width: 91.1%; background: linear-gradient(90deg, #818cf8, #6366f1);">$867,600</div>
+                <div class="split-segment" style="width: 8.9%; background: linear-gradient(90deg, #22d3ee, #06b6d4);">$85,195</div>
+            </div>
+            <div class="split-legend">
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: #6366f1;"></div>
+                    <div class="legend-text"><strong>Sales Pipeline (Inbound)</strong> &mdash; 121 deals &middot; $867,600</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: #06b6d4;"></div>
+                    <div class="legend-text"><strong>Outreach Pipeline</strong> &mdash; 24 deals &middot; $85,195</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Monthly Revenue Trend -->
+        <div class="card">
+            <div class="card-title">
+                <span class="dot" style="background: #6366f1;"></span>
+                Monthly Revenue Trend
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+                <div style="padding: 24px; background: rgba(99,102,241,0.04); border: 1px solid rgba(99,102,241,0.1); border-radius: 12px; text-align: center;">
+                    <div style="font-size: 14px; font-weight: 700; color: #818cf8; margin-bottom: 12px;">July</div>
+                    <div style="font-size: 28px; font-weight: 800; color: #fff; letter-spacing: -1px;">$258,835</div>
+                    <div style="font-size: 12px; color: #71717a; margin-top: 8px;">34 deals closed</div>
+                    <div style="margin-top: 16px; display: flex; justify-content: center; gap: 16px;">
+                        <div>
+                            <div style="font-size: 11px; color: #818cf8; font-weight: 600;">Sales</div>
+                            <div style="font-size: 14px; font-weight: 700; color: #e4e4e7;">$244,910</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 11px; color: #22d3ee; font-weight: 600;">Outreach</div>
+                            <div style="font-size: 14px; font-weight: 700; color: #e4e4e7;">$13,925</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding: 24px; background: rgba(16,185,129,0.04); border: 1px solid rgba(16,185,129,0.1); border-radius: 12px; text-align: center;">
+                    <div style="font-size: 14px; font-weight: 700; color: #34d399; margin-bottom: 12px;">August</div>
+                    <div style="font-size: 28px; font-weight: 800; color: #fff; letter-spacing: -1px;">$336,195</div>
+                    <div style="font-size: 12px; color: #71717a; margin-top: 8px;">51 deals closed</div>
+                    <div style="margin-top: 16px; display: flex; justify-content: center; gap: 16px;">
+                        <div>
+                            <div style="font-size: 11px; color: #818cf8; font-weight: 600;">Sales</div>
+                            <div style="font-size: 14px; font-weight: 700; color: #e4e4e7;">$301,445</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 11px; color: #22d3ee; font-weight: 600;">Outreach</div>
+                            <div style="font-size: 14px; font-weight: 700; color: #e4e4e7;">$34,750</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding: 24px; background: rgba(34,211,238,0.04); border: 1px solid rgba(34,211,238,0.12); border-radius: 12px; text-align: center;">
+                    <div style="font-size: 14px; font-weight: 700; color: #22d3ee; margin-bottom: 12px;">September</div>
+                    <div style="font-size: 28px; font-weight: 800; color: #fff; letter-spacing: -1px;">$357,765</div>
+                    <div style="font-size: 12px; color: #71717a; margin-top: 8px;">60 deals closed</div>
+                    <div style="margin-top: 16px; display: flex; justify-content: center; gap: 16px;">
+                        <div>
+                            <div style="font-size: 11px; color: #818cf8; font-weight: 600;">Sales</div>
+                            <div style="font-size: 14px; font-weight: 700; color: #e4e4e7;">$321,245</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 11px; color: #22d3ee; font-weight: 600;">Outreach</div>
+                            <div style="font-size: 14px; font-weight: 700; color: #e4e4e7;">$36,520</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 16px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.04); font-size: 11px; color: #71717a;">Three straight months of growth &mdash; Jul $259K &rarr; Aug $336K &rarr; Sep $358K</div>
+        </div>
+
+        <!-- Sales Rep Performance -->
+        <div class="card">
+            <div class="card-title">
+                <span class="dot" style="background: #6366f1;"></span>
+                Sales Rep Performance &mdash; Q3 2026
+            </div>
+            <div class="rep-row">
+                <div class="rep-avatar" style="background: linear-gradient(135deg, #6366f1, #4f46e5);">HS</div>
+                <div class="rep-info">
+                    <div class="rep-name">Hector Simoudis</div>
+                    <div class="rep-deals">45 deals &middot; 33.8% of Q3 revenue</div>
+                    <div class="rep-bar-container"><div class="rep-bar-fill" style="width: 33.8%; background: #6366f1;"></div></div>
+                </div>
+                <div class="rep-amount">$322,410</div>
+            </div>
+            <div class="rep-row">
+                <div class="rep-avatar" style="background: linear-gradient(135deg, #f59e0b, #d97706);">MC</div>
+                <div class="rep-info">
+                    <div class="rep-name">Maxwell Cavender</div>
+                    <div class="rep-deals">34 deals &middot; 24.8% of Q3 revenue</div>
+                    <div class="rep-bar-container"><div class="rep-bar-fill" style="width: 24.8%; background: #f59e0b;"></div></div>
+                </div>
+                <div class="rep-amount">$236,550</div>
+            </div>
+            <div class="rep-row">
+                <div class="rep-avatar" style="background: linear-gradient(135deg, #06b6d4, #0891b2);">JA</div>
+                <div class="rep-info">
+                    <div class="rep-name">Jordan Azis</div>
+                    <div class="rep-deals">35 deals &middot; 22.5% of Q3 revenue</div>
+                    <div class="rep-bar-container"><div class="rep-bar-fill" style="width: 22.5%; background: #06b6d4;"></div></div>
+                </div>
+                <div class="rep-amount">$214,525</div>
+            </div>
+            <div class="rep-row">
+                <div class="rep-avatar" style="background: linear-gradient(135deg, #10b981, #059669);">AW</div>
+                <div class="rep-info">
+                    <div class="rep-name">Anthony Will</div>
+                    <div class="rep-deals">21 deals &middot; 16.0% of Q3 revenue</div>
+                    <div class="rep-bar-container"><div class="rep-bar-fill" style="width: 16.0%; background: #10b981;"></div></div>
+                </div>
+                <div class="rep-amount">$152,775</div>
+            </div>
+            <div class="rep-row">
+                <div class="rep-avatar" style="background: linear-gradient(135deg, #ec4899, #db2777);">TI</div>
+                <div class="rep-info">
+                    <div class="rep-name">Tatijana Ivusa</div>
+                    <div class="rep-deals">4 deals &middot; 1.6% of Q3 revenue</div>
+                    <div class="rep-bar-container"><div class="rep-bar-fill" style="width: 1.6%; background: #ec4899;"></div></div>
+                </div>
+                <div class="rep-amount">$15,715</div>
+            </div>
+            <div class="rep-row">
+                <div class="rep-avatar" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);">LG</div>
+                <div class="rep-info">
+                    <div class="rep-name">Lucija Gaudio</div>
+                    <div class="rep-deals">6 deals &middot; 1.1% of Q3 revenue</div>
+                    <div class="rep-bar-container"><div class="rep-bar-fill" style="width: 1.1%; background: #8b5cf6;"></div></div>
+                </div>
+                <div class="rep-amount">$10,820</div>
+            </div>
+            <div style="margin-top: 16px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.04); font-size: 11px; color: #71717a;">Four reps above $150K &mdash; the deepest, most balanced quarter of the year</div>
+        </div>
+
+        <!-- Executive Summary -->
+        <div class="card" style="border: 1px solid rgba(99,102,241,0.15); background: linear-gradient(135deg, rgba(99,102,241,0.04), rgba(16,185,129,0.04));">
+            <div class="card-title">
+                <span class="dot" style="background: #818cf8;"></span>
+                Q3 2026 &mdash; Executive Summary
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+                <div>
+                    <div style="font-size: 13px; font-weight: 700; color: #10b981; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px;">Wins</div>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px;">
+                        <li style="font-size: 13px; color: #a1a1aa; padding-left: 16px; position: relative;"><span style="position: absolute; left: 0; color: #10b981;">+</span><strong style="color: #e4e4e7;">$952,795 across 145 deals</strong> &mdash; up 38% from Q2 and the strongest quarter since Q1, with growth every month (Jul&rarr;Aug&rarr;Sep)</li>
+                        <li style="font-size: 13px; color: #a1a1aa; padding-left: 16px; position: relative;"><span style="position: absolute; left: 0; color: #10b981;">+</span><strong style="color: #e4e4e7;">Deepest bench of the year</strong> &mdash; Hector $322K, Maxwell $237K, Jordan $215K, Anthony $153K; four reps above $150K</li>
+                        <li style="font-size: 13px; color: #a1a1aa; padding-left: 16px; position: relative;"><span style="position: absolute; left: 0; color: #10b981;">+</span><strong style="color: #e4e4e7;">Avg deal size up to $6,571</strong> &mdash; from $5,186 in Q2; bigger, higher-value wins</li>
+                        <li style="font-size: 13px; color: #a1a1aa; padding-left: 16px; position: relative;"><span style="position: absolute; left: 0; color: #10b981;">+</span><strong style="color: #e4e4e7;">Outreach shifted to quality</strong> &mdash; granular channels (Google Review, Trustpilot) replaced the Instantly blast; leads fell to 231 but are far better targeted</li>
+                    </ul>
+                </div>
+                <div>
+                    <div style="font-size: 13px; font-weight: 700; color: #f59e0b; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px;">Watch</div>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px;">
+                        <li style="font-size: 13px; color: #a1a1aa; padding-left: 16px; position: relative;"><span style="position: absolute; left: 0; color: #f59e0b;">&bull;</span><strong style="color: #e4e4e7;">Outreach revenue share fell to 8.9%</strong> &mdash; $85K; the lead mix pivoted but revenue hasn't caught up yet (conversion lag)</li>
+                        <li style="font-size: 13px; color: #a1a1aa; padding-left: 16px; position: relative;"><span style="position: absolute; left: 0; color: #f59e0b;">&bull;</span><strong style="color: #e4e4e7;">Zero-loss streak ended in September</strong> &mdash; 3 deals lost after a long clean run</li>
+                        <li style="font-size: 13px; color: #a1a1aa; padding-left: 16px; position: relative;"><span style="position: absolute; left: 0; color: #f59e0b;">&bull;</span><strong style="color: #e4e4e7;">Heavily Sales/inbound-led</strong> &mdash; 91% of revenue; outreach is a lead engine, not yet a revenue engine</li>
+                        <li style="font-size: 13px; color: #a1a1aa; padding-left: 16px; position: relative;"><span style="position: absolute; left: 0; color: #f59e0b;">&bull;</span><strong style="color: #e4e4e7;">Hector still the biggest single dependency</strong> &mdash; 34% of the quarter; deep but top-weighted</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            Data pulled live from HubSpot CRM (Account #21116307) &middot; Q3 2026 (July&ndash;September) &middot; Sales + Outreach pipelines &middot; Closed-won by close date &middot; Leads = tagged contact RR Lead Source (excl. untagged / test)
+        </div>
+    </div>
+
+
+    <!-- ============================================================ -->
+    <!-- Q2 2026 SUMMARY TAB -->
+    <!-- ============================================================ -->
+    <div class="tab-content" id="tab-q2">
+
+        <div class="header">
+            <div>
+                <h1>Q2 2026 Summary</h1>
+                <div class="subtitle">Reputation Resolutions &mdash; HubSpot CRM Data</div>
+            </div>
+            <div class="date-badge">Apr - Jun 2026</div>
+        </div>
+
+        <div class="kpi-row">
+            <div class="kpi-card">
+                <div class="kpi-label">Total Revenue</div>
+                <div class="kpi-value">$689,723</div>
+                <div class="kpi-detail">133 deals closed won</div>
+                <div style="font-size: 10px; color: #f59e0b; margin-top: 5px;">down from Q1 $1.25M</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Avg Deal Size</div>
+                <div class="kpi-value">$5,186</div>
+                <div class="kpi-detail">across both pipelines</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">New Leads Created</div>
+                <div class="kpi-value">1,702</div>
+                <div class="kpi-detail">1,269 Outreach &middot; 410 Inbound &middot; 23 Sub-Brand</div>
+                <div style="font-size: 10px; color: #f59e0b; margin-top: 5px;">tagged leads &middot; peak Instantly volume</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Deals Closed</div>
+                <div class="kpi-value">133</div>
+                <div class="kpi-detail">81 Sales &middot; 52 Outreach</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Deals Lost</div>
+                <div class="kpi-value">1</div>
+                <div class="kpi-detail">0 Apr &middot; 1 May &middot; 0 Jun</div>
+                <div style="font-size: 10px; color: #34d399; margin-top: 5px;">near-perfect close rate</div>
+            </div>
+        </div>
+
+        <!-- Pipeline Revenue Split -->
+        <div class="card">
+            <div style="font-size: 13px; font-weight: 600; color: #71717a; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">Revenue by Pipeline</div>
+            <div class="split-bar">
+                <div class="split-segment" style="width: 71.4%; background: linear-gradient(90deg, #818cf8, #6366f1);">$492,558</div>
+                <div class="split-segment" style="width: 28.6%; background: linear-gradient(90deg, #22d3ee, #06b6d4);">$197,165</div>
+            </div>
+            <div class="split-legend">
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: #6366f1;"></div>
+                    <div class="legend-text"><strong>Sales Pipeline (Inbound)</strong> &mdash; 81 deals &middot; $492,558</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: #06b6d4;"></div>
+                    <div class="legend-text"><strong>Outreach Pipeline (Instantly)</strong> &mdash; 52 deals &middot; $197,165</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Monthly Revenue Trend -->
+        <div class="card">
+            <div class="card-title">
+                <span class="dot" style="background: #6366f1;"></span>
+                Monthly Revenue Trend
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+                <div style="padding: 24px; background: rgba(99,102,241,0.04); border: 1px solid rgba(99,102,241,0.1); border-radius: 12px; text-align: center;">
+                    <div style="font-size: 14px; font-weight: 700; color: #818cf8; margin-bottom: 12px;">April</div>
+                    <div style="font-size: 28px; font-weight: 800; color: #fff; letter-spacing: -1px;">$306,390</div>
+                    <div style="font-size: 12px; color: #71717a; margin-top: 8px;">58 deals closed</div>
+                    <div style="margin-top: 16px; display: flex; justify-content: center; gap: 16px;">
+                        <div>
+                            <div style="font-size: 11px; color: #818cf8; font-weight: 600;">Sales</div>
+                            <div style="font-size: 14px; font-weight: 700; color: #e4e4e7;">$196,015</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 11px; color: #22d3ee; font-weight: 600;">Outreach</div>
+                            <div style="font-size: 14px; font-weight: 700; color: #e4e4e7;">$110,375</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding: 24px; background: rgba(16,185,129,0.04); border: 1px solid rgba(16,185,129,0.1); border-radius: 12px; text-align: center;">
+                    <div style="font-size: 14px; font-weight: 700; color: #34d399; margin-bottom: 12px;">May</div>
+                    <div style="font-size: 28px; font-weight: 800; color: #fff; letter-spacing: -1px;">$231,143</div>
+                    <div style="font-size: 12px; color: #71717a; margin-top: 8px;">40 deals closed</div>
+                    <div style="margin-top: 16px; display: flex; justify-content: center; gap: 16px;">
+                        <div>
+                            <div style="font-size: 11px; color: #818cf8; font-weight: 600;">Sales</div>
+                            <div style="font-size: 14px; font-weight: 700; color: #e4e4e7;">$187,603</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 11px; color: #22d3ee; font-weight: 600;">Outreach</div>
+                            <div style="font-size: 14px; font-weight: 700; color: #e4e4e7;">$43,540</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding: 24px; background: rgba(245,158,11,0.04); border: 1px solid rgba(245,158,11,0.1); border-radius: 12px; text-align: center;">
+                    <div style="font-size: 14px; font-weight: 700; color: #fbbf24; margin-bottom: 12px;">June</div>
+                    <div style="font-size: 28px; font-weight: 800; color: #fff; letter-spacing: -1px;">$152,190</div>
+                    <div style="font-size: 12px; color: #71717a; margin-top: 8px;">35 deals closed</div>
+                    <div style="margin-top: 16px; display: flex; justify-content: center; gap: 16px;">
+                        <div>
+                            <div style="font-size: 11px; color: #818cf8; font-weight: 600;">Sales</div>
+                            <div style="font-size: 14px; font-weight: 700; color: #e4e4e7;">$108,940</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 11px; color: #22d3ee; font-weight: 600;">Outreach</div>
+                            <div style="font-size: 14px; font-weight: 700; color: #e4e4e7;">$43,250</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 16px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.04); font-size: 11px; color: #71717a;">Declining through the quarter &mdash; Apr $306K &rarr; May $231K &rarr; Jun $152K (the year's low)</div>
+        </div>
+
+        <!-- Sales Rep Performance -->
+        <div class="card">
+            <div class="card-title">
+                <span class="dot" style="background: #6366f1;"></span>
+                Sales Rep Performance &mdash; Q2 2026
+            </div>
+            <div class="rep-row">
+                <div class="rep-avatar" style="background: linear-gradient(135deg, #6366f1, #4f46e5);">HS</div>
+                <div class="rep-info">
+                    <div class="rep-name">Hector Simoudis</div>
+                    <div class="rep-deals">56 deals &middot; 38.0% of Q2 revenue</div>
+                    <div class="rep-bar-container"><div class="rep-bar-fill" style="width: 38.0%; background: #6366f1;"></div></div>
+                </div>
+                <div class="rep-amount">$261,930</div>
+            </div>
+            <div class="rep-row">
+                <div class="rep-avatar" style="background: linear-gradient(135deg, #06b6d4, #0891b2);">JA</div>
+                <div class="rep-info">
+                    <div class="rep-name">Jordan Azis</div>
+                    <div class="rep-deals">33 deals &middot; 29.5% of Q2 revenue</div>
+                    <div class="rep-bar-container"><div class="rep-bar-fill" style="width: 29.5%; background: #06b6d4;"></div></div>
+                </div>
+                <div class="rep-amount">$203,340</div>
+            </div>
+            <div class="rep-row">
+                <div class="rep-avatar" style="background: linear-gradient(135deg, #f59e0b, #d97706);">MC</div>
+                <div class="rep-info">
+                    <div class="rep-name">Maxwell Cavender</div>
+                    <div class="rep-deals">34 deals &middot; 23.3% of Q2 revenue</div>
+                    <div class="rep-bar-container"><div class="rep-bar-fill" style="width: 23.3%; background: #f59e0b;"></div></div>
+                </div>
+                <div class="rep-amount">$160,528</div>
+            </div>
+            <div class="rep-row">
+                <div class="rep-avatar" style="background: linear-gradient(135deg, #10b981, #059669);">AW</div>
+                <div class="rep-info">
+                    <div class="rep-name">Anthony Will</div>
+                    <div class="rep-deals">5 deals &middot; 5.7% of Q2 revenue</div>
+                    <div class="rep-bar-container"><div class="rep-bar-fill" style="width: 5.7%; background: #10b981;"></div></div>
+                </div>
+                <div class="rep-amount">$39,125</div>
+            </div>
+            <div class="rep-row">
+                <div class="rep-avatar" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);">LG</div>
+                <div class="rep-info">
+                    <div class="rep-name">Lucija Gaudio</div>
+                    <div class="rep-deals">2 deals &middot; 3.3% of Q2 revenue</div>
+                    <div class="rep-bar-container"><div class="rep-bar-fill" style="width: 3.3%; background: #8b5cf6;"></div></div>
+                </div>
+                <div class="rep-amount">$23,000</div>
+            </div>
+            <div class="rep-row">
+                <div class="rep-avatar" style="background: linear-gradient(135deg, #ec4899, #db2777);">TI</div>
+                <div class="rep-info">
+                    <div class="rep-name">Tatijana Ivusa</div>
+                    <div class="rep-deals">5 deals &middot; 0.8% of Q2 revenue</div>
+                    <div class="rep-bar-container"><div class="rep-bar-fill" style="width: 0.8%; background: #ec4899;"></div></div>
+                </div>
+                <div class="rep-amount">$5,800</div>
+            </div>
+            <div style="margin-top: 16px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.04); font-size: 11px; color: #71717a;">Hector, Jordan &amp; Maxwell drove 91% of Q2 &mdash; the Instantly-outreach era's top closers</div>
+        </div>
+
+        <!-- Executive Summary -->
+        <div class="card" style="border: 1px solid rgba(99,102,241,0.15); background: linear-gradient(135deg, rgba(99,102,241,0.04), rgba(16,185,129,0.04));">
+            <div class="card-title">
+                <span class="dot" style="background: #818cf8;"></span>
+                Q2 2026 &mdash; Executive Summary
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+                <div>
+                    <div style="font-size: 13px; font-weight: 700; color: #10b981; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px;">Wins</div>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px;">
+                        <li style="font-size: 13px; color: #a1a1aa; padding-left: 16px; position: relative;"><span style="position: absolute; left: 0; color: #10b981;">+</span><strong style="color: #e4e4e7;">$689,723 across 133 deals</strong> &mdash; a solid quarter led by a strong April ($306K, 58 deals)</li>
+                        <li style="font-size: 13px; color: #a1a1aa; padding-left: 16px; position: relative;"><span style="position: absolute; left: 0; color: #10b981;">+</span><strong style="color: #e4e4e7;">Outreach punched above its weight</strong> &mdash; 29% of revenue ($197K across 52 deals), the Instantly engine's peak contribution</li>
+                        <li style="font-size: 13px; color: #a1a1aa; padding-left: 16px; position: relative;"><span style="position: absolute; left: 0; color: #10b981;">+</span><strong style="color: #e4e4e7;">Only 1 deal lost all quarter</strong> &mdash; a near-perfect close rate</li>
+                        <li style="font-size: 13px; color: #a1a1aa; padding-left: 16px; position: relative;"><span style="position: absolute; left: 0; color: #10b981;">+</span><strong style="color: #e4e4e7;">Three closers carried it</strong> &mdash; Hector $262K, Jordan $203K, Maxwell $161K</li>
+                    </ul>
+                </div>
+                <div>
+                    <div style="font-size: 13px; font-weight: 700; color: #f59e0b; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px;">Watch</div>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px;">
+                        <li style="font-size: 13px; color: #a1a1aa; padding-left: 16px; position: relative;"><span style="position: absolute; left: 0; color: #f59e0b;">&bull;</span><strong style="color: #e4e4e7;">Steady decline through the quarter</strong> &mdash; $306K &rarr; $231K &rarr; $152K, bottoming at the year's low in June</li>
+                        <li style="font-size: 13px; color: #a1a1aa; padding-left: 16px; position: relative;"><span style="position: absolute; left: 0; color: #f59e0b;">&bull;</span><strong style="color: #e4e4e7;">Down sharply from Q1</strong> &mdash; $690K vs $1.25M; revenue nearly halved quarter-over-quarter</li>
+                        <li style="font-size: 13px; color: #a1a1aa; padding-left: 16px; position: relative;"><span style="position: absolute; left: 0; color: #f59e0b;">&bull;</span><strong style="color: #e4e4e7;">Massive outreach lead volume, thin conversion</strong> &mdash; 1,269 Instantly-era outreach leads for 52 closes; the low-quality blast that Q3's granular approach later replaced</li>
+                        <li style="font-size: 13px; color: #a1a1aa; padding-left: 16px; position: relative;"><span style="position: absolute; left: 0; color: #f59e0b;">&bull;</span><strong style="color: #e4e4e7;">Avg deal slipped to $5,186</strong> &mdash; smaller deals as volume outweighed size</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            Data pulled live from HubSpot CRM (Account #21116307) &middot; Q2 2026 (April&ndash;June) &middot; Sales + Outreach pipelines &middot; Closed-won by close date &middot; Leads = tagged contact RR Lead Source (excl. untagged / test)
+        </div>
+    </div>
+
 
     <!-- ============================================================ -->
     <!-- Q1 2026 YTD TAB -->
