@@ -129,7 +129,8 @@
         <button class="tab-btn" onclick="switchTab('q2')">Q2 2026</button>
         <button class="tab-btn" onclick="switchTab('q3')">Q3 2026</button>
         <button class="tab-btn" onclick="switchTab('retention')">Clients &amp; Retention</button>
-        <button class="tab-btn active" onclick="switchTab('september')">September 2026</button>
+        <button class="tab-btn active" onclick="switchTab('october')">October 2026</button>
+        <button class="tab-btn" onclick="switchTab('september')">September 2026</button>
         <button class="tab-btn" onclick="switchTab('august')">August 2026</button>
         <button class="tab-btn" onclick="switchTab('july')">July 2026</button>
         <button class="tab-btn" onclick="switchTab('june')">June 2026</button>
@@ -143,7 +144,372 @@
     <!-- ============================================================ -->
     <!-- SEPTEMBER 2026 TAB -->
     <!-- ============================================================ -->
-    <div class="tab-content active" id="tab-september">
+    <!-- OCTOBER 2026 TAB -->
+    <!-- ============================================================ -->
+    <div class="tab-content active" id="tab-october">
+
+        <div class="header">
+            <div>
+                <h1>Sales KPI Dashboard</h1>
+                <div class="subtitle">Reputation Resolutions &mdash; HubSpot CRM Data</div>
+            </div>
+            <div class="date-badge">October 2026 (In Progress &mdash; Oct 1&ndash;29)</div>
+        </div>
+
+        <div class="kpi-row">
+            <div class="kpi-card">
+                <div class="kpi-label">Closed Won Revenue</div>
+                <div class="kpi-value">$395,695</div>
+                <div class="kpi-detail">53 deals closed won</div>
+                <div style="font-size: 10px; color: #34d399; margin-top: 5px;">+11% vs Sep &middot; highest since February &middot; 2 days still open</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Avg Deal Size</div>
+                <div class="kpi-value">$7,466</div>
+                <div class="kpi-detail">53 deals</div>
+                <div style="font-size: 10px; color: #34d399; margin-top: 5px;">Sep $5,963 &middot; bigger deals this month</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">New Leads Created</div>
+                <div class="kpi-value">578</div>
+                <div class="kpi-detail">408 Inbound &middot; 109 Outreach &middot; 61 Sub-Brand</div>
+                <div style="font-size: 10px; color: #71717a; margin-top: 5px;">Inbound incl. 45 Ruby phone leads</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Deals Closed</div>
+                <div class="kpi-value">53</div>
+                <div class="kpi-detail">48 Sales &middot; 5 Outreach</div>
+                <div style="font-size: 10px; color: #71717a; margin-top: 5px;">5 real losses &middot; 91 $0 deals swept</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Largest Deal</div>
+                <div class="kpi-value">$44,340</div>
+                <div class="kpi-detail">Sniper Auto Trader &middot; Trustpilot Mgmt Membership</div>
+                <div style="font-size: 10px; color: #71717a; margin-top: 5px;">Hector Simoudis &middot; Sales</div>
+            </div>
+        </div>
+
+        <!-- Month-over-Month Revenue Trend -->
+        <div class="card">
+            <div class="card-title">
+                <span class="dot" style="background: #6366f1;"></span>
+                Closed-Won Revenue &mdash; Month over Month (2026)
+            </div>
+            <svg viewBox="0 0 700 272" style="width: 100%; height: auto; overflow: visible;" role="img" aria-label="Monthly closed-won revenue trend, January through October 2026">
+                <line x1="40" y1="230" x2="660" y2="230" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+                <polygon points="40,230 40,116 108.9,57 177.8,76 246.7,156 315.6,155 384.4,178 453.3,140 522.2,114 591.1,106 660,93 660,230" fill="rgba(129,140,248,0.10)"/>
+                <line x1="40" y1="119" x2="660" y2="119" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="5 4" opacity="0.75"></line>
+                <text x="656" y="113" fill="#f59e0b" font-size="10" font-family="-apple-system, BlinkMacSystemFont, sans-serif" text-anchor="end">10-mo avg $321K</text>
+                <polyline points="40,116 108.9,57 177.8,76 246.7,156 315.6,155 384.4,178 453.3,140 522.2,114 591.1,106 660,93" fill="none" stroke="#818cf8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <g font-family="-apple-system, BlinkMacSystemFont, sans-serif">
+                    <circle cx="40" cy="116" r="4" fill="#818cf8"></circle>
+                    <text x="40" y="104" fill="#e4e4e7" font-size="11" font-weight="700" text-anchor="middle">$330K</text>
+                    <text x="40" y="250" fill="#a1a1aa" font-size="11" text-anchor="middle">Jan</text>
+                    <text x="40" y="264" fill="#52525b" font-size="9" text-anchor="middle">61 deals</text>
+                    <circle cx="108.9" cy="57" r="4" fill="#818cf8"></circle>
+                    <text x="108.9" y="45" fill="#e4e4e7" font-size="11" font-weight="700" text-anchor="middle">$501K</text>
+                    <text x="108.9" y="250" fill="#a1a1aa" font-size="11" text-anchor="middle">Feb</text>
+                    <text x="108.9" y="264" fill="#52525b" font-size="9" text-anchor="middle">40 deals</text>
+                    <circle cx="177.8" cy="76" r="4" fill="#818cf8"></circle>
+                    <text x="177.8" y="64" fill="#e4e4e7" font-size="11" font-weight="700" text-anchor="middle">$445K</text>
+                    <text x="177.8" y="250" fill="#a1a1aa" font-size="11" text-anchor="middle">Mar</text>
+                    <text x="177.8" y="264" fill="#52525b" font-size="9" text-anchor="middle">82 deals</text>
+                    <circle cx="246.7" cy="156" r="4" fill="#818cf8"></circle>
+                    <text x="246.7" y="144" fill="#e4e4e7" font-size="11" font-weight="700" text-anchor="middle">$215K</text>
+                    <text x="246.7" y="250" fill="#a1a1aa" font-size="11" text-anchor="middle">Apr</text>
+                    <text x="246.7" y="264" fill="#52525b" font-size="9" text-anchor="middle">59 deals</text>
+                    <circle cx="315.6" cy="155" r="4" fill="#818cf8"></circle>
+                    <text x="315.6" y="143" fill="#e4e4e7" font-size="11" font-weight="700" text-anchor="middle">$216K</text>
+                    <text x="315.6" y="250" fill="#a1a1aa" font-size="11" text-anchor="middle">May</text>
+                    <text x="315.6" y="264" fill="#52525b" font-size="9" text-anchor="middle">39 deals</text>
+                    <circle cx="384.4" cy="178" r="4" fill="#818cf8"></circle>
+                    <text x="384.4" y="166" fill="#e4e4e7" font-size="11" font-weight="700" text-anchor="middle">$150K</text>
+                    <text x="384.4" y="250" fill="#a1a1aa" font-size="11" text-anchor="middle">Jun</text>
+                    <text x="384.4" y="264" fill="#52525b" font-size="9" text-anchor="middle">34 deals</text>
+                    <circle cx="453.3" cy="140" r="4" fill="#818cf8"></circle>
+                    <text x="453.3" y="128" fill="#e4e4e7" font-size="11" font-weight="700" text-anchor="middle">$261K</text>
+                    <text x="453.3" y="250" fill="#a1a1aa" font-size="11" text-anchor="middle">Jul</text>
+                    <text x="453.3" y="264" fill="#52525b" font-size="9" text-anchor="middle">35 deals</text>
+                    <circle cx="522.2" cy="114" r="4" fill="#818cf8"></circle>
+                    <text x="522.2" y="102" fill="#e4e4e7" font-size="11" font-weight="700" text-anchor="middle">$336K</text>
+                    <text x="522.2" y="250" fill="#a1a1aa" font-size="11" text-anchor="middle">Aug</text>
+                    <text x="522.2" y="264" fill="#52525b" font-size="9" text-anchor="middle">51 deals</text>
+                    <circle cx="591.1" cy="106" r="4" fill="#818cf8"></circle>
+                    <text x="591.1" y="94" fill="#e4e4e7" font-size="11" font-weight="700" text-anchor="middle">$358K</text>
+                    <text x="591.1" y="250" fill="#a1a1aa" font-size="11" text-anchor="middle">Sep</text>
+                    <text x="591.1" y="264" fill="#52525b" font-size="9" text-anchor="middle">60 deals</text>
+                    <circle cx="660" cy="93" r="5" fill="#22d3ee"></circle>
+                    <text x="660" y="81" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">$396K</text>
+                    <text x="660" y="250" fill="#22d3ee" font-size="11" font-weight="700" text-anchor="middle">Oct*</text>
+                    <text x="660" y="264" fill="#52525b" font-size="9" text-anchor="middle">53 deals</text>
+                </g>
+            </svg>
+            <div style="margin-top: 8px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.04); font-size: 11px; color: #71717a;">Closed-won revenue by close date &middot; Sales + Outreach pipelines &middot; *October through Oct 29 (2 days still open) and already the strongest month since February &mdash; a fourth straight month of growth (Jul&rarr;Aug&rarr;Sep&rarr;Oct)</div>
+        </div>
+
+        <!-- Pipeline Revenue Split -->
+        <div class="card">
+            <div style="font-size: 13px; font-weight: 600; color: #71717a; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">Revenue by Pipeline</div>
+            <div class="split-bar">
+                <div class="split-segment" style="width: 91.5%; background: linear-gradient(90deg, #818cf8, #6366f1);">$361,945</div>
+                <div class="split-segment" style="width: 8.5%; background: linear-gradient(90deg, #22d3ee, #06b6d4); font-size: 11px;">$33,750</div>
+            </div>
+            <div class="split-legend">
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: #6366f1;"></div>
+                    <div class="legend-text"><strong>Sales Pipeline (Inbound)</strong> &mdash; 48 deals &middot; $361,945</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: #06b6d4;"></div>
+                    <div class="legend-text"><strong>Outreach Pipeline</strong> &mdash; 5 deals &middot; $33,750</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cash Collected (ChargeOver) -->
+        <div class="card">
+            <div class="card-title">
+                <span class="dot" style="background: #10b981;"></span>
+                Cash Collected (ChargeOver) &mdash; October (MTD)
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 18px;">
+                <div>
+                    <div style="font-size: 11px; color: #71717a; text-transform: uppercase; letter-spacing: 0.5px;">Total Collected (by payment date, through Oct 29)</div>
+                    <div style="font-size: 34px; font-weight: 800; color: #10b981;">$259,166</div>
+                </div>
+            </div>
+            <div class="split-bar">
+                <div class="split-segment" style="width: 56.0%; background: linear-gradient(90deg, #818cf8, #6366f1);">$145,235</div>
+                <div class="split-segment" style="width: 10.9%; background: linear-gradient(90deg, #22d3ee, #06b6d4); font-size: 11px;">$28,125</div>
+                <div class="split-segment" style="width: 33.1%; background: linear-gradient(90deg, #fbbf24, #f59e0b);">$85,806</div>
+            </div>
+            <div class="split-legend">
+                <div class="legend-item"><div class="legend-dot" style="background: #6366f1;"></div><div class="legend-text"><strong>Inbound (Sales)</strong> &mdash; 56% &middot; $145,235</div></div>
+                <div class="legend-item"><div class="legend-dot" style="background: #06b6d4;"></div><div class="legend-text"><strong>Outbound (Outreach)</strong> &mdash; 11% &middot; $28,125</div></div>
+                <div class="legend-item"><div class="legend-dot" style="background: #f59e0b;"></div><div class="legend-text"><strong>No Deal (pre-HubSpot)</strong> &mdash; 33% &middot; $85,806</div></div>
+            </div>
+            <div style="margin-top: 16px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.04); font-size: 11px; color: #71717a;">Actual cash received per ChargeOver, by payment date (monday 02 Invoices ledger) &middot; month-to-date through Oct 29, will rise as more payments land &middot; distinct from booked contract value ($395,695 closed-won this month)</div>
+        </div>
+
+        <!-- Lead Source Mix (3-bucket) -->
+        <div class="card">
+            <div class="card-title">
+                <span class="dot" style="background: #818cf8;"></span>
+                Lead Source Mix &mdash; October 2026
+            </div>
+            <div style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap; padding: 8px 4px;">
+                <div style="width: 180px; height: 180px; flex-shrink: 0; border-radius: 50%; background: conic-gradient(#6366f1 0 70.6%, #06b6d4 70.6% 89.5%, #f59e0b 89.5% 100%); box-shadow: 0 0 0 6px rgba(255,255,255,0.02);"></div>
+                <div style="flex: 1; min-width: 240px; display: flex; flex-direction: column; gap: 16px;">
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <div style="width: 14px; height: 14px; border-radius: 4px; background: #6366f1; flex-shrink: 0;"></div>
+                        <div style="flex: 1;">
+                            <div style="font-size: 14px; font-weight: 600; color: #e4e4e7;">Inbound (Website)</div>
+                            <div style="font-size: 11px; color: #71717a;">Inbound Website 363 + Phone/Ruby 45</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <div style="font-size: 18px; font-weight: 800; color: #fff;">408</div>
+                            <div style="font-size: 11px; color: #818cf8;">70.6%</div>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <div style="width: 14px; height: 14px; border-radius: 4px; background: #06b6d4; flex-shrink: 0;"></div>
+                        <div style="flex: 1;">
+                            <div style="font-size: 14px; font-weight: 600; color: #e4e4e7;">Outreach</div>
+                            <div style="font-size: 11px; color: #71717a;">Trustpilot 56 + Google Review 42 + Glassdoor 6 + Instantly 3</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <div style="font-size: 18px; font-weight: 800; color: #fff;">109</div>
+                            <div style="font-size: 11px; color: #22d3ee;">18.9%</div>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <div style="width: 14px; height: 14px; border-radius: 4px; background: #f59e0b; flex-shrink: 0;"></div>
+                        <div style="flex: 1;">
+                            <div style="font-size: 14px; font-weight: 600; color: #e4e4e7;">Sub-Brand</div>
+                            <div style="font-size: 11px; color: #71717a;">RemoveNews.ai 55 + Courtrecordremoval.com 6</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <div style="font-size: 18px; font-weight: 800; color: #fff;">61</div>
+                            <div style="font-size: 11px; color: #fbbf24;">10.6%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 16px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.04); font-size: 11px; color: #71717a;">By lead (contact) RR Lead Source &middot; 578 tagged Oct leads &middot; excludes untagged / test contacts &middot; Inbound now includes 45 Ruby-answered phone leads (Phone Call - Inbound Website)</div>
+        </div>
+
+        <!-- Revenue by Rep -->
+        <div class="card">
+            <div class="card-title">
+                <span class="dot" style="background: #10b981;"></span>
+                Revenue by Rep &mdash; October
+            </div>
+            <div class="rep-row">
+                <div class="rep-avatar" style="background: linear-gradient(135deg, #6366f1, #4f46e5);">HS</div>
+                <div class="rep-info">
+                    <div class="rep-name">Hector Simoudis</div>
+                    <div class="rep-deals">16 deals</div>
+                    <div class="rep-bar-container"><div class="rep-bar-fill" style="width: 39.9%; background: #6366f1;"></div></div>
+                </div>
+                <div class="rep-amount">$157,995</div>
+            </div>
+            <div class="rep-row">
+                <div class="rep-avatar" style="background: linear-gradient(135deg, #f59e0b, #d97706);">MC</div>
+                <div class="rep-info">
+                    <div class="rep-name">Maxwell Cavender</div>
+                    <div class="rep-deals">20 deals</div>
+                    <div class="rep-bar-container"><div class="rep-bar-fill" style="width: 35.8%; background: #f59e0b;"></div></div>
+                </div>
+                <div class="rep-amount">$141,750</div>
+            </div>
+            <div class="rep-row">
+                <div class="rep-avatar" style="background: linear-gradient(135deg, #06b6d4, #0891b2);">JA</div>
+                <div class="rep-info">
+                    <div class="rep-name">Jordan Azis</div>
+                    <div class="rep-deals">12 deals</div>
+                    <div class="rep-bar-container"><div class="rep-bar-fill" style="width: 18.6%; background: #06b6d4;"></div></div>
+                </div>
+                <div class="rep-amount">$73,700</div>
+            </div>
+            <div class="rep-row">
+                <div class="rep-avatar" style="background: linear-gradient(135deg, #10b981, #059669);">AW</div>
+                <div class="rep-info">
+                    <div class="rep-name">Anthony Will</div>
+                    <div class="rep-deals">2 deals</div>
+                    <div class="rep-bar-container"><div class="rep-bar-fill" style="width: 4.7%; background: #10b981;"></div></div>
+                </div>
+                <div class="rep-amount">$18,425</div>
+            </div>
+            <div class="rep-row">
+                <div class="rep-avatar" style="background: linear-gradient(135deg, #ec4899, #db2777);">MH</div>
+                <div class="rep-info">
+                    <div class="rep-name">Matthew Harding</div>
+                    <div class="rep-deals">3 deals</div>
+                    <div class="rep-bar-container"><div class="rep-bar-fill" style="width: 1.0%; background: #ec4899;"></div></div>
+                </div>
+                <div class="rep-amount">$3,825</div>
+            </div>
+            <div style="margin-top: 16px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.04); font-size: 11px; color: #71717a;">Hector &amp; Maxwell both cleared $140K (76% of the month between them); Jordan steady at $74K</div>
+        </div>
+
+        <!-- Top 10 Deals -->
+        <div class="card">
+            <div class="card-title">
+                <span class="dot" style="background: #f59e0b;"></span>
+                Top 10 Deals &mdash; October
+            </div>
+            <div class="deal-row">
+                <div class="deal-rank" style="background: rgba(99,102,241,0.1); color: #818cf8;">1</div>
+                <div class="deal-name">Sniper Auto Trader LLC - Trustpilot Review Management Membership</div>
+                <div class="deal-pipeline" style="background: rgba(99,102,241,0.12); color: #818cf8;">Sales</div>
+                <div class="deal-amount">$44,340</div>
+            </div>
+            <div class="deal-row">
+                <div class="deal-rank" style="background: rgba(99,102,241,0.1); color: #818cf8;">2</div>
+                <div class="deal-name">Spine &amp; Joint Centers of America - Dr. Samer Elfallal</div>
+                <div class="deal-pipeline" style="background: rgba(99,102,241,0.12); color: #818cf8;">Sales</div>
+                <div class="deal-amount">$41,700</div>
+            </div>
+            <div class="deal-row">
+                <div class="deal-rank" style="background: rgba(99,102,241,0.1); color: #818cf8;">3</div>
+                <div class="deal-name">Eva Lin Pasadena Realtor - Unicourt &amp; Trellis De-indexing, Google Review &amp; Autocomplete</div>
+                <div class="deal-pipeline" style="background: rgba(99,102,241,0.12); color: #818cf8;">Sales</div>
+                <div class="deal-amount">$27,725</div>
+            </div>
+            <div class="deal-row">
+                <div class="deal-rank" style="background: rgba(99,102,241,0.1); color: #818cf8;">4</div>
+                <div class="deal-name">Innovative OT - Glassdoor &amp; Indeed Review Removal 2</div>
+                <div class="deal-pipeline" style="background: rgba(99,102,241,0.12); color: #818cf8;">Sales</div>
+                <div class="deal-amount">$23,750</div>
+            </div>
+            <div class="deal-row">
+                <div class="deal-rank" style="background: rgba(99,102,241,0.1); color: #818cf8;">5</div>
+                <div class="deal-name">Good Life Meds - Negative Trustpilot Review Removal</div>
+                <div class="deal-pipeline" style="background: rgba(99,102,241,0.12); color: #818cf8;">Sales</div>
+                <div class="deal-amount">$20,000</div>
+            </div>
+            <div class="deal-row">
+                <div class="deal-rank" style="background: rgba(99,102,241,0.1); color: #818cf8;">6</div>
+                <div class="deal-name">Kronos Trading - Trustpilot Profile Removal</div>
+                <div class="deal-pipeline" style="background: rgba(99,102,241,0.12); color: #818cf8;">Sales</div>
+                <div class="deal-amount">$20,000</div>
+            </div>
+            <div class="deal-row">
+                <div class="deal-rank" style="background: rgba(6,182,212,0.1); color: #22d3ee;">7</div>
+                <div class="deal-name">Brello Health - Negative Trustpilot Review Removal</div>
+                <div class="deal-pipeline" style="background: rgba(6,182,212,0.12); color: #22d3ee;">Outreach</div>
+                <div class="deal-amount">$19,500</div>
+            </div>
+            <div class="deal-row">
+                <div class="deal-rank" style="background: rgba(99,102,241,0.1); color: #818cf8;">8</div>
+                <div class="deal-name">Inner Matrix Systems - Reddit thread de-indexing + Google Autocomplete</div>
+                <div class="deal-pipeline" style="background: rgba(99,102,241,0.12); color: #818cf8;">Sales</div>
+                <div class="deal-amount">$18,100</div>
+            </div>
+            <div class="deal-row">
+                <div class="deal-rank" style="background: rgba(99,102,241,0.1); color: #818cf8;">9</div>
+                <div class="deal-name">CheapFlightsFares - Reputation Management</div>
+                <div class="deal-pipeline" style="background: rgba(99,102,241,0.12); color: #818cf8;">Sales</div>
+                <div class="deal-amount">$16,500</div>
+            </div>
+            <div class="deal-row">
+                <div class="deal-rank" style="background: rgba(99,102,241,0.1); color: #818cf8;">10</div>
+                <div class="deal-name">Genesis Metro Church - Social Media Profile Removal</div>
+                <div class="deal-pipeline" style="background: rgba(99,102,241,0.12); color: #818cf8;">Sales</div>
+                <div class="deal-amount">$15,000</div>
+            </div>
+            <div style="margin-top: 16px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.04); font-size: 11px; color: #71717a;">Top 10 = $246,615 (62% of the month) &middot; two mega-deals ($44K Sniper + $42K Spine &amp; Joint) anchor the month</div>
+        </div>
+
+        <!-- Closed Lost -->
+        <div class="card">
+            <div class="card-title">
+                <span class="dot" style="background: #f59e0b;"></span>
+                Closed Lost
+            </div>
+            <div style="background: rgba(245,158,11,0.06); border: 1px solid rgba(245,158,11,0.15); border-radius: 8px; padding: 16px;">
+                <div style="font-size: 14px; font-weight: 600; color: #fbbf24;">5 real losses &middot; $24,200 pipeline</div>
+                <div style="font-size: 11px; color: #52525b; margin-top: 4px;">Shift Media (Physna) $10,450 &middot; Eitan Tal $6,650 &middot; Fontan Architecture $5,000 &middot; Powell Kugelman $2,100</div>
+                <div style="font-size: 11px; color: #71717a; margin-top: 10px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.05);">A further <strong style="color:#e4e4e7;">91 zero-value deals</strong> were swept to closed-lost this month (pipeline hygiene) &mdash; so the raw closed-lost count (96) overstates real losses. Worth confirming the sweep was intentional.</div>
+            </div>
+        </div>
+
+        <!-- Executive Summary -->
+        <div class="card" style="border: 1px solid rgba(99,102,241,0.15); background: linear-gradient(135deg, rgba(99,102,241,0.04), rgba(16,185,129,0.04));">
+            <div class="card-title">
+                <span class="dot" style="background: #818cf8;"></span>
+                October 2026 (In Progress) &mdash; Executive Summary
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+                <div>
+                    <div style="font-size: 13px; font-weight: 700; color: #10b981; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px;">Wins</div>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px;">
+                        <li style="font-size: 13px; color: #a1a1aa; padding-left: 16px; position: relative;"><span style="position: absolute; left: 0; color: #10b981;">+</span><strong style="color: #e4e4e7;">Strongest month since February</strong> &mdash; $395,695 across 53 deals with 2 days still open, up 11% from Sep and a fourth straight month of growth</li>
+                        <li style="font-size: 13px; color: #a1a1aa; padding-left: 16px; position: relative;"><span style="position: absolute; left: 0; color: #10b981;">+</span><strong style="color: #e4e4e7;">Avg deal size jumped to $7,466</strong> (from $5,963 in Sep) &mdash; bigger deals, led by Sniper Auto Trader $44.3K and Spine &amp; Joint $41.7K</li>
+                        <li style="font-size: 13px; color: #a1a1aa; padding-left: 16px; position: relative;"><span style="position: absolute; left: 0; color: #10b981;">+</span><strong style="color: #e4e4e7;">Two-engine month</strong> &mdash; Hector $158K/16 and Maxwell $142K/20 both cleared $140K; 76% of revenue between them</li>
+                        <li style="font-size: 13px; color: #a1a1aa; padding-left: 16px; position: relative;"><span style="position: absolute; left: 0; color: #10b981;">+</span><strong style="color: #e4e4e7;">$259K cash collected MTD</strong> &mdash; Inbound $145K, Outbound $28K, pre-HubSpot $86K; outbound cash share up to 11%</li>
+                    </ul>
+                </div>
+                <div>
+                    <div style="font-size: 13px; font-weight: 700; color: #f59e0b; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px;">Watch</div>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px;">
+                        <li style="font-size: 13px; color: #a1a1aa; padding-left: 16px; position: relative;"><span style="position: absolute; left: 0; color: #f59e0b;">&bull;</span><strong style="color: #e4e4e7;">Figures are month-to-date</strong> &mdash; through Oct 29; revenue and cash will rise before the month closes</li>
+                        <li style="font-size: 13px; color: #a1a1aa; padding-left: 16px; position: relative;"><span style="position: absolute; left: 0; color: #f59e0b;">&bull;</span><strong style="color: #e4e4e7;">Outreach still ~9% of revenue</strong> &mdash; $33,750 across 5 deals despite strong outreach lead volume; lead engine, not yet a revenue engine</li>
+                        <li style="font-size: 13px; color: #a1a1aa; padding-left: 16px; position: relative;"><span style="position: absolute; left: 0; color: #f59e0b;">&bull;</span><strong style="color: #e4e4e7;">Concentration risk</strong> &mdash; top 2 deals ($44K + $42K) and top 10 (62% of the month) carried October; a thinner middle than Sep</li>
+                        <li style="font-size: 13px; color: #a1a1aa; padding-left: 16px; position: relative;"><span style="position: absolute; left: 0; color: #f59e0b;">&bull;</span><strong style="color: #e4e4e7;">91-deal closed-lost sweep</strong> &mdash; $0 unqualified deals dispositioned en masse; confirm it was an intentional cleanup, not a routing bug</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            Data pulled live from HubSpot CRM (Account #21116307) &middot; Sales Pipeline + Outreach Sales Pipeline &middot; October 1&ndash;29, 2026 (In Progress) &middot; Closed-won revenue by close date &middot; Lead mix by contact RR Lead Source (tagged leads, excl. untagged/test) &middot; Largest deal: Sniper Auto Trader $44,340 (Hector) &middot; Cash collected month-to-date from ChargeOver (monday 02 Invoices ledger, by payment date) &middot; Collections/AR &amp; call/offer funnel maintained separately
+        </div>
+    </div>
+
+
+    <!-- ============================================================ -->
+    <div class="tab-content" id="tab-september">
 
         <div class="header">
             <div>
