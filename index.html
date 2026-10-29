@@ -128,6 +128,7 @@
         <button class="tab-btn" onclick="switchTab('ytd')">Q1 2026 YTD</button>
         <button class="tab-btn" onclick="switchTab('q2')">Q2 2026</button>
         <button class="tab-btn" onclick="switchTab('q3')">Q3 2026</button>
+        <button class="tab-btn" onclick="switchTab('retention')">Clients &amp; Retention</button>
         <button class="tab-btn active" onclick="switchTab('september')">September 2026</button>
         <button class="tab-btn" onclick="switchTab('august')">August 2026</button>
         <button class="tab-btn" onclick="switchTab('july')">July 2026</button>
@@ -5676,6 +5677,186 @@
 
         <div class="footer">
             Data pulled from HubSpot CRM (Account #21116307) &middot; Q1 2026 (January - March) &middot; Both Pipelines
+        </div>
+    </div>
+
+    <!-- ============================ CLIENTS & RETENTION ============================ -->
+    <div class="tab-content" id="tab-retention">
+
+        <div class="header">
+            <div>
+                <h1>Clients &amp; Retention</h1>
+                <div class="subtitle">Reputation Resolutions &mdash; Repeat &amp; Expansion Revenue</div>
+            </div>
+            <div class="date-badge">All closed-won &middot; lifetime</div>
+        </div>
+
+        <div class="kpi-row">
+            <div class="kpi-card">
+                <div class="kpi-label">Repeat Client Rate</div>
+                <div class="kpi-value">14.3%</div>
+                <div class="kpi-detail">127 of 886 clients bought again</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Deals per Client</div>
+                <div class="kpi-value">1.28</div>
+                <div class="kpi-detail">1,136 won deals &middot; 886 clients</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Avg Client LTV</div>
+                <div class="kpi-value">$8,052</div>
+                <div class="kpi-detail">lifetime value per client</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Expansion Revenue</div>
+                <div class="kpi-value">$1.49M</div>
+                <div class="kpi-detail">20.8% of all revenue &middot; 250 repeat deals</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Repeat-Client Revenue</div>
+                <div class="kpi-value">$2.64M</div>
+                <div class="kpi-detail">37.1% of revenue from 14% of clients</div>
+            </div>
+        </div>
+
+        <!-- New vs Expansion -->
+        <div class="card">
+            <div style="font-size: 13px; font-weight: 600; color: #71717a; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">Revenue: New Client vs Expansion</div>
+            <div class="split-bar">
+                <div class="split-segment" style="width: 79.2%; background: linear-gradient(90deg, #818cf8, #6366f1);">$5,647,402</div>
+                <div class="split-segment" style="width: 20.8%; background: linear-gradient(90deg, #34d399, #10b981);">$1,486,279</div>
+            </div>
+            <div class="split-legend">
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: #6366f1;"></div>
+                    <div class="legend-text"><strong>New-Client Revenue</strong> &mdash; each client&rsquo;s 1st won deal &middot; $5,647,402</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: #10b981;"></div>
+                    <div class="legend-text"><strong>Expansion Revenue</strong> &mdash; 2nd+ deals from existing clients &middot; $1,486,279</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Accuracy caveat -->
+        <div class="card" style="border-color: rgba(245,158,11,0.25); background: rgba(245,158,11,0.03);">
+            <div class="card-title">
+                <span class="dot" style="background: #f59e0b;"></span>
+                Read this before quoting the expansion number
+            </div>
+            <div style="font-size: 13px; color: #a1a1aa; line-height: 1.7;">
+                One reseller account &mdash; <strong style="color:#e4e4e7;">Forward Progress</strong> (58 deals, $523K) &mdash; is <strong style="color:#fbbf24;">35% of the $1.49M expansion figure</strong> on its own. It&rsquo;s a legitimate account (not a data-quality bucket), but it&rsquo;s a reseller sending many end-clients under one company, not one client personally re-buying.
+                <div style="margin-top: 14px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                    <div style="padding: 16px; background: rgba(99,102,241,0.05); border: 1px solid rgba(99,102,241,0.12); border-radius: 10px;">
+                        <div style="font-size: 11px; color: #818cf8; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Headline (all clients)</div>
+                        <div style="font-size: 20px; font-weight: 800; color: #fff; margin-top: 6px;">$1.49M &middot; 20.8%</div>
+                        <div style="font-size: 12px; color: #71717a; margin-top: 4px;">expansion revenue</div>
+                    </div>
+                    <div style="padding: 16px; background: rgba(16,185,129,0.05); border: 1px solid rgba(16,185,129,0.12); border-radius: 10px;">
+                        <div style="font-size: 11px; color: #34d399; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Core (excl. Forward Progress)</div>
+                        <div style="font-size: 20px; font-weight: 800; color: #fff; margin-top: 6px;">$963K &middot; 14.6%</div>
+                        <div style="font-size: 12px; color: #71717a; margin-top: 4px;">true client-driven repeat business</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- How often clients come back -->
+        <div class="card">
+            <div class="card-title">
+                <span class="dot" style="background: #6366f1;"></span>
+                How Many Deals Clients Place
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;">
+                <div style="padding: 20px; background: rgba(99,102,241,0.04); border: 1px solid rgba(99,102,241,0.1); border-radius: 12px; text-align: center;">
+                    <div style="font-size: 32px; font-weight: 800; color: #fff;">759</div>
+                    <div style="font-size: 12px; color: #818cf8; font-weight: 600; margin-top: 6px;">1 deal only</div>
+                    <div style="font-size: 11px; color: #71717a; margin-top: 4px;">85.7% of clients</div>
+                </div>
+                <div style="padding: 20px; background: rgba(16,185,129,0.04); border: 1px solid rgba(16,185,129,0.1); border-radius: 12px; text-align: center;">
+                    <div style="font-size: 32px; font-weight: 800; color: #fff;">93</div>
+                    <div style="font-size: 12px; color: #34d399; font-weight: 600; margin-top: 6px;">2 deals</div>
+                    <div style="font-size: 11px; color: #71717a; margin-top: 4px;">10.5% of clients</div>
+                </div>
+                <div style="padding: 20px; background: rgba(16,185,129,0.04); border: 1px solid rgba(16,185,129,0.1); border-radius: 12px; text-align: center;">
+                    <div style="font-size: 32px; font-weight: 800; color: #fff;">22</div>
+                    <div style="font-size: 12px; color: #34d399; font-weight: 600; margin-top: 6px;">3 deals</div>
+                    <div style="font-size: 11px; color: #71717a; margin-top: 4px;">2.5% of clients</div>
+                </div>
+                <div style="padding: 20px; background: rgba(245,158,11,0.04); border: 1px solid rgba(245,158,11,0.1); border-radius: 12px; text-align: center;">
+                    <div style="font-size: 32px; font-weight: 800; color: #fff;">12</div>
+                    <div style="font-size: 12px; color: #fbbf24; font-weight: 600; margin-top: 6px;">4+ deals</div>
+                    <div style="font-size: 11px; color: #71717a; margin-top: 4px;">1.4% of clients</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2026 expansion -->
+        <div class="card">
+            <div class="card-title">
+                <span class="dot" style="background: #10b981;"></span>
+                2026 Year-to-Date
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+                <div style="padding: 24px; background: rgba(99,102,241,0.04); border: 1px solid rgba(99,102,241,0.1); border-radius: 12px; text-align: center;">
+                    <div style="font-size: 28px; font-weight: 800; color: #fff; letter-spacing: -1px;">319</div>
+                    <div style="font-size: 12px; color: #818cf8; font-weight: 600; margin-top: 8px;">New Clients Acquired</div>
+                </div>
+                <div style="padding: 24px; background: rgba(16,185,129,0.04); border: 1px solid rgba(16,185,129,0.1); border-radius: 12px; text-align: center;">
+                    <div style="font-size: 28px; font-weight: 800; color: #fff; letter-spacing: -1px;">$482,990</div>
+                    <div style="font-size: 12px; color: #34d399; font-weight: 600; margin-top: 8px;">Expansion Revenue</div>
+                    <div style="font-size: 11px; color: #71717a; margin-top: 4px;">80 deals &middot; 19% of 2026 revenue</div>
+                </div>
+                <div style="padding: 24px; background: rgba(245,158,11,0.04); border: 1px solid rgba(245,158,11,0.1); border-radius: 12px; text-align: center;">
+                    <div style="font-size: 28px; font-weight: 800; color: #fff; letter-spacing: -1px;">$2.58M</div>
+                    <div style="font-size: 12px; color: #fbbf24; font-weight: 600; margin-top: 8px;">Total 2026 Revenue</div>
+                    <div style="font-size: 11px; color: #71717a; margin-top: 4px;">419 deals closed won</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top repeat clients -->
+        <div class="card">
+            <div class="card-title">
+                <span class="dot" style="background: #6366f1;"></span>
+                Top Repeat Clients by Lifetime Value
+            </div>
+            <table style="width: 100%; border-collapse: collapse; font-size: 13px;">
+                <thead>
+                    <tr style="text-align: left; color: #71717a; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px;">
+                        <th style="padding: 10px 8px; border-bottom: 1px solid rgba(255,255,255,0.08);">Client</th>
+                        <th style="padding: 10px 8px; border-bottom: 1px solid rgba(255,255,255,0.08); text-align: center;">Deals</th>
+                        <th style="padding: 10px 8px; border-bottom: 1px solid rgba(255,255,255,0.08); text-align: right;">Lifetime Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td style="padding: 10px 8px; color: #e4e4e7; border-bottom: 1px solid rgba(255,255,255,0.04);">Forward Progress <span style="color:#71717a; font-size:11px;">(reseller)</span></td><td style="padding: 10px 8px; text-align: center; color: #a1a1aa; border-bottom: 1px solid rgba(255,255,255,0.04);">58</td><td style="padding: 10px 8px; text-align: right; color: #fff; font-weight: 700; border-bottom: 1px solid rgba(255,255,255,0.04);">$523,190</td></tr>
+                    <tr><td style="padding: 10px 8px; color: #e4e4e7; border-bottom: 1px solid rgba(255,255,255,0.04);">World Transformation Movement</td><td style="padding: 10px 8px; text-align: center; color: #a1a1aa; border-bottom: 1px solid rgba(255,255,255,0.04);">6</td><td style="padding: 10px 8px; text-align: right; color: #fff; font-weight: 700; border-bottom: 1px solid rgba(255,255,255,0.04);">$176,445</td></tr>
+                    <tr><td style="padding: 10px 8px; color: #e4e4e7; border-bottom: 1px solid rgba(255,255,255,0.04);">ARC</td><td style="padding: 10px 8px; text-align: center; color: #a1a1aa; border-bottom: 1px solid rgba(255,255,255,0.04);">2</td><td style="padding: 10px 8px; text-align: right; color: #fff; font-weight: 700; border-bottom: 1px solid rgba(255,255,255,0.04);">$145,300</td></tr>
+                    <tr><td style="padding: 10px 8px; color: #e4e4e7; border-bottom: 1px solid rgba(255,255,255,0.04);">Wilshire Law Firm</td><td style="padding: 10px 8px; text-align: center; color: #a1a1aa; border-bottom: 1px solid rgba(255,255,255,0.04);">2</td><td style="padding: 10px 8px; text-align: right; color: #fff; font-weight: 700; border-bottom: 1px solid rgba(255,255,255,0.04);">$93,125</td></tr>
+                    <tr><td style="padding: 10px 8px; color: #e4e4e7; border-bottom: 1px solid rgba(255,255,255,0.04);">General Linen + Uniform Service</td><td style="padding: 10px 8px; text-align: center; color: #a1a1aa; border-bottom: 1px solid rgba(255,255,255,0.04);">2</td><td style="padding: 10px 8px; text-align: right; color: #fff; font-weight: 700; border-bottom: 1px solid rgba(255,255,255,0.04);">$85,950</td></tr>
+                    <tr><td style="padding: 10px 8px; color: #e4e4e7; border-bottom: 1px solid rgba(255,255,255,0.04);">W.A. Rasic Construction</td><td style="padding: 10px 8px; text-align: center; color: #a1a1aa; border-bottom: 1px solid rgba(255,255,255,0.04);">4</td><td style="padding: 10px 8px; text-align: right; color: #fff; font-weight: 700; border-bottom: 1px solid rgba(255,255,255,0.04);">$72,780</td></tr>
+                    <tr><td style="padding: 10px 8px; color: #e4e4e7; border-bottom: 1px solid rgba(255,255,255,0.04);">Turn5</td><td style="padding: 10px 8px; text-align: center; color: #a1a1aa; border-bottom: 1px solid rgba(255,255,255,0.04);">3</td><td style="padding: 10px 8px; text-align: right; color: #fff; font-weight: 700; border-bottom: 1px solid rgba(255,255,255,0.04);">$64,695</td></tr>
+                    <tr><td style="padding: 10px 8px; color: #e4e4e7;">M&amp;M Painting</td><td style="padding: 10px 8px; text-align: center; color: #a1a1aa;">3</td><td style="padding: 10px 8px; text-align: right; color: #fff; font-weight: 700;">$52,450</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- What to do with this -->
+        <div class="card">
+            <div class="card-title">
+                <span class="dot" style="background: #10b981;"></span>
+                Why This Matters
+            </div>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px;">
+                <li style="font-size: 13px; color: #a1a1aa; padding-left: 16px; position: relative;"><span style="position: absolute; left: 0; color: #10b981;">+</span><strong style="color: #e4e4e7;">37% of all revenue comes from the 14% of clients who buy more than once</strong> &mdash; retention is doing heavy lifting.</li>
+                <li style="font-size: 13px; color: #a1a1aa; padding-left: 16px; position: relative;"><span style="position: absolute; left: 0; color: #f59e0b;">&bull;</span><strong style="color: #e4e4e7;">86% of clients are one-and-done</strong> &mdash; the single biggest growth lever is converting a slice of these into a 2nd deal (maintenance, new platform, monitoring).</li>
+                <li style="font-size: 13px; color: #a1a1aa; padding-left: 16px; position: relative;"><span style="position: absolute; left: 0; color: #818cf8;">&rarr;</span><strong style="color: #e4e4e7;">The Autocomplete-maintenance recurring deals feed this metric directly</strong> &mdash; every maintenance deal is a 2nd deal on an existing client, i.e. expansion revenue.</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            Data pulled from HubSpot CRM (Account #21116307) &middot; all closed-won deals associated to a company &middot; grouped by company
         </div>
     </div>
 
