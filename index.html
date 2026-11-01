@@ -15,10 +15,17 @@
         .dashboard { max-width: 1440px; margin: 0 auto; padding: 32px 40px; }
 
         /* Tabs */
-        .tab-bar { display: flex; gap: 4px; margin-bottom: 32px; background: #18181b; border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 4px; width: fit-content; }
-        .tab-btn { padding: 10px 28px; border-radius: 10px; border: none; background: transparent; color: #71717a; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.2s; font-family: inherit; }
+        .tab-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; margin-bottom: 32px; background: #18181b; border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 4px; width: fit-content; max-width: 100%; }
+        .tab-btn { padding: 10px 22px; border-radius: 10px; border: none; background: transparent; color: #71717a; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.2s; font-family: inherit; }
         .tab-btn:hover { color: #a1a1aa; }
         .tab-btn.active { background: linear-gradient(135deg, #6366f1, #4f46e5); color: #fff; box-shadow: 0 2px 8px rgba(99,102,241,0.3); }
+        .month-select { padding: 9px 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.12); background: #1f1f23; color: #e4e4e7; font-size: 14px; font-weight: 600; cursor: pointer; font-family: inherit; transition: all 0.2s; }
+        .month-select:hover { border-color: rgba(255,255,255,0.25); }
+        .month-select.active { background: linear-gradient(135deg, #6366f1, #4f46e5); color: #fff; border-color: transparent; box-shadow: 0 2px 8px rgba(99,102,241,0.3); }
+        .month-select option { background: #1f1f23; color: #e4e4e7; }
+        .tab-sep { width: 1px; align-self: stretch; margin: 4px 6px; background: rgba(255,255,255,0.08); }
+        .ov-card { background: #18181b; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 24px; cursor: pointer; transition: all 0.2s; }
+        .ov-card:hover { border-color: rgba(99,102,241,0.4); transform: translateY(-2px); }
         .tab-content { display: none; }
         .tab-content.active { display: block; }
 
@@ -125,31 +132,92 @@
 
     <!-- Tab Bar -->
     <div class="tab-bar">
-        <button class="tab-btn" onclick="switchTab('ytd')">Q1 2026 YTD</button>
-        <button class="tab-btn" onclick="switchTab('q2')">Q2 2026</button>
-        <button class="tab-btn" onclick="switchTab('q3')">Q3 2026</button>
-        <button class="tab-btn" onclick="switchTab('retention')">Clients &amp; Retention</button>
-        <button class="tab-btn" onclick="switchTab('delivery')">Service Delivery</button>
-        <button class="tab-btn" onclick="switchTab('recurring')">Recurring Revenue</button>
-        <button class="tab-btn" onclick="switchTab('funnel')">Sales Funnel</button>
-        <button class="tab-btn active" onclick="switchTab('october')">October 2026</button>
-        <button class="tab-btn" onclick="switchTab('september')">September 2026</button>
-        <button class="tab-btn" onclick="switchTab('august')">August 2026</button>
-        <button class="tab-btn" onclick="switchTab('july')">July 2026</button>
-        <button class="tab-btn" onclick="switchTab('june')">June 2026</button>
-        <button class="tab-btn" onclick="switchTab('may')">May 2026</button>
-        <button class="tab-btn" onclick="switchTab('april')">April 2026</button>
-        <button class="tab-btn" onclick="switchTab('march')">March 2026</button>
-        <button class="tab-btn" onclick="switchTab('february')">February 2026</button>
-        <button class="tab-btn" onclick="switchTab('january')">January 2026</button>
+        <button class="tab-btn active" data-tab="overview" onclick="switchTab('overview')">&#128202; Overview</button>
+        <div class="tab-sep"></div>
+        <select id="month-select" class="month-select" onchange="switchTab(this.value)" title="Select month" aria-label="Select month">
+            <option value="october">October 2026</option>
+            <option value="september">September 2026</option>
+            <option value="august">August 2026</option>
+            <option value="july">July 2026</option>
+            <option value="june">June 2026</option>
+            <option value="may">May 2026</option>
+            <option value="april">April 2026</option>
+            <option value="march">March 2026</option>
+            <option value="february">February 2026</option>
+            <option value="january">January 2026</option>
+        </select>
+        <button class="tab-btn" data-tab="q3" onclick="switchTab('q3')">Q3</button>
+        <button class="tab-btn" data-tab="q2" onclick="switchTab('q2')">Q2</button>
+        <button class="tab-btn" data-tab="ytd" onclick="switchTab('ytd')">Q1 YTD</button>
+        <div class="tab-sep"></div>
+        <button class="tab-btn" data-tab="funnel" onclick="switchTab('funnel')">Sales Funnel</button>
+        <button class="tab-btn" data-tab="delivery" onclick="switchTab('delivery')">Service Delivery</button>
+        <button class="tab-btn" data-tab="recurring" onclick="switchTab('recurring')">Recurring Revenue</button>
+        <button class="tab-btn" data-tab="retention" onclick="switchTab('retention')">Clients &amp; Retention</button>
     </div>
 
     <!-- ============================================================ -->
     <!-- SEPTEMBER 2026 TAB -->
     <!-- ============================================================ -->
+    <!-- ============================ OVERVIEW / COMPANY SCORECARD ============================ -->
+    <div class="tab-content active" id="tab-overview">
+
+        <div class="header">
+            <div>
+                <h1>Company Scorecard</h1>
+                <div class="subtitle">Reputation Resolutions &mdash; every pillar at a glance</div>
+            </div>
+            <div class="date-badge">October 2026</div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+
+            <div class="ov-card" onclick="switchTab('october')">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;"><div style="font-size:12px; font-weight:700; color:#818cf8; text-transform:uppercase; letter-spacing:0.5px;">This Month &middot; Revenue</div><div style="font-size:12px; color:#52525b;">October &rarr;</div></div>
+                <div style="font-size:36px; font-weight:800; color:#fff; letter-spacing:-1px;">$395,695</div>
+                <div style="font-size:13px; color:#a1a1aa; margin-top:6px;">53 deals closed won &middot; +11% vs Sep</div>
+            </div>
+
+            <div class="ov-card" onclick="switchTab('october')">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;"><div style="font-size:12px; font-weight:700; color:#34d399; text-transform:uppercase; letter-spacing:0.5px;">Cash Collected &middot; Oct</div><div style="font-size:12px; color:#52525b;">October &rarr;</div></div>
+                <div style="font-size:36px; font-weight:800; color:#fff; letter-spacing:-1px;">$259,166</div>
+                <div style="font-size:13px; color:#a1a1aa; margin-top:6px;">Inbound $145K &middot; Outbound $28K &middot; Pre-HubSpot $86K</div>
+            </div>
+
+            <div class="ov-card" onclick="switchTab('recurring')">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;"><div style="font-size:12px; font-weight:700; color:#34d399; text-transform:uppercase; letter-spacing:0.5px;">Recurring Revenue</div><div style="font-size:12px; color:#52525b;">Recurring &rarr;</div></div>
+                <div style="font-size:36px; font-weight:800; color:#fff; letter-spacing:-1px;">$118K<span style="font-size:18px; color:#71717a;">/mo</span></div>
+                <div style="font-size:13px; color:#a1a1aa; margin-top:6px;">45 active subscriptions &middot; ~$1.4M ARR &middot; 46% of billing</div>
+            </div>
+
+            <div class="ov-card" onclick="switchTab('delivery')">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;"><div style="font-size:12px; font-weight:700; color:#22d3ee; text-transform:uppercase; letter-spacing:0.5px;">Service Delivery</div><div style="font-size:12px; color:#52525b;">Delivery &rarr;</div></div>
+                <div style="font-size:36px; font-weight:800; color:#fff; letter-spacing:-1px;">210<span style="font-size:18px; color:#71717a;"> removed in Oct</span></div>
+                <div style="font-size:13px; color:#a1a1aa; margin-top:6px;">37.5% all-time win rate &middot; 1,561 in progress</div>
+            </div>
+
+            <div class="ov-card" onclick="switchTab('funnel')">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;"><div style="font-size:12px; font-weight:700; color:#818cf8; text-transform:uppercase; letter-spacing:0.5px;">Sales Funnel (2026)</div><div style="font-size:12px; color:#52525b;">Funnel &rarr;</div></div>
+                <div style="font-size:36px; font-weight:800; color:#fff; letter-spacing:-1px;">1,613<span style="font-size:18px; color:#71717a;"> calls booked</span></div>
+                <div style="font-size:13px; color:#a1a1aa; margin-top:6px;">53% inbound close rate &middot; 8.3% lead&rarr;won &middot; 6-day median</div>
+            </div>
+
+            <div class="ov-card" onclick="switchTab('retention')">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;"><div style="font-size:12px; font-weight:700; color:#fbbf24; text-transform:uppercase; letter-spacing:0.5px;">Clients &amp; Retention</div><div style="font-size:12px; color:#52525b;">Retention &rarr;</div></div>
+                <div style="font-size:36px; font-weight:800; color:#fff; letter-spacing:-1px;">14.3%<span style="font-size:18px; color:#71717a;"> repeat rate</span></div>
+                <div style="font-size:13px; color:#a1a1aa; margin-top:6px;">$8,052 avg LTV &middot; 37% of revenue from repeat clients</div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            One headline from each pillar &middot; click any card to open its detail &middot; this-month figures = October 2026 &middot; snapshot 2026-11-01
+        </div>
+    </div>
+
     <!-- OCTOBER 2026 TAB -->
     <!-- ============================================================ -->
-    <div class="tab-content active" id="tab-october">
+    <div class="tab-content" id="tab-october">
 
         <div class="header">
             <div>
@@ -6812,11 +6880,17 @@
 </div>
 
 <script>
-function switchTab(month) {
+function switchTab(id) {
     document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
     document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
-    document.getElementById('tab-' + month).classList.add('active');
-    event.target.classList.add('active');
+    var el = document.getElementById('tab-' + id);
+    if (el) el.classList.add('active');
+    var btn = document.querySelector('.tab-btn[data-tab="' + id + '"]');
+    if (btn) btn.classList.add('active');
+    var sel = document.getElementById('month-select');
+    var months = ['october','september','august','july','june','may','april','march','february','january'];
+    if (months.indexOf(id) >= 0) { sel.value = id; sel.classList.add('active'); }
+    else { sel.classList.remove('active'); }
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 </script>
