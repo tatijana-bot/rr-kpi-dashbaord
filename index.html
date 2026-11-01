@@ -154,6 +154,7 @@
         <button class="tab-btn" data-tab="delivery" onclick="switchTab('delivery')">Service Delivery</button>
         <button class="tab-btn" data-tab="recurring" onclick="switchTab('recurring')">Recurring Revenue</button>
         <button class="tab-btn" data-tab="retention" onclick="switchTab('retention')">Clients &amp; Retention</button>
+        <button class="tab-btn" data-tab="collections" onclick="switchTab('collections')">Collections / AR</button>
     </div>
 
     <!-- ============================================================ -->
@@ -6874,6 +6875,115 @@
 
         <div class="footer">
             Data pulled from HubSpot CRM (Account #21116307) &middot; 2026 YTD &middot; Sales + Outreach pipelines &middot; funnel = contacts/deals created, deals entered Call Scheduled, closed-won by close date &middot; sales cycle = createdate&rarr;closedate on won deals &middot; snapshot 2026-11-01
+        </div>
+    </div>
+
+    <!-- ============================ COLLECTIONS / AR ============================ -->
+    <div class="tab-content" id="tab-collections">
+
+        <div class="header">
+            <div>
+                <h1>Collections / AR</h1>
+                <div class="subtitle">Reputation Resolutions &mdash; Outstanding Invoices &amp; Aging (ChargeOver)</div>
+            </div>
+            <div class="date-badge">As of 2026-11-01</div>
+        </div>
+
+        <div class="kpi-row">
+            <div class="kpi-card">
+                <div class="kpi-label">Outstanding AR</div>
+                <div class="kpi-value">$90,696</div>
+                <div class="kpi-detail">41 unpaid invoices</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Overdue (past due)</div>
+                <div class="kpi-value">$66,194</div>
+                <div class="kpi-detail">33 invoices past due date</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Collection Rate</div>
+                <div class="kpi-value">92.6%</div>
+                <div class="kpi-detail">$1.14M collected of $1.23M billed</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">90+ Days Late</div>
+                <div class="kpi-value">$10,734</div>
+                <div class="kpi-detail">7 invoices &middot; high collection risk</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Typical Pay Time</div>
+                <div class="kpi-value">Same day</div>
+                <div class="kpi-detail">median DSO 0d &middot; avg 16d</div>
+            </div>
+        </div>
+
+        <!-- AR aging -->
+        <div class="card">
+            <div class="card-title">
+                <span class="dot" style="background: #f59e0b;"></span>
+                AR Aging &mdash; Outstanding Balance by Age
+            </div>
+            <div style="display: flex; align-items: flex-end; gap: 16px; height: 200px; border-bottom: 2px solid rgba(255,255,255,0.1); padding: 0 4px;">
+                <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end;" title="Not yet due: $24,502 across 8 invoices"><div style="font-size:13px;font-weight:700;color:#34d399;margin-bottom:6px;">$24.5K</div><div style="width:62%; height:89px; background:linear-gradient(180deg,#34d399,#10b981); border-radius:6px 6px 0 0;"></div></div>
+                <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end;" title="1-30 days late: $44,020 across 18 invoices"><div style="font-size:13px;font-weight:700;color:#fbbf24;margin-bottom:6px;">$44.0K</div><div style="width:62%; height:160px; background:linear-gradient(180deg,#fcd34d,#fbbf24); border-radius:6px 6px 0 0;"></div></div>
+                <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end;" title="31-60 days late: $6,180 across 5 invoices"><div style="font-size:13px;font-weight:700;color:#fb923c;margin-bottom:6px;">$6.2K</div><div style="width:62%; height:22px; background:linear-gradient(180deg,#fb923c,#f59e0b); border-radius:6px 6px 0 0;"></div></div>
+                <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end;" title="61-90 days late: $5,261 across 3 invoices"><div style="font-size:13px;font-weight:700;color:#fb7185;margin-bottom:6px;">$5.3K</div><div style="width:62%; height:19px; background:linear-gradient(180deg,#fb7185,#f43f5e); border-radius:6px 6px 0 0;"></div></div>
+                <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end;" title="90+ days late: $10,734 across 7 invoices"><div style="font-size:13px;font-weight:700;color:#f43f5e;margin-bottom:6px;">$10.7K</div><div style="width:62%; height:39px; background:linear-gradient(180deg,#f43f5e,#e11d48); border-radius:6px 6px 0 0;"></div></div>
+            </div>
+            <div style="display:flex; gap:16px; margin-top:10px; padding:0 4px;">
+                <div style="flex:1; text-align:center; font-size:11px; color:#a1a1aa;">Not yet due<br><span style="color:#52525b;">8 inv</span></div>
+                <div style="flex:1; text-align:center; font-size:11px; color:#a1a1aa;">1&ndash;30 late<br><span style="color:#52525b;">18 inv</span></div>
+                <div style="flex:1; text-align:center; font-size:11px; color:#a1a1aa;">31&ndash;60 late<br><span style="color:#52525b;">5 inv</span></div>
+                <div style="flex:1; text-align:center; font-size:11px; color:#a1a1aa;">61&ndash;90 late<br><span style="color:#52525b;">3 inv</span></div>
+                <div style="flex:1; text-align:center; font-size:11px; color:#a1a1aa;">90+ late<br><span style="color:#52525b;">7 inv</span></div>
+            </div>
+            <div style="margin-top: 14px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.04); font-size: 11px; color: #71717a;">Of $90.7K outstanding, $66.2K is past due. The bulk sits in 1&ndash;30 days late ($44K) &mdash; recent and very collectible. $10.7K is 90+ days late and at real risk; that&rsquo;s where to escalate.</div>
+        </div>
+
+        <!-- Billed vs collected -->
+        <div class="card">
+            <div style="font-size: 13px; font-weight: 600; color: #71717a; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">Billed vs Collected (all-time in ledger)</div>
+            <div class="split-bar">
+                <div class="split-segment" style="width: 92.6%; background: linear-gradient(90deg, #34d399, #10b981);">$1,136,950</div>
+                <div class="split-segment" style="width: 7.4%; background: linear-gradient(90deg, #fbbf24, #f59e0b); font-size: 11px;">$90.7K</div>
+            </div>
+            <div class="split-legend">
+                <div class="legend-item"><div class="legend-dot" style="background: #10b981;"></div><div class="legend-text"><strong>Collected</strong> &mdash; 92.6% &middot; $1,136,950</div></div>
+                <div class="legend-item"><div class="legend-dot" style="background: #f59e0b;"></div><div class="legend-text"><strong>Outstanding AR</strong> &mdash; 7.4% &middot; $90,696</div></div>
+            </div>
+            <div style="margin-top: 16px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.04); font-size: 11px; color: #71717a;">92.6% collection rate is strong &mdash; most clients pay immediately (median 0-day DSO, CC on file). Excludes voided &amp; refunded invoices.</div>
+        </div>
+
+        <!-- Top overdue chase list -->
+        <div class="card">
+            <div class="card-title">
+                <span class="dot" style="background: #f43f5e;"></span>
+                Top Overdue Invoices &mdash; Chase List
+            </div>
+            <table style="width: 100%; border-collapse: collapse; font-size: 13px;">
+                <thead>
+                    <tr style="text-align: left; color: #71717a; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px;">
+                        <th style="padding: 10px 8px; border-bottom: 1px solid rgba(255,255,255,0.08);">Invoice / Client</th>
+                        <th style="padding: 10px 8px; border-bottom: 1px solid rgba(255,255,255,0.08); text-align: center;">Days Late</th>
+                        <th style="padding: 10px 8px; border-bottom: 1px solid rgba(255,255,255,0.08); text-align: right;">Balance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td style="padding:10px 8px; color:#e4e4e7; border-bottom:1px solid rgba(255,255,255,0.04);">INV #17024 &middot; Hype Well</td><td style="padding:10px 8px; text-align:center; color:#fbbf24; border-bottom:1px solid rgba(255,255,255,0.04);">30</td><td style="padding:10px 8px; text-align:right; color:#fff; font-weight:700; border-bottom:1px solid rgba(255,255,255,0.04);">$7,350</td></tr>
+                    <tr><td style="padding:10px 8px; color:#e4e4e7; border-bottom:1px solid rgba(255,255,255,0.04);">INV #17136 &middot; Blissful Voyage</td><td style="padding:10px 8px; text-align:center; color:#fbbf24; border-bottom:1px solid rgba(255,255,255,0.04);">9</td><td style="padding:10px 8px; text-align:right; color:#fff; font-weight:700; border-bottom:1px solid rgba(255,255,255,0.04);">$4,950</td></tr>
+                    <tr><td style="padding:10px 8px; color:#e4e4e7; border-bottom:1px solid rgba(255,255,255,0.04);">INV #16926 &middot; CareerGrowth.io</td><td style="padding:10px 8px; text-align:center; color:#fbbf24; border-bottom:1px solid rgba(255,255,255,0.04);">28</td><td style="padding:10px 8px; text-align:right; color:#fff; font-weight:700; border-bottom:1px solid rgba(255,255,255,0.04);">$4,125</td></tr>
+                    <tr><td style="padding:10px 8px; color:#e4e4e7; border-bottom:1px solid rgba(255,255,255,0.04);">INV #16898 &middot; Evil Genius Games</td><td style="padding:10px 8px; text-align:center; color:#f43f5e; border-bottom:1px solid rgba(255,255,255,0.04);">62</td><td style="padding:10px 8px; text-align:right; color:#fff; font-weight:700; border-bottom:1px solid rgba(255,255,255,0.04);">$4,000</td></tr>
+                    <tr><td style="padding:10px 8px; color:#e4e4e7; border-bottom:1px solid rgba(255,255,255,0.04);">INV #17156 &middot; Howard Rosenburg</td><td style="padding:10px 8px; text-align:center; color:#fbbf24; border-bottom:1px solid rgba(255,255,255,0.04);">5</td><td style="padding:10px 8px; text-align:right; color:#fff; font-weight:700; border-bottom:1px solid rgba(255,255,255,0.04);">$3,950</td></tr>
+                    <tr><td style="padding:10px 8px; color:#e4e4e7; border-bottom:1px solid rgba(255,255,255,0.04);">INV #16723 &middot; Gregory Hannah-Jones</td><td style="padding:10px 8px; text-align:center; color:#f43f5e; border-bottom:1px solid rgba(255,255,255,0.04);">113</td><td style="padding:10px 8px; text-align:right; color:#fff; font-weight:700; border-bottom:1px solid rgba(255,255,255,0.04);">$3,600</td></tr>
+                    <tr><td style="padding:10px 8px; color:#e4e4e7; border-bottom:1px solid rgba(255,255,255,0.04);">INV #17031 &middot; Zeal IT Consultants</td><td style="padding:10px 8px; text-align:center; color:#fbbf24; border-bottom:1px solid rgba(255,255,255,0.04);">29</td><td style="padding:10px 8px; text-align:right; color:#fff; font-weight:700; border-bottom:1px solid rgba(255,255,255,0.04);">$3,850</td></tr>
+                    <tr><td style="padding:10px 8px; color:#e4e4e7;">INV #17162 &middot; Andrew Parro</td><td style="padding:10px 8px; text-align:center; color:#a1a1aa;">1</td><td style="padding:10px 8px; text-align:right; color:#fff; font-weight:700;">$3,500</td></tr>
+                </tbody>
+            </table>
+            <div style="margin-top: 16px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.04); font-size: 11px; color: #71717a;">Hype Well tops the list ($7.4K, 30d). Two flags for escalation: Evil Genius Games ($4K, 62d) and Gregory Hannah-Jones ($3.6K, 113d) are deep in the risk zone.</div>
+        </div>
+
+        <div class="footer">
+            Data pulled from monday.com &middot; 02 Invoices ledger (board 18421436500, ChargeOver sync) &middot; AR = balance on Open/Partial/Overdue invoices &middot; aging by due date vs 2026-11-01 &middot; collection rate = collected &divide; billed (excl. voided/refunded)
         </div>
     </div>
 
