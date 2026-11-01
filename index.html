@@ -130,6 +130,7 @@
         <button class="tab-btn" onclick="switchTab('q3')">Q3 2026</button>
         <button class="tab-btn" onclick="switchTab('retention')">Clients &amp; Retention</button>
         <button class="tab-btn" onclick="switchTab('delivery')">Service Delivery</button>
+        <button class="tab-btn" onclick="switchTab('recurring')">Recurring Revenue</button>
         <button class="tab-btn active" onclick="switchTab('october')">October 2026</button>
         <button class="tab-btn" onclick="switchTab('september')">September 2026</button>
         <button class="tab-btn" onclick="switchTab('august')">August 2026</button>
@@ -6517,6 +6518,115 @@
 
         <div class="footer">
             Data pulled from monday.com &middot; 01 Review Removal Pipeline (board 9996609606) &middot; 8,838 individual reviews/links &middot; success = removed &divide; (removed + denied) &middot; snapshot 2026-11-01
+        </div>
+    </div>
+
+    <!-- ============================ RECURRING REVENUE ============================ -->
+    <div class="tab-content" id="tab-recurring">
+
+        <div class="header">
+            <div>
+                <h1>Recurring Revenue</h1>
+                <div class="subtitle">Reputation Resolutions &mdash; Subscription &amp; Membership Billing (ChargeOver)</div>
+            </div>
+            <div class="date-badge">Jun&ndash;Oct 2026 &middot; 64 subscription clients</div>
+        </div>
+
+        <div class="kpi-row">
+            <div class="kpi-card">
+                <div class="kpi-label">Monthly Recurring (Oct)</div>
+                <div class="kpi-value">$118,276</div>
+                <div class="kpi-detail">billed &middot; $108,644 collected</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Active Subscriptions</div>
+                <div class="kpi-value">45</div>
+                <div class="kpi-detail">distinct clients billed in Oct</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Annual Run-Rate</div>
+                <div class="kpi-value">~$1.4M</div>
+                <div class="kpi-detail">recent monthly &times; 12</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Recurring Share</div>
+                <div class="kpi-value">46%</div>
+                <div class="kpi-detail">of ChargeOver billings (Jun&ndash;Oct)</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Avg / Subscriber</div>
+                <div class="kpi-value">$2,628</div>
+                <div class="kpi-detail">per month (Oct)</div>
+            </div>
+        </div>
+
+        <!-- Monthly recurring billings trend -->
+        <div class="card">
+            <div class="card-title">
+                <span class="dot" style="background: #10b981;"></span>
+                Monthly Recurring Billings &mdash; 2026
+            </div>
+            <div style="display: flex; align-items: flex-end; gap: 14px; height: 200px; border-bottom: 2px solid rgba(255,255,255,0.1); padding: 0 4px;">
+                <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end;" title="June 2026 — $147,170 billed · $118,918 collected · 53 clients"><div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:6px;">$147K</div><div style="width:64%; height:160px; background:linear-gradient(180deg,#34d399,#10b981); border-radius:6px 6px 0 0;"></div></div>
+                <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end;" title="July 2026 — $125,121 billed · $115,049 collected · 47 clients"><div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:6px;">$125K</div><div style="width:64%; height:136px; background:linear-gradient(180deg,#34d399,#10b981); border-radius:6px 6px 0 0;"></div></div>
+                <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end;" title="August 2026 — $107,653 billed · $98,214 collected · 44 clients"><div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:6px;">$108K</div><div style="width:64%; height:117px; background:linear-gradient(180deg,#34d399,#10b981); border-radius:6px 6px 0 0;"></div></div>
+                <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end;" title="September 2026 — $107,182 billed · $96,569 collected · 43 clients"><div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:6px;">$107K</div><div style="width:64%; height:117px; background:linear-gradient(180deg,#34d399,#10b981); border-radius:6px 6px 0 0;"></div></div>
+                <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end;" title="October 2026 — $118,276 billed · $108,644 collected · 45 clients"><div style="font-size:13px;font-weight:700;color:#22d3ee;margin-bottom:6px;">$118K</div><div style="width:64%; height:129px; background:linear-gradient(180deg,#22d3ee,#06b6d4); border-radius:6px 6px 0 0;"></div></div>
+            </div>
+            <div style="display:flex; gap:14px; margin-top:10px; padding:0 4px;">
+                <div style="flex:1; text-align:center; font-size:11px; color:#a1a1aa;">Jun<br><span style="color:#52525b;">53 clients</span></div>
+                <div style="flex:1; text-align:center; font-size:11px; color:#a1a1aa;">Jul<br><span style="color:#52525b;">47 clients</span></div>
+                <div style="flex:1; text-align:center; font-size:11px; color:#a1a1aa;">Aug<br><span style="color:#52525b;">44 clients</span></div>
+                <div style="flex:1; text-align:center; font-size:11px; color:#a1a1aa;">Sep<br><span style="color:#52525b;">43 clients</span></div>
+                <div style="flex:1; text-align:center; font-size:11px; color:#a1a1aa;">Oct<br><span style="color:#52525b;">45 clients</span></div>
+            </div>
+            <div style="margin-top: 14px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.04); font-size: 11px; color: #71717a;">Subscription-flagged invoices by invoice month (ChargeOver). Steady $107&ndash;147K/month across 43&ndash;53 clients since the ledger began in June. Dollar labels are billed; tooltip shows collected.</div>
+        </div>
+
+        <!-- Recurring vs one-time -->
+        <div class="card">
+            <div style="font-size: 13px; font-weight: 600; color: #71717a; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">Recurring vs One-Time (billed, Jun&ndash;Oct)</div>
+            <div class="split-bar">
+                <div class="split-segment" style="width: 45.8%; background: linear-gradient(90deg, #34d399, #10b981);">$629,721</div>
+                <div class="split-segment" style="width: 54.2%; background: linear-gradient(90deg, #818cf8, #6366f1);">$745,982</div>
+            </div>
+            <div class="split-legend">
+                <div class="legend-item"><div class="legend-dot" style="background: #10b981;"></div><div class="legend-text"><strong>Recurring (Subscription)</strong> &mdash; 46% &middot; $629,721 &middot; 298 invoices</div></div>
+                <div class="legend-item"><div class="legend-dot" style="background: #6366f1;"></div><div class="legend-text"><strong>One-Time</strong> &mdash; 54% &middot; $745,982 &middot; 341 invoices</div></div>
+            </div>
+            <div style="margin-top: 16px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.04); font-size: 11px; color: #71717a;">Nearly half of all billing is recurring &mdash; a strong, sticky revenue base for an ORM company.</div>
+        </div>
+
+        <!-- Recurring revenue by service -->
+        <div class="card">
+            <div class="card-title">
+                <span class="dot" style="background: #6366f1;"></span>
+                Recurring Revenue by Service (billed)
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 11px; margin-top: 8px;">
+                <div style="display:flex; align-items:center; gap:12px;"><div style="width:210px; font-size:12px; color:#e4e4e7; flex-shrink:0;">Negative Link Suppression</div><div style="flex:1; height:22px; background:rgba(255,255,255,0.04); border-radius:5px;"><div style="width:100%; height:100%; background:linear-gradient(90deg,#818cf8,#6366f1); border-radius:5px;"></div></div><div style="width:64px; text-align:right; font-size:12px; font-weight:700; color:#fff;">$172.8K</div></div>
+                <div style="display:flex; align-items:center; gap:12px;"><div style="width:210px; font-size:12px; color:#e4e4e7; flex-shrink:0;">Search Engine Suppression Campaign</div><div style="flex:1; height:22px; background:rgba(255,255,255,0.04); border-radius:5px;"><div style="width:69.5%; height:100%; background:linear-gradient(90deg,#818cf8,#6366f1); border-radius:5px;"></div></div><div style="width:64px; text-align:right; font-size:12px; font-weight:700; color:#fff;">$120.0K</div></div>
+                <div style="display:flex; align-items:center; gap:12px;"><div style="width:210px; font-size:12px; color:#e4e4e7; flex-shrink:0;">Review Management Membership</div><div style="flex:1; height:22px; background:rgba(255,255,255,0.04); border-radius:5px;"><div style="width:44.6%; height:100%; background:linear-gradient(90deg,#34d399,#10b981); border-radius:5px;"></div></div><div style="width:64px; text-align:right; font-size:12px; font-weight:700; color:#fff;">$77.0K</div></div>
+                <div style="display:flex; align-items:center; gap:12px;"><div style="width:210px; font-size:12px; color:#e4e4e7; flex-shrink:0;">Reputation Repair, Protection &amp; Mgmt</div><div style="flex:1; height:22px; background:rgba(255,255,255,0.04); border-radius:5px;"><div style="width:36.2%; height:100%; background:linear-gradient(90deg,#818cf8,#6366f1); border-radius:5px;"></div></div><div style="width:64px; text-align:right; font-size:12px; font-weight:700; color:#fff;">$62.5K</div></div>
+                <div style="display:flex; align-items:center; gap:12px;"><div style="width:210px; font-size:12px; color:#e4e4e7; flex-shrink:0;">Online Reputation Repair</div><div style="flex:1; height:22px; background:rgba(255,255,255,0.04); border-radius:5px;"><div style="width:27.7%; height:100%; background:linear-gradient(90deg,#818cf8,#6366f1); border-radius:5px;"></div></div><div style="width:64px; text-align:right; font-size:12px; font-weight:700; color:#fff;">$47.8K</div></div>
+                <div style="display:flex; align-items:center; gap:12px;"><div style="width:210px; font-size:12px; color:#e4e4e7; flex-shrink:0;">Autocomplete Maintenance</div><div style="flex:1; height:22px; background:rgba(255,255,255,0.04); border-radius:5px;"><div style="width:19.4%; height:100%; background:linear-gradient(90deg,#34d399,#10b981); border-radius:5px;"></div></div><div style="width:64px; text-align:right; font-size:12px; font-weight:700; color:#fff;">$33.5K</div></div>
+                <div style="display:flex; align-items:center; gap:12px;"><div style="width:210px; font-size:12px; color:#71717a; flex-shrink:0;">All other recurring services</div><div style="flex:1; height:22px; background:rgba(255,255,255,0.04); border-radius:5px;"><div style="width:45.5%; height:100%; background:linear-gradient(90deg,#52525b,#71717a); border-radius:5px;"></div></div><div style="width:64px; text-align:right; font-size:12px; font-weight:700; color:#a1a1aa;">$115.6K</div></div>
+            </div>
+            <div style="margin-top: 16px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.04); font-size: 11px; color: #71717a;">Suppression campaigns (billed over the campaign) are the largest recurring category (~$353K across all suppression variants) &mdash; bigger than memberships. Autocomplete Maintenance is high-volume, low-ticket (106 invoices, $33.5K). <span style="color:#34d399;">Green = membership/maintenance products</span>; indigo = campaign-based recurring.</div>
+        </div>
+
+        <!-- Data notes -->
+        <div class="card" style="border-color: rgba(245,158,11,0.2); background: rgba(245,158,11,0.03);">
+            <div class="card-title"><span class="dot" style="background: #f59e0b;"></span>Data notes</div>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px;">
+                <li style="font-size: 13px; color: #a1a1aa; padding-left: 16px; position: relative;"><span style="position:absolute;left:0;color:#f59e0b;">&bull;</span><strong style="color:#e4e4e7;">Source = ChargeOver, not the pipeline's membership fields.</strong> The monday Membership Status / Monthly Fee fields are filled on &lt;1% of records, so this tab is built from ChargeOver subscription-flagged invoices &mdash; the reliable source. Backfilling those monday fields would add churn &amp; status tracking.</li>
+                <li style="font-size: 13px; color: #a1a1aa; padding-left: 16px; position: relative;"><span style="position:absolute;left:0;color:#f59e0b;">&bull;</span><strong style="color:#e4e4e7;">&ldquo;Monthly recurring billings&rdquo; &asymp; MRR.</strong> Most subscriptions bill monthly, but some campaigns bill on other cadences, so the run-rate is directional, not an exact MRR ledger.</li>
+                <li style="font-size: 13px; color: #a1a1aa; padding-left: 16px; position: relative;"><span style="position:absolute;left:0;color:#f59e0b;">&bull;</span><strong style="color:#e4e4e7;">Ledger starts June 2026</strong> &mdash; earlier months aren&rsquo;t a trend, just ramp-up.</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            Data pulled from monday.com &middot; 02 Invoices ledger (board 18421436500, ChargeOver sync) &middot; 640 invoices &middot; recurring = Billing Type &ldquo;Subscription&rdquo; &middot; snapshot 2026-11-01
         </div>
     </div>
 
