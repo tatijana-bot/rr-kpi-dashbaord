@@ -155,6 +155,7 @@
         <button class="tab-btn" data-tab="recurring" onclick="switchTab('recurring')">Recurring Revenue</button>
         <button class="tab-btn" data-tab="retention" onclick="switchTab('retention')">Clients &amp; Retention</button>
         <button class="tab-btn" data-tab="collections" onclick="switchTab('collections')">Collections / AR</button>
+        <button class="tab-btn" data-tab="pipeline" onclick="switchTab('pipeline')">Pipeline &amp; Forecast</button>
     </div>
 
     <!-- ============================================================ -->
@@ -6984,6 +6985,92 @@
 
         <div class="footer">
             Data pulled from monday.com &middot; 02 Invoices ledger (board 18421436500, ChargeOver sync) &middot; AR = balance on Open/Partial/Overdue invoices &middot; aging by due date vs 2026-11-01 &middot; collection rate = collected &divide; billed (excl. voided/refunded)
+        </div>
+    </div>
+
+    <!-- ============================ PIPELINE & FORECAST ============================ -->
+    <div class="tab-content" id="tab-pipeline">
+
+        <div class="header">
+            <div>
+                <h1>Pipeline &amp; Forecast</h1>
+                <div class="subtitle">Reputation Resolutions &mdash; Open Deals &amp; Weighted Forecast (HubSpot)</div>
+            </div>
+            <div class="date-badge">Open deals &middot; as of 2026-11-01</div>
+        </div>
+
+        <div class="kpi-row">
+            <div class="kpi-card">
+                <div class="kpi-label">Open Pipeline</div>
+                <div class="kpi-value">$5.70M</div>
+                <div class="kpi-detail">810 valued open deals</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Fresh (&lt; 90 days)</div>
+                <div class="kpi-value">$888K</div>
+                <div class="kpi-detail">the trustworthy forward pipeline</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Stale (90+ days)</div>
+                <div class="kpi-value">$4.81M</div>
+                <div class="kpi-detail">84% &middot; needs cleanup</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Weighted (gross)</div>
+                <div class="kpi-value">$3.27M</div>
+                <div class="kpi-detail">amount &times; stage probability</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Contract Sent</div>
+                <div class="kpi-value">$1.94M</div>
+                <div class="kpi-detail">90% stage &middot; but 76% is stale</div>
+            </div>
+        </div>
+
+        <!-- Fresh vs Stale — the headline -->
+        <div class="card" style="border-color: rgba(245,158,11,0.25); background: rgba(245,158,11,0.03);">
+            <div class="card-title">
+                <span class="dot" style="background: #f59e0b;"></span>
+                Reality Check &mdash; Most of the Pipeline Is Stale
+            </div>
+            <div class="split-bar">
+                <div class="split-segment" style="width: 15.6%; background: linear-gradient(90deg, #34d399, #10b981); font-size: 11px;">$888K</div>
+                <div class="split-segment" style="width: 84.4%; background: linear-gradient(90deg, #52525b, #71717a);">$4.81M</div>
+            </div>
+            <div class="split-legend">
+                <div class="legend-item"><div class="legend-dot" style="background: #10b981;"></div><div class="legend-text"><strong>Fresh</strong> &mdash; created in last 90 days &middot; $888K (16%) &middot; the real forward pipeline</div></div>
+                <div class="legend-item"><div class="legend-dot" style="background: #71717a;"></div><div class="legend-text"><strong>Stale</strong> &mdash; 3+ months old &middot; $4.81M (84%) &middot; mostly abandoned, never marked lost</div></div>
+            </div>
+            <div style="margin-top: 16px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.06); font-size: 12px; color: #a1a1aa; line-height: 1.6;"><strong style="color:#fbbf24;">Read the forecast with this in mind.</strong> The gross weighted pipeline ($3.27M) and Contract Sent ($1.94M) are inflated by old deals that were never closed or marked lost &mdash; <strong style="color:#e4e4e7;">$1.47M of the $1.94M Contract Sent is 3+ months old</strong>. Your genuine near-term forecast is the <em>fresh</em> slice: ~$888K in flight, of which ~$467K is fresh Contract Sent (90% likely). This is the same CRM-hygiene gap seen on other tabs &mdash; a pipeline cleanup would make the forecast trustworthy.</div>
+        </div>
+
+        <!-- Pipeline by stage -->
+        <div class="card">
+            <div class="card-title">
+                <span class="dot" style="background: #6366f1;"></span>
+                Open Pipeline by Stage (value &middot; probability)
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 8px;">
+                <div style="display:flex; align-items:center; gap:12px;"><div style="width:170px; font-size:13px; color:#e4e4e7; flex-shrink:0;">Committed <span style="color:#71717a;">90%</span></div><div style="flex:1; height:24px; background:rgba(255,255,255,0.04); border-radius:5px;"><div style="width:100%; height:100%; background:linear-gradient(90deg,#34d399,#10b981); border-radius:5px;"></div></div><div style="width:64px; text-align:right; font-size:13px; font-weight:700; color:#fff;">$2.10M</div></div>
+                <div style="display:flex; align-items:center; gap:12px;"><div style="width:170px; font-size:13px; color:#e4e4e7; flex-shrink:0;">Early-stage <span style="color:#71717a;">10&ndash;20%</span></div><div style="flex:1; height:24px; background:rgba(255,255,255,0.04); border-radius:5px;"><div style="width:70%; height:100%; background:linear-gradient(90deg,#818cf8,#6366f1); border-radius:5px;"></div></div><div style="width:64px; text-align:right; font-size:13px; font-weight:700; color:#fff;">$1.47M</div></div>
+                <div style="display:flex; align-items:center; gap:12px;"><div style="width:170px; font-size:13px; color:#e4e4e7; flex-shrink:0;">Mid (Call Scheduled) <span style="color:#71717a;">40&ndash;50%</span></div><div style="flex:1; height:24px; background:rgba(255,255,255,0.04); border-radius:5px;"><div style="width:70%; height:100%; background:linear-gradient(90deg,#22d3ee,#06b6d4); border-radius:5px;"></div></div><div style="width:64px; text-align:right; font-size:13px; font-weight:700; color:#fff;">$1.47M</div></div>
+                <div style="display:flex; align-items:center; gap:12px;"><div style="width:170px; font-size:13px; color:#e4e4e7; flex-shrink:0;">Late (Contract Dev) <span style="color:#71717a;">70&ndash;80%</span></div><div style="flex:1; height:24px; background:rgba(255,255,255,0.04); border-radius:5px;"><div style="width:31%; height:100%; background:linear-gradient(90deg,#818cf8,#6366f1); border-radius:5px;"></div></div><div style="width:64px; text-align:right; font-size:13px; font-weight:700; color:#fff;">$0.65M</div></div>
+            </div>
+            <div style="margin-top: 16px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.04); font-size: 11px; color: #71717a;">Total open $5.70M across 810 valued deals (plus ~8,300 $0 early prospecting deals, excluded here). Weighted = each stage&rsquo;s value &times; its HubSpot win probability = $3.27M gross. Bars scaled to the $2.10M committed band.</div>
+        </div>
+
+        <!-- Action -->
+        <div class="card">
+            <div class="card-title"><span class="dot" style="background: #10b981;"></span>What to do with this</div>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px;">
+                <li style="font-size: 13px; color: #a1a1aa; padding-left: 16px; position: relative;"><span style="position:absolute;left:0;color:#10b981;">+</span><strong style="color:#e4e4e7;">Forecast off the fresh $888K</strong>, not the $5.70M headline &mdash; that&rsquo;s the pipeline that will actually move this quarter.</li>
+                <li style="font-size: 13px; color: #a1a1aa; padding-left: 16px; position: relative;"><span style="position:absolute;left:0;color:#f59e0b;">&bull;</span><strong style="color:#e4e4e7;">Run a pipeline cleanup</strong> &mdash; 84% of open value is 3+ months old. Deals that won&rsquo;t close should be marked Closed Lost so the forecast (and win rate) become real.</li>
+                <li style="font-size: 13px; color: #a1a1aa; padding-left: 16px; position: relative;"><span style="position:absolute;left:0;color:#818cf8;">&rarr;</span><strong style="color:#e4e4e7;">Audit the 320 &ldquo;Contract Sent&rdquo; deals</strong> &mdash; $1.47M of them are stale. Those are signed-but-unbilled, slipped, or dead; each needs a decision.</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            Data pulled from HubSpot CRM (Account #21116307) &middot; open deals (hs_is_closed = false) across all pipelines &middot; weighted = amount &times; hs_deal_stage_probability &middot; fresh/stale by createdate vs 2026-08-01 &middot; snapshot 2026-11-01
         </div>
     </div>
 
