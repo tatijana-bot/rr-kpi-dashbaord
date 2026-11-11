@@ -6741,6 +6741,66 @@
             <div style="margin-top: 16px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.04); font-size: 11px; color: #71717a;">Suppression campaigns (billed over the campaign) are the largest recurring category (~$353K across all suppression variants) &mdash; bigger than memberships. Autocomplete Maintenance is high-volume, low-ticket (106 invoices, $33.5K). <span style="color:#34d399;">Green = membership/maintenance products</span>; indigo = campaign-based recurring.</div>
         </div>
 
+        <!-- Recurring client retention & renewal -->
+        <div class="card">
+            <div class="card-title">
+                <span class="dot" style="background: #10b981;"></span>
+                Recurring Client Retention &amp; Renewal
+            </div>
+            <div style="font-size: 13px; color: #71717a; margin-bottom: 18px;">How long subscription clients stay, how many are still active, and whether they grow their spend. 65 distinct recurring clients in the ChargeOver ledger.</div>
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 22px;">
+                <div style="padding: 20px; background: rgba(16,185,129,0.05); border: 1px solid rgba(16,185,129,0.12); border-radius: 12px; text-align: center;">
+                    <div style="font-size: 28px; font-weight: 800; color: #fff; letter-spacing: -1px;">71%</div>
+                    <div style="font-size: 12px; color: #34d399; font-weight: 600; margin-top: 8px;">Still Active</div>
+                    <div style="font-size: 11px; color: #71717a; margin-top: 4px;">46 of 65 &middot; 19 churned</div>
+                </div>
+                <div style="padding: 20px; background: rgba(99,102,241,0.04); border: 1px solid rgba(99,102,241,0.1); border-radius: 12px; text-align: center;">
+                    <div style="font-size: 28px; font-weight: 800; color: #fff; letter-spacing: -1px;">5 mo</div>
+                    <div style="font-size: 12px; color: #818cf8; font-weight: 600; margin-top: 8px;">Median Tenure</div>
+                    <div style="font-size: 11px; color: #71717a; margin-top: 4px;">avg 4.2 &middot; ledger capped at ~12mo</div>
+                </div>
+                <div style="padding: 20px; background: rgba(245,158,11,0.05); border: 1px solid rgba(245,158,11,0.14); border-radius: 12px; text-align: center;">
+                    <div style="font-size: 28px; font-weight: 800; color: #fff; letter-spacing: -1px;">~0</div>
+                    <div style="font-size: 12px; color: #fbbf24; font-weight: 600; margin-top: 8px;">Expansion Revenue</div>
+                    <div style="font-size: 11px; color: #71717a; margin-top: 4px;">40 of 48 hold flat spend</div>
+                </div>
+                <div style="padding: 20px; background: rgba(16,185,129,0.04); border: 1px solid rgba(16,185,129,0.1); border-radius: 12px; text-align: center;">
+                    <div style="font-size: 28px; font-weight: 800; color: #fff; letter-spacing: -1px;">65</div>
+                    <div style="font-size: 12px; color: #34d399; font-weight: 600; margin-top: 8px;">Recurring Clients</div>
+                    <div style="font-size: 11px; color: #71717a; margin-top: 4px;">on a subscription plan</div>
+                </div>
+            </div>
+
+            <div style="font-size: 13px; font-weight: 600; color: #71717a; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 14px;">How Long Clients Stay (tenure)</div>
+            <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 8px;">
+                <div style="display:flex; align-items:center; gap:12px;"><div style="width:110px; font-size:13px; color:#e4e4e7; flex-shrink:0;">1 month only</div><div style="flex:1; height:22px; background:rgba(255,255,255,0.04); border-radius:5px;"><div style="width:34.2%; height:100%; background:linear-gradient(90deg,#fbbf24,#f59e0b); border-radius:5px;"></div></div><div style="width:32px; text-align:right; font-size:13px; font-weight:700; color:#fff;">13</div></div>
+                <div style="display:flex; align-items:center; gap:12px;"><div style="width:110px; font-size:13px; color:#e4e4e7; flex-shrink:0;">2&ndash;3 months</div><div style="flex:1; height:22px; background:rgba(255,255,255,0.04); border-radius:5px;"><div style="width:31.6%; height:100%; background:linear-gradient(90deg,#22d3ee,#06b6d4); border-radius:5px;"></div></div><div style="width:32px; text-align:right; font-size:13px; font-weight:700; color:#fff;">12</div></div>
+                <div style="display:flex; align-items:center; gap:12px;"><div style="width:110px; font-size:13px; color:#e4e4e7; flex-shrink:0;">4&ndash;6 months</div><div style="flex:1; height:22px; background:rgba(255,255,255,0.04); border-radius:5px;"><div style="width:100%; height:100%; background:linear-gradient(90deg,#34d399,#10b981); border-radius:5px;"></div></div><div style="width:32px; text-align:right; font-size:13px; font-weight:700; color:#fff;">38</div></div>
+                <div style="display:flex; align-items:center; gap:12px;"><div style="width:110px; font-size:13px; color:#e4e4e7; flex-shrink:0;">7&ndash;12 months</div><div style="flex:1; height:22px; background:rgba(255,255,255,0.04); border-radius:5px;"><div style="width:5.3%; height:100%; background:linear-gradient(90deg,#34d399,#10b981); border-radius:5px;"></div></div><div style="width:32px; text-align:right; font-size:13px; font-weight:700; color:#fff;">2</div></div>
+            </div>
+            <div style="font-size: 11px; color: #52525b; margin-bottom: 22px;">Modal tenure is 4&ndash;6 months (38 of 65). The subscription ledger only runs Dec 2025 &rarr; now, so tenure can&rsquo;t yet exceed ~12 months &mdash; true long-term LTV isn&rsquo;t measurable until the ledger is deeper.</div>
+
+            <div style="font-size: 13px; font-weight: 600; color: #71717a; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px;">By Service Type</div>
+            <table style="width: 100%; border-collapse: collapse; font-size: 13px;">
+                <thead>
+                    <tr style="text-align: left; color: #71717a; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px;">
+                        <th style="padding: 10px 8px; border-bottom: 1px solid rgba(255,255,255,0.08);">Service</th>
+                        <th style="padding: 10px 8px; border-bottom: 1px solid rgba(255,255,255,0.08); text-align: center;">Clients</th>
+                        <th style="padding: 10px 8px; border-bottom: 1px solid rgba(255,255,255,0.08); text-align: center;">Median Tenure</th>
+                        <th style="padding: 10px 8px; border-bottom: 1px solid rgba(255,255,255,0.08); text-align: center;">Active</th>
+                        <th style="padding: 10px 8px; border-bottom: 1px solid rgba(255,255,255,0.08); text-align: right;">~Monthly $</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td style="padding:10px 8px; color:#e4e4e7; border-bottom:1px solid rgba(255,255,255,0.04);">Suppression</td><td style="padding:10px 8px; text-align:center; color:#a1a1aa; border-bottom:1px solid rgba(255,255,255,0.04);">14</td><td style="padding:10px 8px; text-align:center; color:#a1a1aa; border-bottom:1px solid rgba(255,255,255,0.04);">4 mo</td><td style="padding:10px 8px; text-align:center; color:#a1a1aa; border-bottom:1px solid rgba(255,255,255,0.04);">9</td><td style="padding:10px 8px; text-align:right; color:#fff; font-weight:700; border-bottom:1px solid rgba(255,255,255,0.04);">$55.8K</td></tr>
+                    <tr><td style="padding:10px 8px; color:#e4e4e7; border-bottom:1px solid rgba(255,255,255,0.04);">Other (monitoring, repair, de-index)</td><td style="padding:10px 8px; text-align:center; color:#a1a1aa; border-bottom:1px solid rgba(255,255,255,0.04);">15</td><td style="padding:10px 8px; text-align:center; color:#a1a1aa; border-bottom:1px solid rgba(255,255,255,0.04);">4 mo</td><td style="padding:10px 8px; text-align:center; color:#a1a1aa; border-bottom:1px solid rgba(255,255,255,0.04);">9</td><td style="padding:10px 8px; text-align:right; color:#fff; font-weight:700; border-bottom:1px solid rgba(255,255,255,0.04);">$37.6K</td></tr>
+                    <tr><td style="padding:10px 8px; color:#e4e4e7; border-bottom:1px solid rgba(255,255,255,0.04);">Autocomplete Maintenance</td><td style="padding:10px 8px; text-align:center; color:#a1a1aa; border-bottom:1px solid rgba(255,255,255,0.04);">17</td><td style="padding:10px 8px; text-align:center; color:#a1a1aa; border-bottom:1px solid rgba(255,255,255,0.04);">5 mo</td><td style="padding:10px 8px; text-align:center; color:#a1a1aa; border-bottom:1px solid rgba(255,255,255,0.04);">13</td><td style="padding:10px 8px; text-align:right; color:#fff; font-weight:700; border-bottom:1px solid rgba(255,255,255,0.04);">$11.4K</td></tr>
+                    <tr><td style="padding:10px 8px; color:#e4e4e7;">Review Management Membership</td><td style="padding:10px 8px; text-align:center; color:#a1a1aa;">19</td><td style="padding:10px 8px; text-align:center; color:#a1a1aa;">5 mo</td><td style="padding:10px 8px; text-align:center; color:#a1a1aa;">15</td><td style="padding:10px 8px; text-align:right; color:#fff; font-weight:700;">$11.0K</td></tr>
+                </tbody>
+            </table>
+            <div style="margin-top: 16px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.04); font-size: 12px; color: #a1a1aa; line-height: 1.6;"><strong style="color:#fbbf24;">The upsell gap, quantified.</strong> Clients are sticky (71% still active) but spend is flat &mdash; of 48 multi-month clients, only <strong style="color:#e4e4e7;">3 grew their spend, 40 held flat, 5 dropped</strong>. Almost no one expands. Suppression earns the most per client but has the weakest retention (9 of 14 active); Autocomplete &amp; Membership retain best but are lower-ticket. This is exactly what the maintenance auto-bill checkbox and the 14%&rarr;20% repeat-rate push are meant to fix.</div>
+        </div>
+
         <!-- Data notes -->
         <div class="card" style="border-color: rgba(245,158,11,0.2); background: rgba(245,158,11,0.03);">
             <div class="card-title"><span class="dot" style="background: #f59e0b;"></span>Data notes</div>
