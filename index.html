@@ -150,6 +150,7 @@
         <button class="tab-btn" data-tab="q2" onclick="switchTab('q2')">Q2</button>
         <button class="tab-btn" data-tab="ytd" onclick="switchTab('ytd')">Q1 YTD</button>
         <div class="tab-sep"></div>
+        <button class="tab-btn" data-tab="reps" onclick="switchTab('reps')">Sales Reps</button>
         <button class="tab-btn" data-tab="funnel" onclick="switchTab('funnel')">Sales Funnel</button>
         <button class="tab-btn" data-tab="delivery" onclick="switchTab('delivery')">Service Delivery</button>
         <button class="tab-btn" data-tab="recurring" onclick="switchTab('recurring')">Recurring Revenue</button>
@@ -7135,6 +7136,176 @@
         </div>
     </div>
 
+    <!-- ============================ SALES REPS ============================ -->
+    <div class="tab-content" id="tab-reps">
+        <div class="header">
+            <div>
+                <h1>Sales Reps</h1>
+                <div class="subtitle">Reputation Resolutions &mdash; individual rep performance</div>
+            </div>
+            <div class="date-badge">2026 YTD &middot; through October</div>
+        </div>
+
+        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:24px;">
+            <button class="rep-btn" data-rep="maxwell" onclick="showRep('maxwell')" style="padding:10px 22px; border-radius:10px; border:none; background:linear-gradient(135deg,#6366f1,#4f46e5); color:#fff; font-size:14px; font-weight:600; cursor:pointer; font-family:inherit;">Maxwell</button>
+            <button class="rep-btn" data-rep="hector" onclick="showRep('hector')" style="padding:10px 22px; border-radius:10px; border:none; background:transparent; color:#71717a; font-size:14px; font-weight:600; cursor:pointer; font-family:inherit;">Hector</button>
+            <button class="rep-btn" data-rep="jordan" onclick="showRep('jordan')" style="padding:10px 22px; border-radius:10px; border:none; background:transparent; color:#71717a; font-size:14px; font-weight:600; cursor:pointer; font-family:inherit;">Jordan</button>
+            <button class="rep-btn" data-rep="anthony" onclick="showRep('anthony')" style="padding:10px 22px; border-radius:10px; border:none; background:transparent; color:#71717a; font-size:14px; font-weight:600; cursor:pointer; font-family:inherit;">Anthony</button>
+        </div>
+
+        <!-- MAXWELL -->
+        <div class="rep-view" id="rep-maxwell" style="display:block;">
+            <div class="card" style="border:1px solid rgba(99,102,241,0.15); background:linear-gradient(135deg, rgba(99,102,241,0.04), rgba(16,185,129,0.04));">
+                <div style="display:flex; align-items:center; gap:14px;">
+                    <div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,#f59e0b,#d97706);display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:18px;">MC</div>
+                    <div><div style="font-size:20px;font-weight:800;color:#fff;">Maxwell Cavender</div><div style="font-size:12px;color:#34d399;font-weight:600;">Rising star &middot; top October closer</div></div>
+                </div>
+                <div style="margin-top:14px; font-size:13px; color:#a1a1aa; line-height:1.6;">Breakout rep &mdash; up every month since July ($107K &rarr; $116K &rarr; $151K) and October&rsquo;s top closer by volume (20 deals). Carries the team&rsquo;s heaviest call load (123 meetings in October, ~5.6/workday). The clear signal: give him more volume.</div>
+            </div>
+            <div class="kpi-row">
+                <div class="kpi-card"><div class="kpi-label">October Revenue</div><div class="kpi-value">$150,900</div><div class="kpi-detail">20 deals closed</div></div>
+                <div class="kpi-card"><div class="kpi-label">2026 Revenue</div><div class="kpi-value">$599,553</div><div class="kpi-detail">97 deals YTD</div></div>
+                <div class="kpi-card"><div class="kpi-label">Avg Deal Size</div><div class="kpi-value">$6,181</div><div class="kpi-detail">per closed-won deal</div></div>
+                <div class="kpi-card"><div class="kpi-label">Meetings (Oct)</div><div class="kpi-value">123</div><div class="kpi-detail">~5.6 / workday &middot; team high</div></div>
+                <div class="kpi-card"><div class="kpi-label">Open Pipeline</div><div class="kpi-value">$808K</div><div class="kpi-detail">137 open deals</div></div>
+            </div>
+            <div class="card">
+                <div class="card-title"><span class="dot" style="background:#10b981;"></span>Monthly Closed-Won &mdash; 2026</div>
+                <div style="display:flex; align-items:flex-end; gap:8px; height:200px; border-bottom:2px solid rgba(255,255,255,0.1); padding:0 4px;">
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Jan 2026 — $0"><div style="font-size:10px;color:#3f3f46;margin-bottom:6px;">&mdash;</div><div style="width:60%;height:2px;background:#27272a;border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Feb 2026 — $0"><div style="font-size:10px;color:#3f3f46;margin-bottom:6px;">&mdash;</div><div style="width:60%;height:2px;background:#27272a;border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Mar 2026 — $50,775 · 11 deals"><div style="font-size:11px;font-weight:700;color:#34d399;margin-bottom:6px;">$51K</div><div style="width:60%;height:54px;background:linear-gradient(180deg,#34d399,#10b981);border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Apr 2026 — $63,465 · 12 deals"><div style="font-size:11px;font-weight:700;color:#34d399;margin-bottom:6px;">$63K</div><div style="width:60%;height:67px;background:linear-gradient(180deg,#34d399,#10b981);border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="May 2026 — $47,163 · 10 deals"><div style="font-size:11px;font-weight:700;color:#34d399;margin-bottom:6px;">$47K</div><div style="width:60%;height:50px;background:linear-gradient(180deg,#34d399,#10b981);border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Jun 2026 — $49,900 · 10 deals"><div style="font-size:11px;font-weight:700;color:#34d399;margin-bottom:6px;">$50K</div><div style="width:60%;height:53px;background:linear-gradient(180deg,#34d399,#10b981);border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Jul 2026 — $14,250 · 4 deals"><div style="font-size:11px;font-weight:700;color:#e4e4e7;margin-bottom:6px;">$14K</div><div style="width:60%;height:15px;background:linear-gradient(180deg,#34d399,#10b981);border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Aug 2026 — $106,950 · 14 deals"><div style="font-size:11px;font-weight:700;color:#34d399;margin-bottom:6px;">$107K</div><div style="width:60%;height:113px;background:linear-gradient(180deg,#34d399,#10b981);border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Sep 2026 — $116,150 · 16 deals"><div style="font-size:11px;font-weight:700;color:#34d399;margin-bottom:6px;">$116K</div><div style="width:60%;height:123px;background:linear-gradient(180deg,#34d399,#10b981);border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Oct 2026 — $150,900 · 20 deals"><div style="font-size:11px;font-weight:700;color:#22d3ee;margin-bottom:6px;">$151K</div><div style="width:60%;height:160px;background:linear-gradient(180deg,#22d3ee,#06b6d4);border-radius:5px 5px 0 0;"></div></div>
+                </div>
+                <div style="display:flex; gap:8px; margin-top:10px; padding:0 4px;">
+                    <div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">Jan</div><div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">Feb</div><div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">Mar</div><div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">Apr</div><div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">May</div><div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">Jun</div><div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">Jul</div><div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">Aug</div><div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">Sep</div><div style="flex:1;text-align:center;font-size:11px;color:#22d3ee;font-weight:700;">Oct</div>
+                </div>
+                <div style="margin-top:14px; padding-top:12px; border-top:1px solid rgba(255,255,255,0.04); font-size:11px; color:#71717a;">Four straight months of growth into October. From a standing start in March to the team&rsquo;s top monthly closer.</div>
+            </div>
+        </div>
+
+        <!-- HECTOR -->
+        <div class="rep-view" id="rep-hector" style="display:none;">
+            <div class="card" style="border:1px solid rgba(99,102,241,0.15); background:linear-gradient(135deg, rgba(99,102,241,0.04), rgba(16,185,129,0.04));">
+                <div style="display:flex; align-items:center; gap:14px;">
+                    <div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,#6366f1,#4f46e5);display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:18px;">HS</div>
+                    <div><div style="font-size:20px;font-weight:800;color:#fff;">Hector Simoudis</div><div style="font-size:12px;color:#818cf8;font-weight:600;">The engine &middot; 42% of 2026 revenue</div></div>
+                </div>
+                <div style="margin-top:14px; font-size:13px; color:#a1a1aa; line-height:1.6;">Carries the company &mdash; $1.32M and 193 deals YTD, 42% of all revenue. Also the most loaded: 344 open deals and 101 meetings in October. The risk here is over-capacity and key-person concentration, not output.</div>
+            </div>
+            <div class="kpi-row">
+                <div class="kpi-card"><div class="kpi-label">October Revenue</div><div class="kpi-value">$168,945</div><div class="kpi-detail">18 deals closed</div></div>
+                <div class="kpi-card"><div class="kpi-label">2026 Revenue</div><div class="kpi-value">$1.32M</div><div class="kpi-detail">193 deals YTD &middot; 42% of co.</div></div>
+                <div class="kpi-card"><div class="kpi-label">Avg Deal Size</div><div class="kpi-value">$6,831</div><div class="kpi-detail">per closed-won deal</div></div>
+                <div class="kpi-card"><div class="kpi-label">Meetings (Oct)</div><div class="kpi-value">101</div><div class="kpi-detail">~4.6 / workday</div></div>
+                <div class="kpi-card"><div class="kpi-label">Open Pipeline</div><div class="kpi-value">$1.94M</div><div class="kpi-detail">344 open deals &middot; heavy load</div></div>
+            </div>
+            <div class="card">
+                <div class="card-title"><span class="dot" style="background:#10b981;"></span>Monthly Closed-Won &mdash; 2026</div>
+                <div style="display:flex; align-items:flex-end; gap:8px; height:200px; border-bottom:2px solid rgba(255,255,255,0.1); padding:0 4px;">
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Jan 2026 — $246,815 · 32 deals"><div style="font-size:11px;font-weight:700;color:#34d399;margin-bottom:6px;">$247K</div><div style="width:60%;height:160px;background:linear-gradient(180deg,#34d399,#10b981);border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Feb 2026 — $228,615 · 29 deals"><div style="font-size:11px;font-weight:700;color:#34d399;margin-bottom:6px;">$229K</div><div style="width:60%;height:148px;background:linear-gradient(180deg,#34d399,#10b981);border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Mar 2026 — $111,850 · 21 deals"><div style="font-size:11px;font-weight:700;color:#34d399;margin-bottom:6px;">$112K</div><div style="width:60%;height:73px;background:linear-gradient(180deg,#34d399,#10b981);border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Apr 2026 — $164,260 · 28 deals"><div style="font-size:11px;font-weight:700;color:#34d399;margin-bottom:6px;">$164K</div><div style="width:60%;height:106px;background:linear-gradient(180deg,#34d399,#10b981);border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="May 2026 — $48,230 · 10 deals"><div style="font-size:11px;font-weight:700;color:#e4e4e7;margin-bottom:6px;">$48K</div><div style="width:60%;height:31px;background:linear-gradient(180deg,#34d399,#10b981);border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Jun 2026 — $27,290 · 12 deals"><div style="font-size:11px;font-weight:700;color:#e4e4e7;margin-bottom:6px;">$27K</div><div style="width:60%;height:18px;background:linear-gradient(180deg,#34d399,#10b981);border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Jul 2026 — $186,535 · 17 deals"><div style="font-size:11px;font-weight:700;color:#34d399;margin-bottom:6px;">$187K</div><div style="width:60%;height:121px;background:linear-gradient(180deg,#34d399,#10b981);border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Aug 2026 — $65,925 · 13 deals"><div style="font-size:11px;font-weight:700;color:#e4e4e7;margin-bottom:6px;">$66K</div><div style="width:60%;height:43px;background:linear-gradient(180deg,#34d399,#10b981);border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Sep 2026 — $69,950 · 13 deals"><div style="font-size:11px;font-weight:700;color:#e4e4e7;margin-bottom:6px;">$70K</div><div style="width:60%;height:45px;background:linear-gradient(180deg,#34d399,#10b981);border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Oct 2026 — $168,945 · 18 deals"><div style="font-size:11px;font-weight:700;color:#22d3ee;margin-bottom:6px;">$169K</div><div style="width:60%;height:110px;background:linear-gradient(180deg,#22d3ee,#06b6d4);border-radius:5px 5px 0 0;"></div></div>
+                </div>
+                <div style="display:flex; gap:8px; margin-top:10px; padding:0 4px;">
+                    <div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">Jan</div><div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">Feb</div><div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">Mar</div><div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">Apr</div><div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">May</div><div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">Jun</div><div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">Jul</div><div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">Aug</div><div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">Sep</div><div style="flex:1;text-align:center;font-size:11px;color:#22d3ee;font-weight:700;">Oct</div>
+                </div>
+                <div style="margin-top:14px; padding-top:12px; border-top:1px solid rgba(255,255,255,0.04); font-size:11px; color:#71717a;">Big Q1, a mid-year dip (May&ndash;Jun), then a strong recovery. Remarkably consistent output given the 344-deal open load he also carries.</div>
+            </div>
+        </div>
+
+        <!-- JORDAN -->
+        <div class="rep-view" id="rep-jordan" style="display:none;">
+            <div class="card" style="border:1px solid rgba(99,102,241,0.15); background:linear-gradient(135deg, rgba(99,102,241,0.04), rgba(16,185,129,0.04));">
+                <div style="display:flex; align-items:center; gap:14px;">
+                    <div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,#06b6d4,#0891b2);display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:18px;">JA</div>
+                    <div><div style="font-size:20px;font-weight:800;color:#fff;">Jordan Azis</div><div style="font-size:12px;color:#22d3ee;font-weight:600;">Steady producer &middot; room to scale</div></div>
+                </div>
+                <div style="margin-top:14px; font-size:13px; color:#a1a1aa; line-height:1.6;">Consistent $652K YTD across steady $90&ndash;110K months. October was lighter on involvement (11 deals, 43 meetings vs Max&rsquo;s 123) &mdash; real headroom to take more calls and lift output.</div>
+            </div>
+            <div class="kpi-row">
+                <div class="kpi-card"><div class="kpi-label">October Revenue</div><div class="kpi-value">$90,890</div><div class="kpi-detail">11 deals closed</div></div>
+                <div class="kpi-card"><div class="kpi-label">2026 Revenue</div><div class="kpi-value">$652,155</div><div class="kpi-detail">101 deals YTD</div></div>
+                <div class="kpi-card"><div class="kpi-label">Avg Deal Size</div><div class="kpi-value">$6,457</div><div class="kpi-detail">per closed-won deal</div></div>
+                <div class="kpi-card"><div class="kpi-label">Meetings (Oct)</div><div class="kpi-value">43</div><div class="kpi-detail">~2 / workday &middot; has headroom</div></div>
+                <div class="kpi-card"><div class="kpi-label">Open Pipeline</div><div class="kpi-value">$982K</div><div class="kpi-detail">143 open deals</div></div>
+            </div>
+            <div class="card">
+                <div class="card-title"><span class="dot" style="background:#10b981;"></span>Monthly Closed-Won &mdash; 2026</div>
+                <div style="display:flex; align-items:flex-end; gap:8px; height:200px; border-bottom:2px solid rgba(255,255,255,0.1); padding:0 4px;">
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Jan 2026 — $0"><div style="font-size:10px;color:#3f3f46;margin-bottom:6px;">&mdash;</div><div style="width:60%;height:2px;background:#27272a;border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Feb 2026 — $44,900 · 9 deals"><div style="font-size:11px;font-weight:700;color:#e4e4e7;margin-bottom:6px;">$45K</div><div style="width:60%;height:66px;background:linear-gradient(180deg,#34d399,#10b981);border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Mar 2026 — $102,500 · 15 deals"><div style="font-size:11px;font-weight:700;color:#34d399;margin-bottom:6px;">$103K</div><div style="width:60%;height:151px;background:linear-gradient(180deg,#34d399,#10b981);border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Apr 2026 — $58,840 · 13 deals"><div style="font-size:11px;font-weight:700;color:#e4e4e7;margin-bottom:6px;">$59K</div><div style="width:60%;height:87px;background:linear-gradient(180deg,#34d399,#10b981);border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="May 2026 — $108,800 · 11 deals"><div style="font-size:11px;font-weight:700;color:#34d399;margin-bottom:6px;">$109K</div><div style="width:60%;height:160px;background:linear-gradient(180deg,#34d399,#10b981);border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Jun 2026 — $31,700 · 7 deals"><div style="font-size:11px;font-weight:700;color:#e4e4e7;margin-bottom:6px;">$32K</div><div style="width:60%;height:47px;background:linear-gradient(180deg,#34d399,#10b981);border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Jul 2026 — $21,650 · 8 deals"><div style="font-size:11px;font-weight:700;color:#e4e4e7;margin-bottom:6px;">$22K</div><div style="width:60%;height:32px;background:linear-gradient(180deg,#34d399,#10b981);border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Aug 2026 — $101,575 · 13 deals"><div style="font-size:11px;font-weight:700;color:#34d399;margin-bottom:6px;">$102K</div><div style="width:60%;height:149px;background:linear-gradient(180deg,#34d399,#10b981);border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Sep 2026 — $91,300 · 14 deals"><div style="font-size:11px;font-weight:700;color:#34d399;margin-bottom:6px;">$91K</div><div style="width:60%;height:134px;background:linear-gradient(180deg,#34d399,#10b981);border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Oct 2026 — $90,890 · 11 deals"><div style="font-size:11px;font-weight:700;color:#22d3ee;margin-bottom:6px;">$91K</div><div style="width:60%;height:134px;background:linear-gradient(180deg,#22d3ee,#06b6d4);border-radius:5px 5px 0 0;"></div></div>
+                </div>
+                <div style="display:flex; gap:8px; margin-top:10px; padding:0 4px;">
+                    <div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">Jan</div><div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">Feb</div><div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">Mar</div><div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">Apr</div><div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">May</div><div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">Jun</div><div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">Jul</div><div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">Aug</div><div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">Sep</div><div style="flex:1;text-align:center;font-size:11px;color:#22d3ee;font-weight:700;">Oct</div>
+                </div>
+                <div style="margin-top:14px; padding-top:12px; border-top:1px solid rgba(255,255,255,0.04); font-size:11px; color:#71717a;">Strong, consistent floor all year. The gap vs his own best months (and his low Oct meeting count) says there&rsquo;s capacity to push.</div>
+            </div>
+        </div>
+
+        <!-- ANTHONY -->
+        <div class="rep-view" id="rep-anthony" style="display:none;">
+            <div class="card" style="border:1px solid rgba(99,102,241,0.15); background:linear-gradient(135deg, rgba(99,102,241,0.04), rgba(16,185,129,0.04));">
+                <div style="display:flex; align-items:center; gap:14px;">
+                    <div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,#10b981,#059669);display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:18px;">AW</div>
+                    <div><div style="font-size:20px;font-weight:800;color:#fff;">Anthony Will</div><div style="font-size:12px;color:#34d399;font-weight:600;">Biggest deals &middot; part-time on sales</div></div>
+                </div>
+                <div style="margin-top:14px; font-size:13px; color:#a1a1aa; line-height:1.6;">Closes the biggest deals on the team (avg $10.1K) but is now part-time on sales &mdash; building the audit &amp; monitoring tools &mdash; so just 2 deals in October. His $1.10M open pipeline is the one to keep warm.</div>
+            </div>
+            <div class="kpi-row">
+                <div class="kpi-card"><div class="kpi-label">October Revenue</div><div class="kpi-value">$18,425</div><div class="kpi-detail">2 deals closed</div></div>
+                <div class="kpi-card"><div class="kpi-label">2026 Revenue</div><div class="kpi-value">$424,750</div><div class="kpi-detail">42 deals YTD</div></div>
+                <div class="kpi-card"><div class="kpi-label">Avg Deal Size</div><div class="kpi-value">$10,113</div><div class="kpi-detail">largest on the team</div></div>
+                <div class="kpi-card"><div class="kpi-label">Meetings (Oct)</div><div class="kpi-value">21</div><div class="kpi-detail">~1 / workday</div></div>
+                <div class="kpi-card"><div class="kpi-label">Open Pipeline</div><div class="kpi-value">$1.10M</div><div class="kpi-detail">49 open deals &middot; high value</div></div>
+            </div>
+            <div class="card">
+                <div class="card-title"><span class="dot" style="background:#10b981;"></span>Monthly Closed-Won &mdash; 2026</div>
+                <div style="display:flex; align-items:flex-end; gap:8px; height:200px; border-bottom:2px solid rgba(255,255,255,0.1); padding:0 4px;">
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Jan 2026 — $45,225 · 7 deals"><div style="font-size:11px;font-weight:700;color:#e4e4e7;margin-bottom:6px;">$45K</div><div style="width:60%;height:69px;background:linear-gradient(180deg,#34d399,#10b981);border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Feb 2026 — $104,525 · 6 deals"><div style="font-size:11px;font-weight:700;color:#34d399;margin-bottom:6px;">$105K</div><div style="width:60%;height:160px;background:linear-gradient(180deg,#34d399,#10b981);border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Mar 2026 — $66,375 · 5 deals"><div style="font-size:11px;font-weight:700;color:#34d399;margin-bottom:6px;">$66K</div><div style="width:60%;height:102px;background:linear-gradient(180deg,#34d399,#10b981);border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Apr 2026 — $14,175 · 2 deals"><div style="font-size:11px;font-weight:700;color:#e4e4e7;margin-bottom:6px;">$14K</div><div style="width:60%;height:22px;background:linear-gradient(180deg,#34d399,#10b981);border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="May 2026 — $2,450 · 2 deals"><div style="font-size:11px;font-weight:700;color:#71717a;margin-bottom:6px;">$2K</div><div style="width:60%;height:4px;background:linear-gradient(180deg,#34d399,#10b981);border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Jun 2026 — $22,500 · 1 deal"><div style="font-size:11px;font-weight:700;color:#e4e4e7;margin-bottom:6px;">$23K</div><div style="width:60%;height:34px;background:linear-gradient(180deg,#34d399,#10b981);border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Jul 2026 — $36,400 · 4 deals"><div style="font-size:11px;font-weight:700;color:#e4e4e7;margin-bottom:6px;">$36K</div><div style="width:60%;height:56px;background:linear-gradient(180deg,#34d399,#10b981);border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Aug 2026 — $49,700 · 6 deals"><div style="font-size:11px;font-weight:700;color:#e4e4e7;margin-bottom:6px;">$50K</div><div style="width:60%;height:76px;background:linear-gradient(180deg,#34d399,#10b981);border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Sep 2026 — $64,975 · 7 deals"><div style="font-size:11px;font-weight:700;color:#34d399;margin-bottom:6px;">$65K</div><div style="width:60%;height:99px;background:linear-gradient(180deg,#34d399,#10b981);border-radius:5px 5px 0 0;"></div></div>
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;" title="Oct 2026 — $18,425 · 2 deals"><div style="font-size:11px;font-weight:700;color:#22d3ee;margin-bottom:6px;">$18K</div><div style="width:60%;height:28px;background:linear-gradient(180deg,#22d3ee,#06b6d4);border-radius:5px 5px 0 0;"></div></div>
+                </div>
+                <div style="display:flex; gap:8px; margin-top:10px; padding:0 4px;">
+                    <div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">Jan</div><div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">Feb</div><div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">Mar</div><div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">Apr</div><div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">May</div><div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">Jun</div><div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">Jul</div><div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">Aug</div><div style="flex:1;text-align:center;font-size:11px;color:#a1a1aa;">Sep</div><div style="flex:1;text-align:center;font-size:11px;color:#22d3ee;font-weight:700;">Oct</div>
+                </div>
+                <div style="margin-top:14px; padding-top:12px; border-top:1px solid rgba(255,255,255,0.04); font-size:11px; color:#71717a;">Output tapered from Q1 as he shifted into tool-building. Still high value-per-deal when he does sell &mdash; a reserve closer for big opportunities.</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            Data pulled live from HubSpot CRM (Account #21116307) &middot; closed-won by close date (amount &gt; $0, excl. test deals) &middot; meetings from logged Meeting activities &middot; open pipeline = hs_is_closed = false, amount &gt; $0 &middot; 2026 YTD through Oct 31 &middot; Tatijana, Lucija, Matthew &amp; Justin shown on the main Revenue-by-Rep card
+        </div>
+    </div>
+
 </div>
 
 <script>
@@ -7150,6 +7321,18 @@ function switchTab(id) {
     if (months.indexOf(id) >= 0) { sel.value = id; sel.classList.add('active'); }
     else { sel.classList.remove('active'); }
     window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+function showRep(r) {
+    var reps = ['maxwell','hector','jordan','anthony'];
+    reps.forEach(function(x) {
+        var v = document.getElementById('rep-' + x);
+        if (v) v.style.display = (x === r ? 'block' : 'none');
+        var b = document.querySelector('.rep-btn[data-rep="' + x + '"]');
+        if (b) {
+            if (x === r) { b.style.background = 'linear-gradient(135deg,#6366f1,#4f46e5)'; b.style.color = '#fff'; }
+            else { b.style.background = 'transparent'; b.style.color = '#71717a'; }
+        }
+    });
 }
 </script>
 </body>
