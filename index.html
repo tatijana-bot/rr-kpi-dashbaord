@@ -150,7 +150,13 @@
         <button class="tab-btn" data-tab="q2" onclick="switchTab('q2')">Q2</button>
         <button class="tab-btn" data-tab="ytd" onclick="switchTab('ytd')">Q1 YTD</button>
         <div class="tab-sep"></div>
-        <button class="tab-btn" data-tab="reps" onclick="switchTab('reps')">Sales Reps</button>
+        <select id="rep-select" class="month-select" onchange="switchTab(this.value)" title="Select sales rep" aria-label="Select sales rep">
+            <option value="" disabled selected>Sales Reps</option>
+            <option value="rep-maxwell">Maxwell</option>
+            <option value="rep-hector">Hector</option>
+            <option value="rep-jordan">Jordan</option>
+            <option value="rep-anthony">Anthony</option>
+        </select>
         <button class="tab-btn" data-tab="funnel" onclick="switchTab('funnel')">Sales Funnel</button>
         <button class="tab-btn" data-tab="delivery" onclick="switchTab('delivery')">Service Delivery</button>
         <button class="tab-btn" data-tab="recurring" onclick="switchTab('recurring')">Recurring Revenue</button>
@@ -7136,25 +7142,16 @@
         </div>
     </div>
 
-    <!-- ============================ SALES REPS ============================ -->
-    <div class="tab-content" id="tab-reps">
+    <!-- ============================ SALES REPS (one tab per rep) ============================ -->
+    <!-- rep tab: Maxwell -->
+    <div class="tab-content" id="tab-rep-maxwell">
         <div class="header">
             <div>
-                <h1>Sales Reps</h1>
-                <div class="subtitle">Reputation Resolutions &mdash; individual rep performance</div>
+                <h1>Maxwell Cavender</h1>
+                <div class="subtitle">Reputation Resolutions &mdash; Sales Rep &middot; rising star</div>
             </div>
             <div class="date-badge">2026 YTD &middot; through October</div>
         </div>
-
-        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:24px;">
-            <button class="rep-btn" data-rep="maxwell" onclick="showRep('maxwell')" style="padding:10px 22px; border-radius:10px; border:none; background:linear-gradient(135deg,#6366f1,#4f46e5); color:#fff; font-size:14px; font-weight:600; cursor:pointer; font-family:inherit;">Maxwell</button>
-            <button class="rep-btn" data-rep="hector" onclick="showRep('hector')" style="padding:10px 22px; border-radius:10px; border:none; background:transparent; color:#71717a; font-size:14px; font-weight:600; cursor:pointer; font-family:inherit;">Hector</button>
-            <button class="rep-btn" data-rep="jordan" onclick="showRep('jordan')" style="padding:10px 22px; border-radius:10px; border:none; background:transparent; color:#71717a; font-size:14px; font-weight:600; cursor:pointer; font-family:inherit;">Jordan</button>
-            <button class="rep-btn" data-rep="anthony" onclick="showRep('anthony')" style="padding:10px 22px; border-radius:10px; border:none; background:transparent; color:#71717a; font-size:14px; font-weight:600; cursor:pointer; font-family:inherit;">Anthony</button>
-        </div>
-
-        <!-- MAXWELL -->
-        <div class="rep-view" id="rep-maxwell" style="display:block;">
             <div class="card" style="border:1px solid rgba(99,102,241,0.15); background:linear-gradient(135deg, rgba(99,102,241,0.04), rgba(16,185,129,0.04));">
                 <div style="display:flex; align-items:center; gap:14px;">
                     <div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,#f59e0b,#d97706);display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:18px;">MC</div>
@@ -7168,6 +7165,10 @@
                 <div class="kpi-card"><div class="kpi-label">Avg Deal Size</div><div class="kpi-value">$6,181</div><div class="kpi-detail">per closed-won deal</div></div>
                 <div class="kpi-card"><div class="kpi-label">Meetings (Oct)</div><div class="kpi-value">123</div><div class="kpi-detail">~5.6 / workday &middot; team high</div></div>
                 <div class="kpi-card"><div class="kpi-label">Open Pipeline</div><div class="kpi-value">$808K</div><div class="kpi-detail">137 open deals</div></div>
+            </div>
+            <div class="kpi-row">
+                <div class="kpi-card"><div class="kpi-label">Win Rate</div><div class="kpi-value">43%</div><div class="kpi-detail">105 won of 243 qualified opportunities</div></div>
+                <div class="kpi-card"><div class="kpi-label">Realized (collected)</div><div class="kpi-value">$93,433</div><div class="kpi-detail">16% of booked collected &middot; via ChargeOver</div></div>
             </div>
             <div class="card">
                 <div class="card-title"><span class="dot" style="background:#10b981;"></span>Monthly Closed-Won &mdash; 2026</div>
@@ -7188,10 +7189,18 @@
                 </div>
                 <div style="margin-top:14px; padding-top:12px; border-top:1px solid rgba(255,255,255,0.04); font-size:11px; color:#71717a;">Four straight months of growth into October. From a standing start in March to the team&rsquo;s top monthly closer.</div>
             </div>
+            <div class="footer">Maxwell Cavender &middot; 2026 YTD closed-won by close date &middot; realized = realized_value_via_monday (ChargeOver) &middot; win rate = won &divide; qualified opportunities created &middot; meetings from logged activities</div>
         </div>
 
-        <!-- HECTOR -->
-        <div class="rep-view" id="rep-hector" style="display:none;">
+        <!-- rep tab: Hector -->
+        <div class="tab-content" id="tab-rep-hector">
+            <div class="header">
+                <div>
+                    <h1>Hector Simoudis</h1>
+                    <div class="subtitle">Reputation Resolutions &mdash; Sales Rep &middot; top producer, the engine</div>
+                </div>
+                <div class="date-badge">2026 YTD &middot; through October</div>
+            </div>
             <div class="card" style="border:1px solid rgba(99,102,241,0.15); background:linear-gradient(135deg, rgba(99,102,241,0.04), rgba(16,185,129,0.04));">
                 <div style="display:flex; align-items:center; gap:14px;">
                     <div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,#6366f1,#4f46e5);display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:18px;">HS</div>
@@ -7205,6 +7214,10 @@
                 <div class="kpi-card"><div class="kpi-label">Avg Deal Size</div><div class="kpi-value">$6,831</div><div class="kpi-detail">per closed-won deal</div></div>
                 <div class="kpi-card"><div class="kpi-label">Meetings (Oct)</div><div class="kpi-value">101</div><div class="kpi-detail">~4.6 / workday</div></div>
                 <div class="kpi-card"><div class="kpi-label">Open Pipeline</div><div class="kpi-value">$1.94M</div><div class="kpi-detail">344 open deals &middot; heavy load</div></div>
+            </div>
+            <div class="kpi-row">
+                <div class="kpi-card"><div class="kpi-label">Win Rate</div><div class="kpi-value">61%</div><div class="kpi-detail">180 won of 296 qualified opportunities</div></div>
+                <div class="kpi-card"><div class="kpi-label">Realized (collected)</div><div class="kpi-value">$220,823</div><div class="kpi-detail">17% of booked collected &middot; via ChargeOver</div></div>
             </div>
             <div class="card">
                 <div class="card-title"><span class="dot" style="background:#10b981;"></span>Monthly Closed-Won &mdash; 2026</div>
@@ -7225,10 +7238,18 @@
                 </div>
                 <div style="margin-top:14px; padding-top:12px; border-top:1px solid rgba(255,255,255,0.04); font-size:11px; color:#71717a;">Big Q1, a mid-year dip (May&ndash;Jun), then a strong recovery. Remarkably consistent output given the 344-deal open load he also carries.</div>
             </div>
+            <div class="footer">Hector Simoudis &middot; 2026 YTD closed-won by close date &middot; realized = realized_value_via_monday (ChargeOver) &middot; win rate = won &divide; qualified opportunities created &middot; meetings from logged activities</div>
         </div>
 
-        <!-- JORDAN -->
-        <div class="rep-view" id="rep-jordan" style="display:none;">
+        <!-- rep tab: Jordan -->
+        <div class="tab-content" id="tab-rep-jordan">
+            <div class="header">
+                <div>
+                    <h1>Jordan Azis</h1>
+                    <div class="subtitle">Reputation Resolutions &mdash; Sales Rep &middot; steady producer</div>
+                </div>
+                <div class="date-badge">2026 YTD &middot; through October</div>
+            </div>
             <div class="card" style="border:1px solid rgba(99,102,241,0.15); background:linear-gradient(135deg, rgba(99,102,241,0.04), rgba(16,185,129,0.04));">
                 <div style="display:flex; align-items:center; gap:14px;">
                     <div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,#06b6d4,#0891b2);display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:18px;">JA</div>
@@ -7242,6 +7263,10 @@
                 <div class="kpi-card"><div class="kpi-label">Avg Deal Size</div><div class="kpi-value">$6,457</div><div class="kpi-detail">per closed-won deal</div></div>
                 <div class="kpi-card"><div class="kpi-label">Meetings (Oct)</div><div class="kpi-value">43</div><div class="kpi-detail">~2 / workday &middot; has headroom</div></div>
                 <div class="kpi-card"><div class="kpi-label">Open Pipeline</div><div class="kpi-value">$982K</div><div class="kpi-detail">143 open deals</div></div>
+            </div>
+            <div class="kpi-row">
+                <div class="kpi-card"><div class="kpi-label">Win Rate</div><div class="kpi-value">41%</div><div class="kpi-detail">101 won of 244 qualified opportunities</div></div>
+                <div class="kpi-card"><div class="kpi-label">Realized (collected)</div><div class="kpi-value">$71,720</div><div class="kpi-detail">11% of booked collected &middot; via ChargeOver</div></div>
             </div>
             <div class="card">
                 <div class="card-title"><span class="dot" style="background:#10b981;"></span>Monthly Closed-Won &mdash; 2026</div>
@@ -7262,10 +7287,18 @@
                 </div>
                 <div style="margin-top:14px; padding-top:12px; border-top:1px solid rgba(255,255,255,0.04); font-size:11px; color:#71717a;">Strong, consistent floor all year. The gap vs his own best months (and his low Oct meeting count) says there&rsquo;s capacity to push.</div>
             </div>
+            <div class="footer">Jordan Azis &middot; 2026 YTD closed-won by close date &middot; realized = realized_value_via_monday (ChargeOver) &middot; win rate = won &divide; qualified opportunities created &middot; meetings from logged activities</div>
         </div>
 
-        <!-- ANTHONY -->
-        <div class="rep-view" id="rep-anthony" style="display:none;">
+        <!-- rep tab: Anthony -->
+        <div class="tab-content" id="tab-rep-anthony">
+            <div class="header">
+                <div>
+                    <h1>Anthony Will</h1>
+                    <div class="subtitle">Reputation Resolutions &mdash; Sales Rep &middot; biggest deals, part-time on sales</div>
+                </div>
+                <div class="date-badge">2026 YTD &middot; through October</div>
+            </div>
             <div class="card" style="border:1px solid rgba(99,102,241,0.15); background:linear-gradient(135deg, rgba(99,102,241,0.04), rgba(16,185,129,0.04));">
                 <div style="display:flex; align-items:center; gap:14px;">
                     <div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,#10b981,#059669);display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:18px;">AW</div>
@@ -7279,6 +7312,10 @@
                 <div class="kpi-card"><div class="kpi-label">Avg Deal Size</div><div class="kpi-value">$10,113</div><div class="kpi-detail">largest on the team</div></div>
                 <div class="kpi-card"><div class="kpi-label">Meetings (Oct)</div><div class="kpi-value">21</div><div class="kpi-detail">~1 / workday</div></div>
                 <div class="kpi-card"><div class="kpi-label">Open Pipeline</div><div class="kpi-value">$1.10M</div><div class="kpi-detail">49 open deals &middot; high value</div></div>
+            </div>
+            <div class="kpi-row">
+                <div class="kpi-card"><div class="kpi-label">Win Rate</div><div class="kpi-value">82%</div><div class="kpi-detail">96 won of 117 qualified opportunities &middot; team high</div></div>
+                <div class="kpi-card"><div class="kpi-label">Realized (collected)</div><div class="kpi-value">$124,000</div><div class="kpi-detail">29% of booked collected &middot; team high</div></div>
             </div>
             <div class="card">
                 <div class="card-title"><span class="dot" style="background:#10b981;"></span>Monthly Closed-Won &mdash; 2026</div>
@@ -7299,12 +7336,8 @@
                 </div>
                 <div style="margin-top:14px; padding-top:12px; border-top:1px solid rgba(255,255,255,0.04); font-size:11px; color:#71717a;">Output tapered from Q1 as he shifted into tool-building. Still high value-per-deal when he does sell &mdash; a reserve closer for big opportunities.</div>
             </div>
+            <div class="footer">Anthony Will &middot; 2026 YTD closed-won by close date &middot; realized = realized_value_via_monday (ChargeOver) &middot; win rate = won &divide; qualified opportunities created &middot; Tatijana, Lucija, Matthew &amp; Justin shown on the main Revenue-by-Rep card</div>
         </div>
-
-        <div class="footer">
-            Data pulled live from HubSpot CRM (Account #21116307) &middot; closed-won by close date (amount &gt; $0, excl. test deals) &middot; meetings from logged Meeting activities &middot; open pipeline = hs_is_closed = false, amount &gt; $0 &middot; 2026 YTD through Oct 31 &middot; Tatijana, Lucija, Matthew &amp; Justin shown on the main Revenue-by-Rep card
-        </div>
-    </div>
 
 </div>
 
@@ -7320,19 +7353,11 @@ function switchTab(id) {
     var months = ['october','september','august','july','june','may','april','march','february','january'];
     if (months.indexOf(id) >= 0) { sel.value = id; sel.classList.add('active'); }
     else { sel.classList.remove('active'); }
+    var rsel = document.getElementById('rep-select');
+    var reps = ['rep-maxwell','rep-hector','rep-jordan','rep-anthony'];
+    if (reps.indexOf(id) >= 0) { if (rsel) { rsel.value = id; rsel.classList.add('active'); } }
+    else { if (rsel) { rsel.selectedIndex = 0; rsel.classList.remove('active'); } }
     window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-function showRep(r) {
-    var reps = ['maxwell','hector','jordan','anthony'];
-    reps.forEach(function(x) {
-        var v = document.getElementById('rep-' + x);
-        if (v) v.style.display = (x === r ? 'block' : 'none');
-        var b = document.querySelector('.rep-btn[data-rep="' + x + '"]');
-        if (b) {
-            if (x === r) { b.style.background = 'linear-gradient(135deg,#6366f1,#4f46e5)'; b.style.color = '#fff'; }
-            else { b.style.background = 'transparent'; b.style.color = '#71717a'; }
-        }
-    });
 }
 </script>
 </body>
