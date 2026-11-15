@@ -99,6 +99,26 @@ the deal to Closed Lost with a reason.
 - Revenue headline uses **revenue-producing deals** (amount > 0), split by pipeline; $0 and
   test ("ZZ TEST") deals are excluded from the headline and noted separately.
 
+## Paid Ads (Google Ads)
+- There is a SEPARATE "Google Ads Tracker" artifact (owned by Tatijana, shared with org):
+  `https://claude.ai/artifact/8WTwkKMjQESrxVGYmPqCfi`. It owns ALL ad detail — campaigns,
+  clicks, impressions/CTR, CPC, conversions, and a "Trend" tab (monthly + week-1-vs-week-4
+  click rate and its correlation with sales). That artifact has Google Ads access; THIS
+  session does not (no Google Ads connector) — get ad-platform numbers from the user or that
+  artifact, don't try to query Google Ads here.
+- The KPI board carries ONLY a one-line **"Paid Ads (2026)"** Overview card (exec rollup)
+  that links to the ads dashboard's **canonical URL (no `?sk=` share key — this page is
+  public)**. Do NOT duplicate ad detail (weekly click rate, correlation, campaigns) on the
+  KPI board — that stays on the ads dashboard. Split: exec rollup here, detail there.
+- Attribution: ad-sourced = CONTACT `hs_analytics_source = 'PAID_SEARCH'`. The RR Lead Source
+  option "Facebook Ad - Calendly" (`outreach_lead_source`) is EMPTY/unused — don't use it.
+  Ad-sourced closed-won: `DEAL WHERE CONTACT.hs_analytics_source = 'PAID_SEARCH' AND
+  hs_is_closed_won = true`, by `closedate`.
+- 2026 card figures: **$14,336 spent -> $116,960 signed (contract value), 10 deals = 8.2x**.
+  Lifetime 2021-2026: $86,526 spent -> $507,576 signed (8.5x). "Signed" = contract value by
+  close date (THIS YEAR = 2026 closedate); cash actually collected lags (~$19,070 on 2026 ad
+  deals via the `realized_value_via_monday` property, filled on only 5 of 10).
+
 ## Git
 - Container is ephemeral; re-clone with
   `git clone https://github.com/tatijana-bot/rr-kpi-dashbaord.git`.
