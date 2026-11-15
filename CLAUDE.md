@@ -54,6 +54,20 @@ the deal to Closed Lost with a reason.
   (`>= '2026-10-01' AND < '2026-11-01'`).
 - Stage-entry dates: `hs_v2_date_entered_<stageid>`.
 
+### "Calls Booked" metric — use this, nothing else
+- **Definition:** a deal with the **`call_outcome`** property set (Showed / No Show / Cancelled /
+  Rescheduled), bucketed by **`createdate`** month. This is the team-maintained source and it
+  reproduces the historical dashboard exactly (Mar = 166, Apr = 128).
+  `SELECT DATE_TRUNC(createdate,'MONTH'), call_outcome, COUNT(*) FROM DEAL WHERE call_outcome IS NOT NULL AND createdate >= '<m-start>' AND createdate < '<m-end>' GROUP BY DATE_TRUNC(createdate,'MONTH'), call_outcome`
+- Show rate = Showed &divide; (Showed + No Show). Report Calls Booked + Showed/No-Show/Canceled.
+- **Do NOT** count "deals entered the Call Scheduled stage" (`hs_v2_date_entered_9550124` etc.) —
+  that undercounts ~6&times; (it gave the bogus "8" for Nov, "48" for Oct). And do NOT use the raw
+  MEETING object (counts every meeting incl. service/internal; ~2&times; too high).
+- `call_outcome` is logged thoroughly on Sales-pipeline deals but **sparsely on Outreach**, so a
+  per-pipeline split of booked calls is unreliable — keep headline counts monthly, not by pipeline.
+- 2026 monthly series (Calls Booked): Jan 145, Feb 142, Mar 166, Apr 128, May 135, Jun 88,
+  Jul 68, Aug 163, Sep 126, Oct 157, Nov(MTD d14) 54. YTD 1,372 · 82.9% show rate.
+
 ### Pipelines & key stage IDs
 - Sales (default): Call Scheduled `9550124`, Contract Sent `decisionmakerboughtin`,
   Qualified `appointmentscheduled`, closed won `closedwon`, closed lost `closedlost`.
