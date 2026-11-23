@@ -170,6 +170,7 @@
             <option value="collections">Collections / AR</option>
             <option value="pipeline">Pipeline &amp; Forecast</option>
             <option value="margins">Profit by Service</option>
+            <option value="acquisition">Acquisition / CAC</option>
         </select>
     </div>
 
@@ -229,6 +230,12 @@
                 <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;"><div style="font-size:12px; font-weight:700; color:#f472b6; text-transform:uppercase; letter-spacing:0.5px;">Paid Ads (2026)</div><div style="font-size:12px; color:#52525b;">Ads Dashboard &#8599;</div></div>
                 <div style="font-size:36px; font-weight:800; color:#fff; letter-spacing:-1px;">$116,960<span style="font-size:18px; color:#71717a;"> won from ads</span></div>
                 <div style="font-size:13px; color:#a1a1aa; margin-top:6px;">$14,336 ad spend &rarr; $8.20 back per $1 (8.2&times;) &middot; 10 clients</div>
+            </div>
+
+            <div class="ov-card" onclick="switchTab('acquisition')">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;"><div style="font-size:12px; font-weight:700; color:#a78bfa; text-transform:uppercase; letter-spacing:0.5px;">Acquisition &middot; CAC</div><div style="font-size:12px; color:#52525b;">Channels &rarr;</div></div>
+                <div style="font-size:36px; font-weight:800; color:#fff; letter-spacing:-1px;">~$79<span style="font-size:18px; color:#71717a;"> blended CAC</span></div>
+                <div style="font-size:13px; color:#a1a1aa; margin-top:6px;">Inbound ~$0 &middot; Outreach $208 &middot; Ads $1,257 &middot; Jul&ndash;Nov</div>
             </div>
 
         </div>
@@ -7793,6 +7800,100 @@
         </div>
 
     <!-- ============================================================ -->
+    <!-- ACQUISITION / CAC TAB -->
+    <!-- ============================================================ -->
+    <div class="tab-content" id="tab-acquisition">
+
+        <div class="header">
+            <div>
+                <h1>Acquisition &amp; CAC</h1>
+                <div class="subtitle">What it costs to win a customer, by channel</div>
+            </div>
+            <div class="date-badge">Jul&ndash;Nov 2026 &middot; since Orchestra + new site went live</div>
+        </div>
+
+        <div class="kpi-row">
+            <div class="kpi-card">
+                <div class="kpi-label">Customers Won</div>
+                <div class="kpi-value">226</div>
+                <div class="kpi-detail">3 channels &middot; Jul&ndash;Nov</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Deal Amount Won</div>
+                <div class="kpi-value">$1.76M</div>
+                <div class="kpi-detail">contracted from these channels</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Blended CAC</div>
+                <div class="kpi-value">~$79</div>
+                <div class="kpi-detail">$17.8K spend &divide; 226 customers</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Most Efficient</div>
+                <div class="kpi-value" style="color:#34d399;">Inbound</div>
+                <div class="kpi-detail">181 won &middot; ~$0 cost</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title"><span class="dot" style="background:#a78bfa;"></span>Cost to Acquire a Customer &mdash; by Channel (Jul&ndash;Nov)</div>
+            <div style="overflow-x:auto;">
+            <table style="width:100%; border-collapse:collapse; font-size:12.5px; min-width:620px;">
+                <thead><tr>
+                    <th style="text-align:left; padding:9px 10px; font-size:10px; text-transform:uppercase; letter-spacing:0.4px; color:#71717a; border-bottom:1px solid rgba(255,255,255,0.08);">Channel</th>
+                    <th style="text-align:right; padding:9px 10px; font-size:10px; text-transform:uppercase; letter-spacing:0.4px; color:#71717a; border-bottom:1px solid rgba(255,255,255,0.08);">Marketing spend</th>
+                    <th style="text-align:right; padding:9px 10px; font-size:10px; text-transform:uppercase; letter-spacing:0.4px; color:#71717a; border-bottom:1px solid rgba(255,255,255,0.08);">Customers</th>
+                    <th style="text-align:right; padding:9px 10px; font-size:10px; text-transform:uppercase; letter-spacing:0.4px; color:#71717a; border-bottom:1px solid rgba(255,255,255,0.08);">CAC / customer</th>
+                    <th style="text-align:right; padding:9px 10px; font-size:10px; text-transform:uppercase; letter-spacing:0.4px; color:#71717a; border-bottom:1px solid rgba(255,255,255,0.08);">Avg deal</th>
+                    <th style="text-align:right; padding:9px 10px; font-size:10px; text-transform:uppercase; letter-spacing:0.4px; color:#71717a; border-bottom:1px solid rgba(255,255,255,0.08);">Return</th>
+                </tr></thead>
+                <tbody>
+                    <tr><td style="text-align:left; padding:9px 10px; color:#e4e4e7; font-weight:600; border-top:1px solid rgba(255,255,255,0.05);">Inbound <span style="color:#71717a; font-weight:400;">(website / organic)</span></td><td style="text-align:right; padding:9px 10px; color:#34d399; border-top:1px solid rgba(255,255,255,0.05);">~$0</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">181</td><td style="text-align:right; padding:9px 10px; color:#34d399; font-weight:700; border-top:1px solid rgba(255,255,255,0.05);">&asymp; $0</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$7,786</td><td style="text-align:right; padding:9px 10px; color:#34d399; border-top:1px solid rgba(255,255,255,0.05);">free</td></tr>
+                    <tr><td style="text-align:left; padding:9px 10px; color:#e4e4e7; font-weight:600; border-top:1px solid rgba(255,255,255,0.05);">Outreach <span style="color:#71717a; font-weight:400;">(Orchestra)</span></td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">~$7,700</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">37</td><td style="text-align:right; padding:9px 10px; color:#34d399; font-weight:700; border-top:1px solid rgba(255,255,255,0.05);">~$208</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$8,233</td><td style="text-align:right; padding:9px 10px; color:#34d399; border-top:1px solid rgba(255,255,255,0.05);">~40:1</td></tr>
+                    <tr><td style="text-align:left; padding:9px 10px; color:#e4e4e7; font-weight:600; border-top:1px solid rgba(255,255,255,0.05);">Paid ads <span style="color:#71717a; font-weight:400;">(Google)</span></td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">~$10,060</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">8</td><td style="text-align:right; padding:9px 10px; color:#f59e0b; font-weight:700; border-top:1px solid rgba(255,255,255,0.05);">~$1,257</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$5,641</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">~4.5:1</td></tr>
+                    <tr style="background:rgba(167,139,250,0.07);"><td style="text-align:left; padding:9px 10px; color:#c4b5fd; font-weight:700; border-top:1px solid rgba(255,255,255,0.08);">All channels</td><td style="text-align:right; padding:9px 10px; color:#e4e4e7; font-weight:700; border-top:1px solid rgba(255,255,255,0.08);">~$17,760</td><td style="text-align:right; padding:9px 10px; color:#e4e4e7; font-weight:700; border-top:1px solid rgba(255,255,255,0.08);">226</td><td style="text-align:right; padding:9px 10px; color:#c4b5fd; font-weight:800; border-top:1px solid rgba(255,255,255,0.08);">~$79</td><td style="text-align:right; padding:9px 10px; color:#e4e4e7; font-weight:700; border-top:1px solid rgba(255,255,255,0.08);">$1.76M</td><td style="text-align:right; padding:9px 10px; color:#71717a; border-top:1px solid rgba(255,255,255,0.08);">&mdash;</td></tr>
+                </tbody>
+            </table>
+            </div>
+            <div style="margin-top:14px; padding-top:12px; border-top:1px solid rgba(255,255,255,0.04); font-size:11px; color:#71717a;"><strong style="color:#a1a1aa;">CAC</strong> = marketing spend to acquire &divide; customers won. <strong style="color:#a1a1aa;">Return</strong> = avg deal &divide; CAC. All three channels on the same Jul&ndash;Nov window (Orchestra + the new website both launched in July).</div>
+        </div>
+
+        <div class="card">
+            <div class="card-title"><span class="dot" style="background:#22d3ee;"></span>Cost per Customer &mdash; lower is better</div>
+            <div style="display:grid; gap:14px; margin-top:12px;">
+                <div style="display:flex; align-items:center; gap:12px;">
+                    <div style="width:100px; flex-shrink:0; font-size:13px; color:#e4e4e7; font-weight:600;">Inbound</div>
+                    <div style="flex:1; background:rgba(255,255,255,0.04); border-radius:6px; height:26px; overflow:hidden;"><div style="width:0.5%; min-width:4px; height:100%; background:linear-gradient(90deg,#6ee7b7,#10b981); border-radius:6px;"></div></div>
+                    <div style="width:72px; text-align:right; font-size:13px; font-weight:700; color:#34d399;">~$0</div>
+                </div>
+                <div style="display:flex; align-items:center; gap:12px;">
+                    <div style="width:100px; flex-shrink:0; font-size:13px; color:#e4e4e7; font-weight:600;">Outreach</div>
+                    <div style="flex:1; background:rgba(255,255,255,0.04); border-radius:6px; height:26px; overflow:hidden;"><div style="width:16.5%; min-width:4px; height:100%; background:linear-gradient(90deg,#22d3ee,#06b6d4); border-radius:6px;"></div></div>
+                    <div style="width:72px; text-align:right; font-size:13px; font-weight:700; color:#22d3ee;">~$208</div>
+                </div>
+                <div style="display:flex; align-items:center; gap:12px;">
+                    <div style="width:100px; flex-shrink:0; font-size:13px; color:#e4e4e7; font-weight:600;">Paid ads</div>
+                    <div style="flex:1; background:rgba(255,255,255,0.04); border-radius:6px; height:26px; overflow:hidden;"><div style="width:100%; height:100%; background:linear-gradient(90deg,#fbbf24,#f59e0b); border-radius:6px;"></div></div>
+                    <div style="width:72px; text-align:right; font-size:13px; font-weight:700; color:#f59e0b;">~$1,257</div>
+                </div>
+            </div>
+            <div style="margin-top:16px; padding-top:12px; border-top:1px solid rgba(255,255,255,0.04); font-size:12px; color:#a1a1aa; line-height:1.6;"><strong style="color:#34d399;">Inbound</strong> is the engine &mdash; 181 customers, $1.4M, basically free (the new website carrying it). <strong style="color:#22d3ee;">Outreach</strong> wins customers ~6&times; cheaper than ads and at a ~40:1 return. <strong style="color:#f59e0b;">Paid ads</strong> cost the most per customer but still land profitable deals.</div>
+        </div>
+
+        <div class="card">
+            <div class="card-title"><span class="dot" style="background:#71717a;"></span>What&rsquo;s in (and not in) these numbers</div>
+            <div style="font-size:13px; color:#a1a1aa; line-height:1.7;">
+                &bull; <strong style="color:#e4e4e7;">Counts only acquisition spend</strong> &mdash; Google Ads spend + Orchestra outreach tools (~$1,464/mo). Inbound is organic; the website build is one-time, so its CAC &asymp; $0.<br>
+                &bull; <strong style="color:#e4e4e7;">Excludes sales pay</strong> (this is &ldquo;marketing CAC&rdquo;) and <strong style="color:#e4e4e7;">excludes delivery cost</strong> &mdash; what we pay partners per removal is separate (see <em>Profit by Service</em>).<br>
+                &bull; Window is <strong style="color:#e4e4e7;">Jul&ndash;Nov 2026</strong> so cost and customers line up; the pre-July Instantly era isn&rsquo;t costed and is excluded.
+            </div>
+            <div style="margin-top:14px; padding-top:12px; border-top:1px solid rgba(255,255,255,0.04); font-size:11px; color:#52525b;"><strong style="color:#71717a;">Coming next:</strong> LTV &divide; CAC per channel, a CAC trend line, and CAC per service line once the services board tags deals.</div>
+        </div>
+
+        <div class="footer">Customers = closed-won deals by channel (Outreach pipeline; Paid Search original source; Inbound Website lead source) &middot; Jul&ndash;Nov 2026 &middot; spend from Google Ads + the Orchestra costs tab &middot; CAC excludes sales comp &amp; service-delivery cost.</div>
+    </div>
+
+    <!-- ============================================================ -->
     <!-- WEEKLY BREAKDOWN TAB -->
     <!-- ============================================================ -->
     <div class="tab-content" id="tab-weekly">
@@ -8026,7 +8127,7 @@ function switchTab(id) {
     if (reps.indexOf(id) >= 0) { if (rsel) { rsel.value = id; rsel.classList.add('active'); } }
     else { if (rsel) { rsel.selectedIndex = 0; rsel.classList.remove('active'); } }
     var vsel = document.getElementById('view-select');
-    var views = ['funnel','delivery','recurring','retention','collections','pipeline','margins'];
+    var views = ['funnel','delivery','recurring','retention','collections','pipeline','margins','acquisition'];
     if (views.indexOf(id) >= 0) { if (vsel) { vsel.value = id; vsel.classList.add('active'); } }
     else { if (vsel) { vsel.selectedIndex = 0; vsel.classList.remove('active'); } }
     window.scrollTo({ top: 0, behavior: 'smooth' });
