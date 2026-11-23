@@ -164,6 +164,7 @@
         <button class="tab-btn" data-tab="retention" onclick="switchTab('retention')">Clients &amp; Retention</button>
         <button class="tab-btn" data-tab="collections" onclick="switchTab('collections')">Collections / AR</button>
         <button class="tab-btn" data-tab="pipeline" onclick="switchTab('pipeline')">Pipeline &amp; Forecast</button>
+        <button class="tab-btn" data-tab="margins" onclick="switchTab('margins')">Profit by Service</button>
     </div>
 
     <!-- ============================================================ -->
@@ -7784,6 +7785,122 @@
             </div>
             <div class="footer">Anthony Will &middot; 2026 YTD closed-won by close date &middot; realized = realized_value_via_monday (ChargeOver) &middot; win rate = won &divide; qualified opportunities created &middot; Tatijana, Lucija, Matthew &amp; Justin shown on the main Revenue-by-Rep card</div>
         </div>
+
+    <!-- ============================================================ -->
+    <!-- PROFIT BY SERVICE LINE TAB -->
+    <!-- ============================================================ -->
+    <div class="tab-content" id="tab-margins">
+
+        <div class="header">
+            <div>
+                <h1>Profit by Service Line</h1>
+                <div class="subtitle">What each removal earns us after what we pay the partner</div>
+            </div>
+            <div class="date-badge">Pricing 02/25/2026 &middot; paid on success</div>
+        </div>
+
+        <div class="kpi-row">
+            <div class="kpi-card">
+                <div class="kpi-label">Profit Engine</div>
+                <div class="kpi-value" style="color:#34d399;">~100%</div>
+                <div class="kpi-detail">internal lines &middot; $0 partner cost</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Best Review Line</div>
+                <div class="kpi-value">+$500</div>
+                <div class="kpi-detail">Glassdoor &middot; 67% margin</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Top $ / Removal</div>
+                <div class="kpi-value">+$1,873</div>
+                <div class="kpi-detail">Reddit de-index</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Money-Losing Line</div>
+                <div class="kpi-value" style="color:#f87171;">Yelp</div>
+                <div class="kpi-detail">&minus;$500 per removal</div>
+            </div>
+        </div>
+
+        <div class="card" style="border:1px solid rgba(239,68,68,0.28); background:rgba(239,68,68,0.05);">
+            <div class="card-title"><span class="dot" style="background:#ef4444;"></span>Fix or drop &mdash; Yelp review removal is underwater</div>
+            <div style="font-size:13px; color:#a1a1aa; line-height:1.65;">The partner charges us <strong style="color:#f87171;">$1,250</strong> per Yelp removal but the floor sell price is <strong style="color:#e4e4e7;">$750</strong> &mdash; we lose <strong style="color:#f87171;">$500 every time</strong>, and it only succeeds <strong style="color:#e4e4e7;">15%</strong> of the time, so each win also burns a lot of the team&rsquo;s effort. <strong style="color:#e4e4e7;">Action:</strong> raise the Yelp floor above ~$1,500, or stop selling it.</div>
+        </div>
+
+        <div class="card">
+            <div class="card-title"><span class="dot" style="background:#06b6d4;"></span>Review Removal &mdash; floor $750 / removal</div>
+            <div style="overflow-x:auto;">
+            <table style="width:100%; border-collapse:collapse; font-size:12.5px; min-width:540px;">
+                <thead><tr>
+                    <th style="text-align:left; padding:9px 10px; font-size:10px; text-transform:uppercase; letter-spacing:0.4px; color:#71717a; border-bottom:1px solid rgba(255,255,255,0.08);">Service</th>
+                    <th style="text-align:right; padding:9px 10px; font-size:10px; text-transform:uppercase; letter-spacing:0.4px; color:#71717a; border-bottom:1px solid rgba(255,255,255,0.08);">Partner cost</th>
+                    <th style="text-align:right; padding:9px 10px; font-size:10px; text-transform:uppercase; letter-spacing:0.4px; color:#71717a; border-bottom:1px solid rgba(255,255,255,0.08);">Floor price</th>
+                    <th style="text-align:right; padding:9px 10px; font-size:10px; text-transform:uppercase; letter-spacing:0.4px; color:#71717a; border-bottom:1px solid rgba(255,255,255,0.08);">Profit / removal</th>
+                    <th style="text-align:right; padding:9px 10px; font-size:10px; text-transform:uppercase; letter-spacing:0.4px; color:#71717a; border-bottom:1px solid rgba(255,255,255,0.08);">Margin</th>
+                    <th style="text-align:right; padding:9px 10px; font-size:10px; text-transform:uppercase; letter-spacing:0.4px; color:#71717a; border-bottom:1px solid rgba(255,255,255,0.08);">Works</th>
+                </tr></thead>
+                <tbody>
+                    <tr><td style="text-align:left; padding:9px 10px; color:#e4e4e7; font-weight:600; border-top:1px solid rgba(255,255,255,0.05);">Glassdoor</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$250</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$750</td><td style="text-align:right; padding:9px 10px; color:#34d399; font-weight:700; border-top:1px solid rgba(255,255,255,0.05);">+$500</td><td style="text-align:right; padding:9px 10px; color:#34d399; border-top:1px solid rgba(255,255,255,0.05);">67%</td><td style="text-align:right; padding:9px 10px; color:#71717a; border-top:1px solid rgba(255,255,255,0.05);">25%</td></tr>
+                    <tr><td style="text-align:left; padding:9px 10px; color:#e4e4e7; font-weight:600; border-top:1px solid rgba(255,255,255,0.05);">Google (&gt;30 days old)</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$346</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$750</td><td style="text-align:right; padding:9px 10px; color:#34d399; font-weight:700; border-top:1px solid rgba(255,255,255,0.05);">+$404</td><td style="text-align:right; padding:9px 10px; color:#34d399; border-top:1px solid rgba(255,255,255,0.05);">54%</td><td style="text-align:right; padding:9px 10px; color:#71717a; border-top:1px solid rgba(255,255,255,0.05);">30%</td></tr>
+                    <tr><td style="text-align:left; padding:9px 10px; color:#e4e4e7; font-weight:600; border-top:1px solid rgba(255,255,255,0.05);">Google (&lt;30 days old)</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$421</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$750</td><td style="text-align:right; padding:9px 10px; color:#34d399; font-weight:700; border-top:1px solid rgba(255,255,255,0.05);">+$330</td><td style="text-align:right; padding:9px 10px; color:#34d399; border-top:1px solid rgba(255,255,255,0.05);">44%</td><td style="text-align:right; padding:9px 10px; color:#71717a; border-top:1px solid rgba(255,255,255,0.05);">40%</td></tr>
+                    <tr><td style="text-align:left; padding:9px 10px; color:#e4e4e7; font-weight:600; border-top:1px solid rgba(255,255,255,0.05);">Indeed</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$450</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$750</td><td style="text-align:right; padding:9px 10px; color:#34d399; font-weight:700; border-top:1px solid rgba(255,255,255,0.05);">+$300</td><td style="text-align:right; padding:9px 10px; color:#34d399; border-top:1px solid rgba(255,255,255,0.05);">40%</td><td style="text-align:right; padding:9px 10px; color:#71717a; border-top:1px solid rgba(255,255,255,0.05);">40%</td></tr>
+                    <tr><td style="text-align:left; padding:9px 10px; color:#e4e4e7; font-weight:600; border-top:1px solid rgba(255,255,255,0.05);">Trustpilot</td><td style="text-align:right; padding:9px 10px; color:#71717a; border-top:1px solid rgba(255,255,255,0.05);">TBD</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$750</td><td style="text-align:right; padding:9px 10px; color:#71717a; border-top:1px solid rgba(255,255,255,0.05);">&mdash;</td><td style="text-align:right; padding:9px 10px; color:#71717a; border-top:1px solid rgba(255,255,255,0.05);">&mdash;</td><td style="text-align:right; padding:9px 10px; color:#71717a; border-top:1px solid rgba(255,255,255,0.05);">35%</td></tr>
+                    <tr style="background:rgba(239,68,68,0.06);"><td style="text-align:left; padding:9px 10px; color:#f87171; font-weight:700; border-top:1px solid rgba(255,255,255,0.05);">Yelp</td><td style="text-align:right; padding:9px 10px; color:#f87171; border-top:1px solid rgba(255,255,255,0.05);">$1,250</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$750</td><td style="text-align:right; padding:9px 10px; color:#f87171; font-weight:700; border-top:1px solid rgba(255,255,255,0.05);">&minus;$500</td><td style="text-align:right; padding:9px 10px; color:#f87171; border-top:1px solid rgba(255,255,255,0.05);">loss</td><td style="text-align:right; padding:9px 10px; color:#71717a; border-top:1px solid rgba(255,255,255,0.05);">15%</td></tr>
+                </tbody>
+            </table>
+            </div>
+            <div style="margin-top:14px; padding-top:12px; border-top:1px solid rgba(255,255,255,0.04); font-size:11px; color:#71717a;">Healthgrades, RateMDs &amp; Amazon also sell at the $750 floor but their partner cost is still TBD (&ldquo;ask Angela&rdquo;). &ldquo;Works&rdquo; = average success rate &mdash; it doesn&rsquo;t change profit per removal (partners are paid only on success) but a low rate means more effort per win.</div>
+        </div>
+
+        <div class="card">
+            <div class="card-title"><span class="dot" style="background:#6366f1;"></span>Social &amp; Link De-Indexing &mdash; floor $3,000+ / removal</div>
+            <div style="overflow-x:auto;">
+            <table style="width:100%; border-collapse:collapse; font-size:12.5px; min-width:540px;">
+                <thead><tr>
+                    <th style="text-align:left; padding:9px 10px; font-size:10px; text-transform:uppercase; letter-spacing:0.4px; color:#71717a; border-bottom:1px solid rgba(255,255,255,0.08);">Service</th>
+                    <th style="text-align:right; padding:9px 10px; font-size:10px; text-transform:uppercase; letter-spacing:0.4px; color:#71717a; border-bottom:1px solid rgba(255,255,255,0.08);">Partner cost</th>
+                    <th style="text-align:right; padding:9px 10px; font-size:10px; text-transform:uppercase; letter-spacing:0.4px; color:#71717a; border-bottom:1px solid rgba(255,255,255,0.08);">Floor price</th>
+                    <th style="text-align:right; padding:9px 10px; font-size:10px; text-transform:uppercase; letter-spacing:0.4px; color:#71717a; border-bottom:1px solid rgba(255,255,255,0.08);">Profit / removal</th>
+                    <th style="text-align:right; padding:9px 10px; font-size:10px; text-transform:uppercase; letter-spacing:0.4px; color:#71717a; border-bottom:1px solid rgba(255,255,255,0.08);">Works</th>
+                </tr></thead>
+                <tbody>
+                    <tr><td style="text-align:left; padding:9px 10px; color:#e4e4e7; font-weight:600; border-top:1px solid rgba(255,255,255,0.05);">Reddit</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$1,127</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$3,000</td><td style="text-align:right; padding:9px 10px; color:#34d399; font-weight:700; border-top:1px solid rgba(255,255,255,0.05);">+$1,873</td><td style="text-align:right; padding:9px 10px; color:#71717a; border-top:1px solid rgba(255,255,255,0.05);">60%</td></tr>
+                    <tr><td style="text-align:left; padding:9px 10px; color:#e4e4e7; font-weight:600; border-top:1px solid rgba(255,255,255,0.05);">TikTok</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$1,305</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$3,000</td><td style="text-align:right; padding:9px 10px; color:#34d399; font-weight:700; border-top:1px solid rgba(255,255,255,0.05);">+$1,695</td><td style="text-align:right; padding:9px 10px; color:#71717a; border-top:1px solid rgba(255,255,255,0.05);">60%</td></tr>
+                    <tr><td style="text-align:left; padding:9px 10px; color:#e4e4e7; font-weight:600; border-top:1px solid rgba(255,255,255,0.05);">Facebook</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$1,583</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$3,000</td><td style="text-align:right; padding:9px 10px; color:#34d399; font-weight:700; border-top:1px solid rgba(255,255,255,0.05);">+$1,417</td><td style="text-align:right; padding:9px 10px; color:#71717a; border-top:1px solid rgba(255,255,255,0.05);">60%</td></tr>
+                    <tr><td style="text-align:left; padding:9px 10px; color:#e4e4e7; font-weight:600; border-top:1px solid rgba(255,255,255,0.05);">Instagram / X / YouTube</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$1,000&ndash;2,500</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$3,000</td><td style="text-align:right; padding:9px 10px; color:#34d399; font-weight:700; border-top:1px solid rgba(255,255,255,0.05);">+$500&ndash;2,000</td><td style="text-align:right; padding:9px 10px; color:#71717a; border-top:1px solid rgba(255,255,255,0.05);">60&ndash;70%</td></tr>
+                    <tr><td style="text-align:left; padding:9px 10px; color:#e4e4e7; font-weight:600; border-top:1px solid rgba(255,255,255,0.05);">News article (local media)</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$1,000&ndash;2,500</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$3,000</td><td style="text-align:right; padding:9px 10px; color:#34d399; font-weight:700; border-top:1px solid rgba(255,255,255,0.05);">+$500&ndash;2,000</td><td style="text-align:right; padding:9px 10px; color:#71717a; border-top:1px solid rgba(255,255,255,0.05);">50%</td></tr>
+                    <tr><td style="text-align:left; padding:9px 10px; color:#e4e4e7; font-weight:600; border-top:1px solid rgba(255,255,255,0.05);">News article (state media)</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$1,000&ndash;3,500</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$4,000</td><td style="text-align:right; padding:9px 10px; color:#34d399; font-weight:700; border-top:1px solid rgba(255,255,255,0.05);">+$500&ndash;3,000</td><td style="text-align:right; padding:9px 10px; color:#71717a; border-top:1px solid rgba(255,255,255,0.05);">30%</td></tr>
+                </tbody>
+            </table>
+            </div>
+            <div style="margin-top:14px; padding-top:12px; border-top:1px solid rgba(255,255,255,0.04); font-size:11px; color:#71717a;">These carry the highest dollar profit per removal. Where the partner quotes a range, profit is shown as a range.</div>
+        </div>
+
+        <div class="card">
+            <div class="card-title"><span class="dot" style="background:#10b981;"></span>The Profit Engine &mdash; internal, $0 partner cost</div>
+            <div style="overflow-x:auto;">
+            <table style="width:100%; border-collapse:collapse; font-size:12.5px; min-width:540px;">
+                <thead><tr>
+                    <th style="text-align:left; padding:9px 10px; font-size:10px; text-transform:uppercase; letter-spacing:0.4px; color:#71717a; border-bottom:1px solid rgba(255,255,255,0.08);">Service</th>
+                    <th style="text-align:right; padding:9px 10px; font-size:10px; text-transform:uppercase; letter-spacing:0.4px; color:#71717a; border-bottom:1px solid rgba(255,255,255,0.08);">Partner cost</th>
+                    <th style="text-align:right; padding:9px 10px; font-size:10px; text-transform:uppercase; letter-spacing:0.4px; color:#71717a; border-bottom:1px solid rgba(255,255,255,0.08);">Sell price</th>
+                    <th style="text-align:right; padding:9px 10px; font-size:10px; text-transform:uppercase; letter-spacing:0.4px; color:#71717a; border-bottom:1px solid rgba(255,255,255,0.08);">Profit</th>
+                    <th style="text-align:right; padding:9px 10px; font-size:10px; text-transform:uppercase; letter-spacing:0.4px; color:#71717a; border-bottom:1px solid rgba(255,255,255,0.08);">Works</th>
+                </tr></thead>
+                <tbody>
+                    <tr><td style="text-align:left; padding:9px 10px; color:#e4e4e7; font-weight:600; border-top:1px solid rgba(255,255,255,0.05);">Court records <span style="color:#71717a; font-weight:400;">(Trellis, Justia, UniCourt, Pacer, &hellip;)</span></td><td style="text-align:right; padding:9px 10px; color:#34d399; border-top:1px solid rgba(255,255,255,0.05);">$0</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$1,450</td><td style="text-align:right; padding:9px 10px; color:#34d399; font-weight:700; border-top:1px solid rgba(255,255,255,0.05);">+$1,450</td><td style="text-align:right; padding:9px 10px; color:#71717a; border-top:1px solid rgba(255,255,255,0.05);">20&ndash;90%</td></tr>
+                    <tr><td style="text-align:left; padding:9px 10px; color:#e4e4e7; font-weight:600; border-top:1px solid rgba(255,255,255,0.05);">Autocomplete <span style="color:#71717a; font-weight:400;">(per keyword)</span></td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$250</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$3,950</td><td style="text-align:right; padding:9px 10px; color:#34d399; font-weight:700; border-top:1px solid rgba(255,255,255,0.05);">+$3,700</td><td style="text-align:right; padding:9px 10px; color:#71717a; border-top:1px solid rgba(255,255,255,0.05);">70&ndash;99%</td></tr>
+                    <tr><td style="text-align:left; padding:9px 10px; color:#e4e4e7; font-weight:600; border-top:1px solid rgba(255,255,255,0.05);">Archive.org (sealed cases)</td><td style="text-align:right; padding:9px 10px; color:#34d399; border-top:1px solid rgba(255,255,255,0.05);">$0</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$2,450</td><td style="text-align:right; padding:9px 10px; color:#34d399; font-weight:700; border-top:1px solid rgba(255,255,255,0.05);">+$2,450</td><td style="text-align:right; padding:9px 10px; color:#71717a; border-top:1px solid rgba(255,255,255,0.05);">50%</td></tr>
+                    <tr><td style="text-align:left; padding:9px 10px; color:#e4e4e7; font-weight:600; border-top:1px solid rgba(255,255,255,0.05);">Mugshots</td><td style="text-align:right; padding:9px 10px; color:#34d399; border-top:1px solid rgba(255,255,255,0.05);">$0</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$950</td><td style="text-align:right; padding:9px 10px; color:#34d399; font-weight:700; border-top:1px solid rgba(255,255,255,0.05);">+$950</td><td style="text-align:right; padding:9px 10px; color:#71717a; border-top:1px solid rgba(255,255,255,0.05);">90%</td></tr>
+                    <tr><td style="text-align:left; padding:9px 10px; color:#e4e4e7; font-weight:600; border-top:1px solid rgba(255,255,255,0.05);">Tumblr</td><td style="text-align:right; padding:9px 10px; color:#34d399; border-top:1px solid rgba(255,255,255,0.05);">$0</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$950</td><td style="text-align:right; padding:9px 10px; color:#34d399; font-weight:700; border-top:1px solid rgba(255,255,255,0.05);">+$950</td><td style="text-align:right; padding:9px 10px; color:#71717a; border-top:1px solid rgba(255,255,255,0.05);">80%</td></tr>
+                </tbody>
+            </table>
+            </div>
+            <div style="margin-top:14px; padding-top:12px; border-top:1px solid rgba(255,255,255,0.04); font-size:11px; color:#52525b; line-height:1.6;">These are done in-house with no partner to pay &mdash; nearly the whole sale price is profit. Court-record de-indexing alone spans 8 sites (Trellis &amp; Docket Alarm ~90% success, FindLaw only ~20%). <strong style="color:#71717a;">Lean here.</strong></div>
+        </div>
+
+        <div class="footer">Profit = floor sell price &minus; partner cost. Partners are paid <strong style="color:#a1a1aa;">only on a successful removal</strong>, so success rate drives volume &amp; effort, not profit per removal. Partner costs, floor prices (Partner Escalation Threshold) &amp; success rates from the Current Services sheet (Hector 12/03/2025, updated 02/25/2026). Figures are list/floor economics, not actuals billed.</div>
+    </div>
 
 </div>
 
