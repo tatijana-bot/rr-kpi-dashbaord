@@ -150,6 +150,7 @@
         <button class="tab-btn" data-tab="q3" onclick="switchTab('q3')">Q3</button>
         <button class="tab-btn" data-tab="q2" onclick="switchTab('q2')">Q2</button>
         <button class="tab-btn" data-tab="ytd" onclick="switchTab('ytd')">Q1 YTD</button>
+        <button class="tab-btn" data-tab="weekly" onclick="switchTab('weekly')">&#128198; Weekly</button>
         <div class="tab-sep"></div>
         <select id="rep-select" class="month-select" onchange="switchTab(this.value)" title="Select sales rep" aria-label="Select sales rep">
             <option value="" disabled selected>Sales Reps</option>
@@ -7785,6 +7786,98 @@
             </div>
             <div class="footer">Anthony Will &middot; 2026 YTD closed-won by close date &middot; realized = realized_value_via_monday (ChargeOver) &middot; win rate = won &divide; qualified opportunities created &middot; Tatijana, Lucija, Matthew &amp; Justin shown on the main Revenue-by-Rep card</div>
         </div>
+
+    <!-- ============================================================ -->
+    <!-- WEEKLY BREAKDOWN TAB -->
+    <!-- ============================================================ -->
+    <div class="tab-content" id="tab-weekly">
+
+        <div class="header">
+            <div>
+                <h1>Weekly Breakdown</h1>
+                <div class="subtitle">Sales results &amp; activity, week by week &mdash; for Hector</div>
+            </div>
+            <div class="date-badge">Q4 2026 &middot; through Nov 22 &middot; updated weekly</div>
+        </div>
+
+        <div class="kpi-row">
+            <div class="kpi-card">
+                <div class="kpi-label">Revenue (QTD)</div>
+                <div class="kpi-value">$1.01M</div>
+                <div class="kpi-detail">106 deals &middot; Oct 1&ndash;Nov 22</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Deals Closed (QTD)</div>
+                <div class="kpi-value">106</div>
+                <div class="kpi-detail">~13 / week</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Calls Booked (QTD)</div>
+                <div class="kpi-value">252</div>
+                <div class="kpi-detail">~32 / week</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Best Week</div>
+                <div class="kpi-value" style="color:#34d399;">$275K</div>
+                <div class="kpi-detail">Nov 9&ndash;15 &middot; 23 deals</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title"><span class="dot" style="background:#10b981;"></span>Revenue by Week &mdash; Q4 2026 (closed-won)</div>
+            <div style="display:flex; align-items:flex-end; gap:10px; height:150px; padding:0 2px; margin-top:8px;">
+                <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end;" title="Oct 1&ndash;4 — $35,950 · 6 deals"><div style="font-size:10px; font-weight:700; color:#a1a1aa; margin-bottom:6px;">$36K</div><div style="width:62%; height:16px; background:linear-gradient(180deg,#34d399,#10b981); border-radius:4px 4px 0 0;"></div></div>
+                <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end;" title="Oct 5&ndash;11 — $106,375 · 14 deals"><div style="font-size:10px; font-weight:700; color:#a1a1aa; margin-bottom:6px;">$106K</div><div style="width:62%; height:46px; background:linear-gradient(180deg,#34d399,#10b981); border-radius:4px 4px 0 0;"></div></div>
+                <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end;" title="Oct 12&ndash;18 — $5,725 · 6 deals (slow week)"><div style="font-size:10px; font-weight:700; color:#f59e0b; margin-bottom:6px;">$6K</div><div style="width:62%; height:5px; background:linear-gradient(180deg,#fbbf24,#f59e0b); border-radius:4px 4px 0 0;"></div></div>
+                <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end;" title="Oct 19&ndash;25 — $142,530 · 15 deals"><div style="font-size:10px; font-weight:700; color:#a1a1aa; margin-bottom:6px;">$143K</div><div style="width:62%; height:62px; background:linear-gradient(180deg,#34d399,#10b981); border-radius:4px 4px 0 0;"></div></div>
+                <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end;" title="Oct 26&ndash;Nov 1 — $152,460 · 13 deals"><div style="font-size:10px; font-weight:700; color:#a1a1aa; margin-bottom:6px;">$152K</div><div style="width:62%; height:66px; background:linear-gradient(180deg,#34d399,#10b981); border-radius:4px 4px 0 0;"></div></div>
+                <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end;" title="Nov 2&ndash;8 — $105,925 · 17 deals"><div style="font-size:10px; font-weight:700; color:#a1a1aa; margin-bottom:6px;">$106K</div><div style="width:62%; height:46px; background:linear-gradient(180deg,#34d399,#10b981); border-radius:4px 4px 0 0;"></div></div>
+                <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end;" title="Nov 9&ndash;15 — $275,135 · 23 deals (best week)"><div style="font-size:10px; font-weight:700; color:#34d399; margin-bottom:6px;">$275K</div><div style="width:62%; height:120px; background:linear-gradient(180deg,#6ee7b7,#10b981); border-radius:4px 4px 0 0;"></div></div>
+                <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end;" title="Nov 16&ndash;22 — $186,867 · 12 deals"><div style="font-size:10px; font-weight:700; color:#a1a1aa; margin-bottom:6px;">$187K</div><div style="width:62%; height:81px; background:linear-gradient(180deg,#34d399,#10b981); border-radius:4px 4px 0 0;"></div></div>
+                <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end;" title="Nov 23&ndash;29 — week in progress"><div style="font-size:10px; font-weight:700; color:#22d3ee; margin-bottom:6px;">live</div><div style="width:62%; height:4px; background:repeating-linear-gradient(135deg,#22d3ee,#22d3ee 3px,transparent 3px,transparent 6px); border-radius:4px 4px 0 0;"></div></div>
+            </div>
+            <div style="display:flex; gap:10px; margin-top:10px; padding:0 2px;">
+                <div style="flex:1; text-align:center; font-size:10px; color:#a1a1aa;">Oct 1</div>
+                <div style="flex:1; text-align:center; font-size:10px; color:#a1a1aa;">Oct 5</div>
+                <div style="flex:1; text-align:center; font-size:10px; color:#a1a1aa;">Oct 12</div>
+                <div style="flex:1; text-align:center; font-size:10px; color:#a1a1aa;">Oct 19</div>
+                <div style="flex:1; text-align:center; font-size:10px; color:#a1a1aa;">Oct 26</div>
+                <div style="flex:1; text-align:center; font-size:10px; color:#a1a1aa;">Nov 2</div>
+                <div style="flex:1; text-align:center; font-size:10px; color:#34d399; font-weight:700;">Nov 9</div>
+                <div style="flex:1; text-align:center; font-size:10px; color:#a1a1aa;">Nov 16</div>
+                <div style="flex:1; text-align:center; font-size:10px; color:#22d3ee; font-weight:700;">Nov 23</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title"><span class="dot" style="background:#06b6d4;"></span>Week by Week &mdash; Q4 2026</div>
+            <div style="overflow-x:auto;">
+            <table style="width:100%; border-collapse:collapse; font-size:12.5px; min-width:520px;">
+                <thead><tr>
+                    <th style="text-align:left; padding:9px 10px; font-size:10px; text-transform:uppercase; letter-spacing:0.4px; color:#71717a; border-bottom:1px solid rgba(255,255,255,0.08);">Week (Mon&ndash;Sun)</th>
+                    <th style="text-align:right; padding:9px 10px; font-size:10px; text-transform:uppercase; letter-spacing:0.4px; color:#71717a; border-bottom:1px solid rgba(255,255,255,0.08);">Revenue</th>
+                    <th style="text-align:right; padding:9px 10px; font-size:10px; text-transform:uppercase; letter-spacing:0.4px; color:#71717a; border-bottom:1px solid rgba(255,255,255,0.08);">Deals</th>
+                    <th style="text-align:right; padding:9px 10px; font-size:10px; text-transform:uppercase; letter-spacing:0.4px; color:#71717a; border-bottom:1px solid rgba(255,255,255,0.08);">Avg deal</th>
+                    <th style="text-align:right; padding:9px 10px; font-size:10px; text-transform:uppercase; letter-spacing:0.4px; color:#71717a; border-bottom:1px solid rgba(255,255,255,0.08);">Calls booked</th>
+                </tr></thead>
+                <tbody>
+                    <tr><td style="text-align:left; padding:9px 10px; color:#e4e4e7; font-weight:600; border-top:1px solid rgba(255,255,255,0.05);">Oct 1&ndash;4</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$35,950</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">6</td><td style="text-align:right; padding:9px 10px; color:#71717a; border-top:1px solid rgba(255,255,255,0.05);">$5,992</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">22</td></tr>
+                    <tr><td style="text-align:left; padding:9px 10px; color:#e4e4e7; font-weight:600; border-top:1px solid rgba(255,255,255,0.05);">Oct 5&ndash;11</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$106,375</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">14</td><td style="text-align:right; padding:9px 10px; color:#71717a; border-top:1px solid rgba(255,255,255,0.05);">$7,598</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">45</td></tr>
+                    <tr><td style="text-align:left; padding:9px 10px; color:#e4e4e7; font-weight:600; border-top:1px solid rgba(255,255,255,0.05);">Oct 12&ndash;18</td><td style="text-align:right; padding:9px 10px; color:#f59e0b; border-top:1px solid rgba(255,255,255,0.05);">$5,725</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">6</td><td style="text-align:right; padding:9px 10px; color:#71717a; border-top:1px solid rgba(255,255,255,0.05);">$954</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">28</td></tr>
+                    <tr><td style="text-align:left; padding:9px 10px; color:#e4e4e7; font-weight:600; border-top:1px solid rgba(255,255,255,0.05);">Oct 19&ndash;25</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$142,530</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">15</td><td style="text-align:right; padding:9px 10px; color:#71717a; border-top:1px solid rgba(255,255,255,0.05);">$9,502</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">38</td></tr>
+                    <tr><td style="text-align:left; padding:9px 10px; color:#e4e4e7; font-weight:600; border-top:1px solid rgba(255,255,255,0.05);">Oct 26&ndash;Nov 1</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$152,460</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">13</td><td style="text-align:right; padding:9px 10px; color:#71717a; border-top:1px solid rgba(255,255,255,0.05);">$11,728</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">28</td></tr>
+                    <tr><td style="text-align:left; padding:9px 10px; color:#e4e4e7; font-weight:600; border-top:1px solid rgba(255,255,255,0.05);">Nov 2&ndash;8</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$105,925</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">17</td><td style="text-align:right; padding:9px 10px; color:#71717a; border-top:1px solid rgba(255,255,255,0.05);">$6,231</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">32</td></tr>
+                    <tr style="background:rgba(16,185,129,0.06);"><td style="text-align:left; padding:9px 10px; color:#34d399; font-weight:700; border-top:1px solid rgba(255,255,255,0.05);">Nov 9&ndash;15 &#9733;</td><td style="text-align:right; padding:9px 10px; color:#34d399; font-weight:700; border-top:1px solid rgba(255,255,255,0.05);">$275,135</td><td style="text-align:right; padding:9px 10px; color:#e4e4e7; border-top:1px solid rgba(255,255,255,0.05);">23</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$11,962</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">32</td></tr>
+                    <tr><td style="text-align:left; padding:9px 10px; color:#e4e4e7; font-weight:600; border-top:1px solid rgba(255,255,255,0.05);">Nov 16&ndash;22</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">$186,867</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">12</td><td style="text-align:right; padding:9px 10px; color:#34d399; border-top:1px solid rgba(255,255,255,0.05);">$15,572</td><td style="text-align:right; padding:9px 10px; color:#a1a1aa; border-top:1px solid rgba(255,255,255,0.05);">27</td></tr>
+                    <tr><td style="text-align:left; padding:9px 10px; color:#22d3ee; font-weight:600; border-top:1px solid rgba(255,255,255,0.05);">Nov 23&ndash;29</td><td style="text-align:right; padding:9px 10px; color:#71717a; border-top:1px solid rgba(255,255,255,0.05);">in progress</td><td style="text-align:right; padding:9px 10px; color:#71717a; border-top:1px solid rgba(255,255,255,0.05);">&mdash;</td><td style="text-align:right; padding:9px 10px; color:#71717a; border-top:1px solid rgba(255,255,255,0.05);">&mdash;</td><td style="text-align:right; padding:9px 10px; color:#71717a; border-top:1px solid rgba(255,255,255,0.05);">&mdash;</td></tr>
+                </tbody>
+            </table>
+            </div>
+            <div style="margin-top:14px; padding-top:12px; border-top:1px solid rgba(255,255,255,0.04); font-size:11px; color:#71717a;">Oct 12&ndash;18 was the quarter&rsquo;s slow week ($5.7K) &mdash; a dip, not a trend. Nov 9&ndash;15 was the peak ($275K). Note Nov 16&ndash;22 did $187K on only 12 deals ($15.6K avg) &mdash; fewer, bigger deals.</div>
+        </div>
+
+        <div class="footer">Closed-won by close date (revenue-producing deals &gt; $1; $0 / test deals excluded). Calls booked = deals created that week with a Call Outcome. Weeks are Mon&ndash;Sun. Q4 quarter-to-date through Nov 22; current week (Nov 23&ndash;29) in progress. Refreshes with the monthly dashboard update.</div>
+    </div>
 
     <!-- ============================================================ -->
     <!-- PROFIT BY SERVICE LINE TAB -->
