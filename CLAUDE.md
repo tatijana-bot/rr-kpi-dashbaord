@@ -98,11 +98,11 @@ the deal to Closed Lost with a reason.
   `python3 -c "s=open('index.html').read(); print(s.count('<div')-s.count('</div>'))"` → 0.
 - Revenue headline uses **revenue-producing deals** (amount > 0), split by pipeline; $0 and
   test ("ZZ TEST") deals are excluded from the headline and noted separately.
-- **Always label which revenue a figure is:** **Signed** = closed-won contract value
-  (`amount_in_home_currency`, by close date) vs **Collected** = cash actually received
-  (`realized_value_via_monday`, which lags). Never show a bare "revenue" number without
-  saying which. Most dashboard headlines are Signed; realized/collected always lags and must
-  be labelled as such.
+- **Always label which revenue a figure is, using these two terms consistently:**
+  **Deal Amount** = closed-won contract value (`amount_in_home_currency`, by close date) vs
+  **Realized Amount** = cash actually received (`realized_value_via_monday`, which lags).
+  Never show a bare "revenue" number without saying which. Most dashboard headlines are
+  Deal Amount; Realized Amount always lags and must be labelled as such.
 
 ## Paid Ads (Google Ads)
 - There is a SEPARATE "Google Ads Tracker" artifact (owned by Tatijana, shared with org):
