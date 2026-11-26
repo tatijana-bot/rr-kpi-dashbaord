@@ -66,7 +66,7 @@ the deal to Closed Lost with a reason.
 - `call_outcome` is logged thoroughly on Sales-pipeline deals but **sparsely on Outreach**, so a
   per-pipeline split of booked calls is unreliable — keep headline counts monthly, not by pipeline.
 - 2026 monthly series (Calls Booked): Jan 145, Feb 142, Mar 166, Apr 128, May 135, Jun 88,
-  Jul 68, Aug 163, Sep 126, Oct 157, Nov(MTD d14) 54. YTD 1,372 · 82.9% show rate.
+  Jul 68, Aug 163, Sep 126, Oct 157, Nov(d26) 129. YTD 1,447 · 82%+ show rate.
 
 ### Pipelines & key stage IDs
 - Sales (default): Call Scheduled `9550124`, Contract Sent `decisionmakerboughtin`,
